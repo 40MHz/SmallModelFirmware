@@ -1,0 +1,212 @@
+
+
+================================================================
+== Vivado HLS Report for 'normalize_0_0_0_0_0_s'
+================================================================
+* Date:           Thu Nov 26 15:34:00 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 12.50 ns | 3.792 ns |   1.56 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.79>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%data_V_read_1 = call i60 @_ssdm_op_Read.ap_auto.i60(i60 %data_V_read)" [firmware/nnet_utils/nnet_batchnorm.h:49]   --->   Operation 2 'read' 'data_V_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str31)" [firmware/nnet_utils/nnet_batchnorm.h:60]   --->   Operation 3 'specregionbegin' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str13) nounwind" [firmware/nnet_utils/nnet_batchnorm.h:64]   --->   Operation 4 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecResourceLimit(i32 12, [4 x i8]* @p_str32, [1 x i8]* @p_str13, [1 x i8]* @p_str13, [1 x i8]* @p_str13) nounwind" [firmware/nnet_utils/nnet_batchnorm.h:71]   --->   Operation 5 'specresourcelimit' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str31, i32 %tmp)" [firmware/nnet_utils/nnet_batchnorm.h:73]   --->   Operation 6 'specregionend' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%trunc_ln446 = trunc i60 %data_V_read_1 to i5" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 7 'trunc' 'trunc_ln446' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%zext_ln731 = zext i5 %trunc_ln446 to i12" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 8 'zext' 'zext_ln731' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (2.44ns)   --->   "%mul_ln731 = mul i12 98, %zext_ln731" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 9 'mul' 'mul_ln731' <Predicate = true> <Delay = 2.44> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (1.35ns)   --->   "%add_ln731 = add i12 -1475, %mul_ln731" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 10 'add' 'add_ln731' <Predicate = true> <Delay = 1.35> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp_1 = call i13 @_ssdm_op_BitConcatenate.i13.i12.i1(i12 %add_ln731, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 11 'bitconcatenate' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%sext_ln731 = sext i13 %tmp_1 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 12 'sext' 'sext_ln731' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_5 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 5, i32 9)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 13 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%shl_ln731_s = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %tmp_5, i7 0)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 14 'bitconcatenate' 'shl_ln731_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln731_1 = zext i12 %shl_ln731_s to i13" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 15 'zext' 'zext_ln731_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%shl_ln731_1 = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %tmp_5, i3 0)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 16 'bitconcatenate' 'shl_ln731_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln731_2 = zext i8 %shl_ln731_1 to i13" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 17 'zext' 'zext_ln731_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln731 = sub i13 %zext_ln731_1, %zext_ln731_2" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 18 'sub' 'sub_ln731' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 19 [1/1] (1.07ns) (root node of TernaryAdder)   --->   "%add_ln731_1 = add i13 -875, %sub_ln731" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 19 'add' 'add_ln731_1' <Predicate = true> <Delay = 1.07> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_8 = call i14 @_ssdm_op_BitConcatenate.i14.i13.i1(i13 %add_ln731_1, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 20 'bitconcatenate' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%sext_ln731_1 = sext i14 %tmp_8 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 21 'sext' 'sext_ln731_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_3 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 10, i32 14)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 22 'partselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln731_3 = zext i5 %tmp_3 to i10" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 23 'zext' 'zext_ln731_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (1.88ns)   --->   "%mul_ln731_1 = mul i10 27, %zext_ln731_3" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 24 'mul' 'mul_ln731_1' <Predicate = true> <Delay = 1.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (1.31ns)   --->   "%add_ln731_2 = add i10 -383, %mul_ln731_1" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 25 'add' 'add_ln731_2' <Predicate = true> <Delay = 1.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_10 = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 %add_ln731_2, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 26 'bitconcatenate' 'tmp_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%sext_ln731_2 = sext i11 %tmp_10 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 27 'sext' 'sext_ln731_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_4 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 15, i32 19)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 28 'partselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln731_4 = zext i5 %tmp_4 to i12" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 29 'zext' 'zext_ln731_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (2.44ns)   --->   "%mul_ln731_2 = mul i12 98, %zext_ln731_4" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 30 'mul' 'mul_ln731_2' <Predicate = true> <Delay = 2.44> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (1.35ns)   --->   "%add_ln731_3 = add i12 -1475, %mul_ln731_2" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 31 'add' 'add_ln731_3' <Predicate = true> <Delay = 1.35> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_11 = call i13 @_ssdm_op_BitConcatenate.i13.i12.i1(i12 %add_ln731_3, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 32 'bitconcatenate' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%sext_ln731_3 = sext i13 %tmp_11 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 33 'sext' 'sext_ln731_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%tmp_12 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 20, i32 24)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 34 'partselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%shl_ln731_2 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %tmp_12, i7 0)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 35 'bitconcatenate' 'shl_ln731_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln731_5 = zext i12 %shl_ln731_2 to i13" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 36 'zext' 'zext_ln731_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%shl_ln731_3 = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %tmp_12, i3 0)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 37 'bitconcatenate' 'shl_ln731_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln731_6 = zext i8 %shl_ln731_3 to i13" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 38 'zext' 'zext_ln731_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln731_1 = sub i13 %zext_ln731_5, %zext_ln731_6" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 39 'sub' 'sub_ln731_1' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 40 [1/1] (1.07ns) (root node of TernaryAdder)   --->   "%add_ln731_4 = add i13 -875, %sub_ln731_1" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 40 'add' 'add_ln731_4' <Predicate = true> <Delay = 1.07> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%tmp_13 = call i14 @_ssdm_op_BitConcatenate.i14.i13.i1(i13 %add_ln731_4, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 41 'bitconcatenate' 'tmp_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%sext_ln731_4 = sext i14 %tmp_13 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 42 'sext' 'sext_ln731_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_6 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 25, i32 29)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 43 'partselect' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln731_7 = zext i5 %tmp_6 to i10" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 44 'zext' 'zext_ln731_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (1.88ns)   --->   "%mul_ln731_3 = mul i10 27, %zext_ln731_7" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 45 'mul' 'mul_ln731_3' <Predicate = true> <Delay = 1.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (1.31ns)   --->   "%add_ln731_5 = add i10 -383, %mul_ln731_3" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 46 'add' 'add_ln731_5' <Predicate = true> <Delay = 1.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%tmp_14 = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 %add_ln731_5, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 47 'bitconcatenate' 'tmp_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%sext_ln731_5 = sext i11 %tmp_14 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 48 'sext' 'sext_ln731_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_7 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 30, i32 34)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 49 'partselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%zext_ln731_8 = zext i5 %tmp_7 to i12" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 50 'zext' 'zext_ln731_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (2.44ns)   --->   "%mul_ln731_4 = mul i12 98, %zext_ln731_8" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 51 'mul' 'mul_ln731_4' <Predicate = true> <Delay = 2.44> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 52 [1/1] (1.35ns)   --->   "%add_ln731_6 = add i12 -1475, %mul_ln731_4" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 52 'add' 'add_ln731_6' <Predicate = true> <Delay = 1.35> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_15 = call i13 @_ssdm_op_BitConcatenate.i13.i12.i1(i12 %add_ln731_6, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 53 'bitconcatenate' 'tmp_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%sext_ln731_6 = sext i13 %tmp_15 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 54 'sext' 'sext_ln731_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_16 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 35, i32 39)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 55 'partselect' 'tmp_16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%shl_ln731_4 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %tmp_16, i7 0)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 56 'bitconcatenate' 'shl_ln731_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln731_9 = zext i12 %shl_ln731_4 to i13" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 57 'zext' 'zext_ln731_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%shl_ln731_5 = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %tmp_16, i3 0)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 58 'bitconcatenate' 'shl_ln731_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%zext_ln731_10 = zext i8 %shl_ln731_5 to i13" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 59 'zext' 'zext_ln731_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln731_2 = sub i13 %zext_ln731_9, %zext_ln731_10" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 60 'sub' 'sub_ln731_2' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 61 [1/1] (1.07ns) (root node of TernaryAdder)   --->   "%add_ln731_7 = add i13 -875, %sub_ln731_2" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 61 'add' 'add_ln731_7' <Predicate = true> <Delay = 1.07> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%tmp_17 = call i14 @_ssdm_op_BitConcatenate.i14.i13.i1(i13 %add_ln731_7, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 62 'bitconcatenate' 'tmp_17' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "%sext_ln731_7 = sext i14 %tmp_17 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 63 'sext' 'sext_ln731_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%tmp_9 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 40, i32 44)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 64 'partselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln731_11 = zext i5 %tmp_9 to i10" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 65 'zext' 'zext_ln731_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (1.88ns)   --->   "%mul_ln731_5 = mul i10 27, %zext_ln731_11" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 66 'mul' 'mul_ln731_5' <Predicate = true> <Delay = 1.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 67 [1/1] (1.31ns)   --->   "%add_ln731_8 = add i10 -383, %mul_ln731_5" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 67 'add' 'add_ln731_8' <Predicate = true> <Delay = 1.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "%tmp_18 = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 %add_ln731_8, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 68 'bitconcatenate' 'tmp_18' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%sext_ln731_8 = sext i11 %tmp_18 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 69 'sext' 'sext_ln731_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_s = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 45, i32 49)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 70 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%zext_ln731_12 = zext i5 %tmp_s to i12" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 71 'zext' 'zext_ln731_12' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (2.44ns)   --->   "%mul_ln731_6 = mul i12 98, %zext_ln731_12" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 72 'mul' 'mul_ln731_6' <Predicate = true> <Delay = 2.44> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 73 [1/1] (1.35ns)   --->   "%add_ln731_9 = add i12 -1475, %mul_ln731_6" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 73 'add' 'add_ln731_9' <Predicate = true> <Delay = 1.35> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_19 = call i13 @_ssdm_op_BitConcatenate.i13.i12.i1(i12 %add_ln731_9, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 74 'bitconcatenate' 'tmp_19' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%sext_ln731_9 = sext i13 %tmp_19 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 75 'sext' 'sext_ln731_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_20 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 50, i32 54)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 76 'partselect' 'tmp_20' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 77 [1/1] (0.00ns)   --->   "%shl_ln731_6 = call i12 @_ssdm_op_BitConcatenate.i12.i5.i7(i5 %tmp_20, i7 0)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 77 'bitconcatenate' 'shl_ln731_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%zext_ln731_13 = zext i12 %shl_ln731_6 to i13" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 78 'zext' 'zext_ln731_13' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 79 [1/1] (0.00ns)   --->   "%shl_ln731_7 = call i8 @_ssdm_op_BitConcatenate.i8.i5.i3(i5 %tmp_20, i3 0)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 79 'bitconcatenate' 'shl_ln731_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 80 [1/1] (0.00ns)   --->   "%zext_ln731_14 = zext i8 %shl_ln731_7 to i13" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 80 'zext' 'zext_ln731_14' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 81 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln731_3 = sub i13 %zext_ln731_13, %zext_ln731_14" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 81 'sub' 'sub_ln731_3' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 82 [1/1] (1.07ns) (root node of TernaryAdder)   --->   "%add_ln731_10 = add i13 -875, %sub_ln731_3" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 82 'add' 'add_ln731_10' <Predicate = true> <Delay = 1.07> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%tmp_21 = call i14 @_ssdm_op_BitConcatenate.i14.i13.i1(i13 %add_ln731_10, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 83 'bitconcatenate' 'tmp_21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%sext_ln731_10 = sext i14 %tmp_21 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 84 'sext' 'sext_ln731_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_2 = call i5 @_ssdm_op_PartSelect.i5.i60.i32.i32(i60 %data_V_read_1, i32 55, i32 59)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 85 'partselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%zext_ln731_15 = zext i5 %tmp_2 to i10" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 86 'zext' 'zext_ln731_15' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 87 [1/1] (1.88ns)   --->   "%mul_ln731_7 = mul i10 27, %zext_ln731_15" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 87 'mul' 'mul_ln731_7' <Predicate = true> <Delay = 1.88> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 1.88> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 88 [1/1] (1.31ns)   --->   "%add_ln731_11 = add i10 -383, %mul_ln731_7" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 88 'add' 'add_ln731_11' <Predicate = true> <Delay = 1.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 89 [1/1] (0.00ns)   --->   "%tmp_22 = call i11 @_ssdm_op_BitConcatenate.i11.i10.i1(i10 %add_ln731_11, i1 false)" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 89 'bitconcatenate' 'tmp_22' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 90 [1/1] (0.00ns)   --->   "%sext_ln731_11 = sext i11 %tmp_22 to i16" [firmware/nnet_utils/nnet_batchnorm.h:90]   --->   Operation 90 'sext' 'sext_ln731_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 91 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } undef, i16 %sext_ln731, 0" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 91 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 92 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv, i16 %sext_ln731_1, 1" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 92 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 93 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_1, i16 %sext_ln731_2, 2" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 93 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 94 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_2, i16 %sext_ln731_3, 3" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 94 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 95 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_3, i16 %sext_ln731_4, 4" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 95 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 96 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_4, i16 %sext_ln731_5, 5" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 96 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 97 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_5, i16 %sext_ln731_6, 6" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 97 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 98 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_6, i16 %sext_ln731_7, 7" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 98 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 99 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_7, i16 %sext_ln731_8, 8" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 99 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 100 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_8, i16 %sext_ln731_9, 9" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 100 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 101 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_9, i16 %sext_ln731_10, 10" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 101 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 102 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_10, i16 %sext_ln731_11, 11" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 102 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 103 [1/1] (0.00ns)   --->   "ret { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %mrv_11" [firmware/nnet_utils/nnet_batchnorm.h:93]   --->   Operation 103 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 12.5ns, clock uncertainty: 1.56ns.
+
+ <State 1>: 3.79ns
+The critical path consists of the following:
+	wire read on port 'data_V_read' (firmware/nnet_utils/nnet_batchnorm.h:49) [2]  (0 ns)
+	'mul' operation ('mul_ln731', firmware/nnet_utils/nnet_batchnorm.h:90) [9]  (2.44 ns)
+	'add' operation ('add_ln731', firmware/nnet_utils/nnet_batchnorm.h:90) [10]  (1.35 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

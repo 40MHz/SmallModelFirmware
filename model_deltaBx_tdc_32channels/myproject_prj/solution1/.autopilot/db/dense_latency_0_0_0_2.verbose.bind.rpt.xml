@@ -1,0 +1,98 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'dense_latency_0_0_0_2'" level="0">
+<item name = "Date">Tue Nov 24 16:18:39 2020
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">kintexu</item>
+<item name = "Target device">xcku115-flvb2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">12.50 ns, 7.758 ns, 1.56 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="mult_0_V_product_fu_200">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_1_V_product_fu_208">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_2_V_product_fu_216">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_4_V_product_fu_224">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_5_V_product_fu_232">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_6_V_product_fu_240">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_7_V_product_fu_248">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_8_V_product_fu_256">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_11_V_product_fu_264">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_12_V_product_fu_272">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_14_V_product_fu_280">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_15_V_product_fu_288">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_16_V_product_fu_296">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_17_V_product_fu_304">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_18_V_product_fu_312">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_20_V_product_fu_320">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_21_V_product_fu_328">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_22_V_product_fu_336">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_24_V_product_fu_344">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_25_V_product_fu_352">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_26_V_product_fu_360">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_27_V_product_fu_368">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_28_V_product_fu_376">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_29_V_product_fu_384">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_30_V_product_fu_392">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_31_V_product_fu_400">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_32_V_product_fu_408">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_33_V_product_fu_416">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_34_V_product_fu_424">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_36_V_product_fu_432">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_37_V_product_fu_440">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_38_V_product_fu_448">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_40_V_product_fu_456">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_41_V_product_fu_464">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_42_V_product_fu_472">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_44_V_product_fu_480">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_45_V_product_fu_488">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_46_V_product_fu_496">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_47_V_product_fu_504">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_48_V_product_fu_512">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_49_V_product_fu_520">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_50_V_product_fu_528">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_51_V_product_fu_536">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_52_V_product_fu_544">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_53_V_product_fu_552">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_54_V_product_fu_560">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_56_V_product_fu_568">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_57_V_product_fu_576">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_58_V_product_fu_584">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_60_V_product_fu_592">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_61_V_product_fu_600">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_62_V_product_fu_608">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="op_V_assign_0_15_3_product_fu_616">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

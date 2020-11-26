@@ -1,0 +1,13 @@
+myproject_mul_mulbkb
+normalize_0_0_0_0_0_s
+product_1
+dense_latency_0_0_0_3
+relu_1
+product
+dense_latency_0_0_0_1
+relu
+dense_latency_0_0_0_s
+relu_2
+dense_latency_0_0_0_2
+linear
+myproject

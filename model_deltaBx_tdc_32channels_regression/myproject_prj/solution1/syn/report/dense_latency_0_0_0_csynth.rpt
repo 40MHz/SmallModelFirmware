@@ -1,0 +1,227 @@
+
+
+================================================================
+== Vivado HLS Report for 'dense_latency_0_0_0'
+================================================================
+* Date:           Thu Nov 26 15:34:35 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 12.50 ns | 8.909 ns |   1.56 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------+-----------+---------+---------+----------+----------+-----+-----+----------+
+        |                                     |           |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |               Instance              |   Module  |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +-------------------------------------+-----------+---------+---------+----------+----------+-----+-----+----------+
+        |mult_0_V_product_2_fu_186            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_2_V_product_2_fu_194            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_3_V_product_2_fu_202            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_4_V_product_2_fu_210            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_5_V_product_2_fu_218            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_6_V_product_2_fu_226            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_7_V_product_2_fu_234            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_8_V_product_2_fu_242            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_9_V_product_2_fu_250            |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_10_V_product_2_fu_258           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_11_V_product_2_fu_266           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_12_V_product_2_fu_274           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_13_V_product_2_fu_282           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_14_V_product_2_fu_290           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_15_V_product_2_fu_298           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_16_V_product_2_fu_306           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_17_V_product_2_fu_314           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_18_V_product_2_fu_322           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_19_V_product_2_fu_330           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_20_V_product_2_fu_338           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_22_V_product_2_fu_346           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_23_V_product_2_fu_354           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_24_V_product_2_fu_362           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_25_V_product_2_fu_370           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_26_V_product_2_fu_378           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_27_V_product_2_fu_386           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_28_V_product_2_fu_394           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_29_V_product_2_fu_402           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |mult_30_V_product_2_fu_410           |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |op_V_assign_0_15_1_product_2_fu_418  |product_2  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        +-------------------------------------+-----------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  | URAM|
++---------------------+---------+-------+---------+--------+-----+
+|DSP                  |        -|      -|        -|       -|    -|
+|Expression           |        -|      -|        0|     646|    -|
+|FIFO                 |        -|      -|        -|       -|    -|
+|Instance             |        -|     30|        -|       -|    -|
+|Memory               |        -|      -|        -|       -|    -|
+|Multiplexer          |        -|      -|        -|       -|    -|
+|Register             |        -|      -|        -|       -|    -|
++---------------------+---------+-------+---------+--------+-----+
+|Total                |        0|     30|        0|     646|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Available SLR        |     2160|   2760|   663360|  331680|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization SLR (%)  |        0|      1|        0|   ~0   |  100|
++---------------------+---------+-------+---------+--------+-----+
+|Available            |     4320|   5520|  1326720|  663360|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization (%)      |        0|   ~0  |        0|   ~0   |    0|
++---------------------+---------+-------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------+-----------+---------+-------+---+----+-----+
+    |               Instance              |   Module  | BRAM_18K| DSP48E| FF| LUT| URAM|
+    +-------------------------------------+-----------+---------+-------+---+----+-----+
+    |mult_0_V_product_2_fu_186            |product_2  |        0|      1|  0|   0|    0|
+    |mult_2_V_product_2_fu_194            |product_2  |        0|      1|  0|   0|    0|
+    |mult_3_V_product_2_fu_202            |product_2  |        0|      1|  0|   0|    0|
+    |mult_4_V_product_2_fu_210            |product_2  |        0|      1|  0|   0|    0|
+    |mult_5_V_product_2_fu_218            |product_2  |        0|      1|  0|   0|    0|
+    |mult_6_V_product_2_fu_226            |product_2  |        0|      1|  0|   0|    0|
+    |mult_7_V_product_2_fu_234            |product_2  |        0|      1|  0|   0|    0|
+    |mult_8_V_product_2_fu_242            |product_2  |        0|      1|  0|   0|    0|
+    |mult_9_V_product_2_fu_250            |product_2  |        0|      1|  0|   0|    0|
+    |mult_10_V_product_2_fu_258           |product_2  |        0|      1|  0|   0|    0|
+    |mult_11_V_product_2_fu_266           |product_2  |        0|      1|  0|   0|    0|
+    |mult_12_V_product_2_fu_274           |product_2  |        0|      1|  0|   0|    0|
+    |mult_13_V_product_2_fu_282           |product_2  |        0|      1|  0|   0|    0|
+    |mult_14_V_product_2_fu_290           |product_2  |        0|      1|  0|   0|    0|
+    |mult_15_V_product_2_fu_298           |product_2  |        0|      1|  0|   0|    0|
+    |mult_16_V_product_2_fu_306           |product_2  |        0|      1|  0|   0|    0|
+    |mult_17_V_product_2_fu_314           |product_2  |        0|      1|  0|   0|    0|
+    |mult_18_V_product_2_fu_322           |product_2  |        0|      1|  0|   0|    0|
+    |mult_19_V_product_2_fu_330           |product_2  |        0|      1|  0|   0|    0|
+    |mult_20_V_product_2_fu_338           |product_2  |        0|      1|  0|   0|    0|
+    |mult_22_V_product_2_fu_346           |product_2  |        0|      1|  0|   0|    0|
+    |mult_23_V_product_2_fu_354           |product_2  |        0|      1|  0|   0|    0|
+    |mult_24_V_product_2_fu_362           |product_2  |        0|      1|  0|   0|    0|
+    |mult_25_V_product_2_fu_370           |product_2  |        0|      1|  0|   0|    0|
+    |mult_26_V_product_2_fu_378           |product_2  |        0|      1|  0|   0|    0|
+    |mult_27_V_product_2_fu_386           |product_2  |        0|      1|  0|   0|    0|
+    |mult_28_V_product_2_fu_394           |product_2  |        0|      1|  0|   0|    0|
+    |mult_29_V_product_2_fu_402           |product_2  |        0|      1|  0|   0|    0|
+    |mult_30_V_product_2_fu_410           |product_2  |        0|      1|  0|   0|    0|
+    |op_V_assign_0_15_1_product_2_fu_418  |product_2  |        0|      1|  0|   0|    0|
+    +-------------------------------------+-----------+---------+-------+---+----+-----+
+    |Total                                |           |        0|     30|  0|   0|    0|
+    +-------------------------------------+-----------+---------+-------+---+----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |acc_1_V_fu_820_p2        |     +    |      0|  0|  16|          16|          16|
+    |add_ln703_497_fu_452_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_498_fu_462_p2  |     +    |      0|  0|  16|          16|          16|
+    |add_ln703_499_fu_476_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_500_fu_494_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_501_fu_504_p2  |     +    |      0|  0|  22|          15|          15|
+    |add_ln703_502_fu_514_p2  |     +    |      0|  0|  16|          16|          16|
+    |add_ln703_503_fu_528_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_504_fu_542_p2  |     +    |      0|  0|  16|          16|          16|
+    |add_ln703_505_fu_548_p2  |     +    |      0|  0|  16|          16|          16|
+    |add_ln703_506_fu_562_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_507_fu_576_p2  |     +    |      0|  0|  21|          14|           9|
+    |add_ln703_508_fu_590_p2  |     +    |      0|  0|  22|          15|          15|
+    |add_ln703_509_fu_600_p2  |     +    |      0|  0|  23|          16|          16|
+    |add_ln703_510_fu_606_p2  |     +    |      0|  0|  16|          16|          16|
+    |add_ln703_512_fu_626_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_513_fu_644_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_514_fu_654_p2  |     +    |      0|  0|  22|          15|          15|
+    |add_ln703_515_fu_672_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_516_fu_690_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_517_fu_700_p2  |     +    |      0|  0|  22|          15|          15|
+    |add_ln703_518_fu_710_p2  |     +    |      0|  0|  23|          16|          16|
+    |add_ln703_519_fu_724_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_520_fu_742_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_521_fu_752_p2  |     +    |      0|  0|  22|          15|          15|
+    |add_ln703_522_fu_770_p2  |     +    |      0|  0|  21|          14|          14|
+    |add_ln703_523_fu_784_p2  |     +    |      0|  0|  21|          14|           5|
+    |add_ln703_524_fu_798_p2  |     +    |      0|  0|  22|          15|          15|
+    |add_ln703_525_fu_808_p2  |     +    |      0|  0|  23|          16|          16|
+    |add_ln703_526_fu_814_p2  |     +    |      0|  0|  16|          16|          16|
+    |add_ln703_751_fu_612_p2  |     +    |      0|  0|  16|          16|          16|
+    |add_ln703_fu_438_p2      |     +    |      0|  0|  23|          16|          16|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      0|  0| 646|         478|         464|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+---------------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++----------------+-----+-----+------------+---------------------+--------------+
+|ap_ready        | out |    1| ap_ctrl_hs | dense_latency.0.0.0 | return value |
+|ap_return_0     | out |   16| ap_ctrl_hs | dense_latency.0.0.0 | return value |
+|ap_return_1     | out |   16| ap_ctrl_hs | dense_latency.0.0.0 | return value |
+|data_0_V_read   |  in |   13|   ap_none  |    data_0_V_read    |    scalar    |
+|data_1_V_read   |  in |   13|   ap_none  |    data_1_V_read    |    scalar    |
+|data_2_V_read   |  in |   13|   ap_none  |    data_2_V_read    |    scalar    |
+|data_3_V_read   |  in |   13|   ap_none  |    data_3_V_read    |    scalar    |
+|data_4_V_read   |  in |   13|   ap_none  |    data_4_V_read    |    scalar    |
+|data_5_V_read   |  in |   13|   ap_none  |    data_5_V_read    |    scalar    |
+|data_6_V_read   |  in |   13|   ap_none  |    data_6_V_read    |    scalar    |
+|data_7_V_read   |  in |   13|   ap_none  |    data_7_V_read    |    scalar    |
+|data_8_V_read   |  in |   13|   ap_none  |    data_8_V_read    |    scalar    |
+|data_9_V_read   |  in |   13|   ap_none  |    data_9_V_read    |    scalar    |
+|data_10_V_read  |  in |   13|   ap_none  |    data_10_V_read   |    scalar    |
+|data_11_V_read  |  in |   13|   ap_none  |    data_11_V_read   |    scalar    |
+|data_12_V_read  |  in |   13|   ap_none  |    data_12_V_read   |    scalar    |
+|data_13_V_read  |  in |   13|   ap_none  |    data_13_V_read   |    scalar    |
+|data_14_V_read  |  in |   13|   ap_none  |    data_14_V_read   |    scalar    |
+|data_15_V_read  |  in |   13|   ap_none  |    data_15_V_read   |    scalar    |
++----------------+-----+-----+------------+---------------------+--------------+
+
