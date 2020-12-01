@@ -23,7 +23,7 @@ typedef ap_fixed<8,1,AP_RND,AP_SAT> layer5_t;
 typedef ap_fixed<16,6> layer6_t;
 typedef ap_fixed<8,2> weight6_t;
 typedef ap_fixed<8,2> bias6_t;
-typedef ap_fixed<16,6,AP_RND,AP_SAT> activation_default_t;
-typedef ap_fixed<16,6,AP_RND,AP_SAT> result_t;
+typedef ap_fixed<6,1,AP_RND,AP_SAT> activation_default_t;
+typedef ap_fixed<6,1,AP_RND,AP_SAT> result_t;
 
 #endif

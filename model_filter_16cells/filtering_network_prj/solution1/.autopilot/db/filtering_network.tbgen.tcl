@@ -15,43 +15,43 @@ set C_modelName {filtering_network}
 set C_modelType { void 0 }
 set C_modelArgList {
 	{ input_V int 192 regular {pointer 0}  }
-	{ layer8_out_0_V int 16 regular {pointer 1}  }
-	{ layer8_out_1_V int 16 regular {pointer 1}  }
-	{ layer8_out_2_V int 16 regular {pointer 1}  }
-	{ layer8_out_3_V int 16 regular {pointer 1}  }
-	{ layer8_out_4_V int 16 regular {pointer 1}  }
-	{ layer8_out_5_V int 16 regular {pointer 1}  }
-	{ layer8_out_6_V int 16 regular {pointer 1}  }
-	{ layer8_out_7_V int 16 regular {pointer 1}  }
-	{ layer8_out_8_V int 16 regular {pointer 1}  }
-	{ layer8_out_9_V int 16 regular {pointer 1}  }
-	{ layer8_out_10_V int 16 regular {pointer 1}  }
-	{ layer8_out_11_V int 16 regular {pointer 1}  }
-	{ layer8_out_12_V int 16 regular {pointer 1}  }
-	{ layer8_out_13_V int 16 regular {pointer 1}  }
-	{ layer8_out_14_V int 16 regular {pointer 1}  }
-	{ layer8_out_15_V int 16 regular {pointer 1}  }
+	{ layer8_out_0_V int 6 regular {pointer 1}  }
+	{ layer8_out_1_V int 6 regular {pointer 1}  }
+	{ layer8_out_2_V int 6 regular {pointer 1}  }
+	{ layer8_out_3_V int 6 regular {pointer 1}  }
+	{ layer8_out_4_V int 6 regular {pointer 1}  }
+	{ layer8_out_5_V int 6 regular {pointer 1}  }
+	{ layer8_out_6_V int 6 regular {pointer 1}  }
+	{ layer8_out_7_V int 6 regular {pointer 1}  }
+	{ layer8_out_8_V int 6 regular {pointer 1}  }
+	{ layer8_out_9_V int 6 regular {pointer 1}  }
+	{ layer8_out_10_V int 6 regular {pointer 1}  }
+	{ layer8_out_11_V int 6 regular {pointer 1}  }
+	{ layer8_out_12_V int 6 regular {pointer 1}  }
+	{ layer8_out_13_V int 6 regular {pointer 1}  }
+	{ layer8_out_14_V int 6 regular {pointer 1}  }
+	{ layer8_out_15_V int 6 regular {pointer 1}  }
 	{ const_size_in_1 int 16 regular {pointer 1}  }
 	{ const_size_out_1 int 16 regular {pointer 1}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "input_V", "interface" : "wire", "bitwidth" : 192, "direction" : "READONLY", "bitSlice":[{"low":0,"up":11,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 0,"up" : 0,"step" : 2}]}]},{"low":12,"up":23,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 1,"up" : 1,"step" : 2}]}]},{"low":24,"up":35,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 2,"up" : 2,"step" : 2}]}]},{"low":36,"up":47,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 3,"up" : 3,"step" : 2}]}]},{"low":48,"up":59,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 4,"up" : 4,"step" : 2}]}]},{"low":60,"up":71,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 5,"up" : 5,"step" : 2}]}]},{"low":72,"up":83,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 6,"up" : 6,"step" : 2}]}]},{"low":84,"up":95,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 7,"up" : 7,"step" : 2}]}]},{"low":96,"up":107,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 8,"up" : 8,"step" : 2}]}]},{"low":108,"up":119,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 9,"up" : 9,"step" : 2}]}]},{"low":120,"up":131,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 10,"up" : 10,"step" : 2}]}]},{"low":132,"up":143,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 11,"up" : 11,"step" : 2}]}]},{"low":144,"up":155,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 12,"up" : 12,"step" : 2}]}]},{"low":156,"up":167,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 13,"up" : 13,"step" : 2}]}]},{"low":168,"up":179,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 14,"up" : 14,"step" : 2}]}]},{"low":180,"up":191,"cElement": [{"cName": "input.V","cData": "uint12","bit_use": { "low": 0,"up": 11},"cArray": [{"low" : 15,"up" : 15,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_0_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 0,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_1_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 1,"up" : 1,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_2_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 2,"up" : 2,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_3_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 3,"up" : 3,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_4_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 4,"up" : 4,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_5_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 5,"up" : 5,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_6_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 6,"up" : 6,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_7_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 7,"up" : 7,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_8_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 8,"up" : 8,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_9_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 9,"up" : 9,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_10_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 10,"up" : 10,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_11_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 11,"up" : 11,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_12_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 12,"up" : 12,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_13_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 13,"up" : 13,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_14_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 14,"up" : 14,"step" : 2}]}]}]} , 
- 	{ "Name" : "layer8_out_15_V", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "layer8_out.V","cData": "int16","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 15,"up" : 15,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_0_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 0,"up" : 0,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_1_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 1,"up" : 1,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_2_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 2,"up" : 2,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_3_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 3,"up" : 3,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_4_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 4,"up" : 4,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_5_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 5,"up" : 5,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_6_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 6,"up" : 6,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_7_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 7,"up" : 7,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_8_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 8,"up" : 8,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_9_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 9,"up" : 9,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_10_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 10,"up" : 10,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_11_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 11,"up" : 11,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_12_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 12,"up" : 12,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_13_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 13,"up" : 13,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_14_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 14,"up" : 14,"step" : 2}]}]}]} , 
+ 	{ "Name" : "layer8_out_15_V", "interface" : "wire", "bitwidth" : 6, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":5,"cElement": [{"cName": "layer8_out.V","cData": "int6","bit_use": { "low": 0,"up": 5},"cArray": [{"low" : 15,"up" : 15,"step" : 2}]}]}]} , 
  	{ "Name" : "const_size_in_1", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "const_size_in_1","cData": "unsigned short","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
  	{ "Name" : "const_size_out_1", "interface" : "wire", "bitwidth" : 16, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":15,"cElement": [{"cName": "const_size_out_1","cData": "unsigned short","bit_use": { "low": 0,"up": 15},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
@@ -65,37 +65,37 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ input_V_ap_vld sc_in sc_logic 1 invld 0 } 
 	{ input_V sc_in sc_lv 192 signal 0 } 
-	{ layer8_out_0_V sc_out sc_lv 16 signal 1 } 
+	{ layer8_out_0_V sc_out sc_lv 6 signal 1 } 
 	{ layer8_out_0_V_ap_vld sc_out sc_logic 1 outvld 1 } 
-	{ layer8_out_1_V sc_out sc_lv 16 signal 2 } 
+	{ layer8_out_1_V sc_out sc_lv 6 signal 2 } 
 	{ layer8_out_1_V_ap_vld sc_out sc_logic 1 outvld 2 } 
-	{ layer8_out_2_V sc_out sc_lv 16 signal 3 } 
+	{ layer8_out_2_V sc_out sc_lv 6 signal 3 } 
 	{ layer8_out_2_V_ap_vld sc_out sc_logic 1 outvld 3 } 
-	{ layer8_out_3_V sc_out sc_lv 16 signal 4 } 
+	{ layer8_out_3_V sc_out sc_lv 6 signal 4 } 
 	{ layer8_out_3_V_ap_vld sc_out sc_logic 1 outvld 4 } 
-	{ layer8_out_4_V sc_out sc_lv 16 signal 5 } 
+	{ layer8_out_4_V sc_out sc_lv 6 signal 5 } 
 	{ layer8_out_4_V_ap_vld sc_out sc_logic 1 outvld 5 } 
-	{ layer8_out_5_V sc_out sc_lv 16 signal 6 } 
+	{ layer8_out_5_V sc_out sc_lv 6 signal 6 } 
 	{ layer8_out_5_V_ap_vld sc_out sc_logic 1 outvld 6 } 
-	{ layer8_out_6_V sc_out sc_lv 16 signal 7 } 
+	{ layer8_out_6_V sc_out sc_lv 6 signal 7 } 
 	{ layer8_out_6_V_ap_vld sc_out sc_logic 1 outvld 7 } 
-	{ layer8_out_7_V sc_out sc_lv 16 signal 8 } 
+	{ layer8_out_7_V sc_out sc_lv 6 signal 8 } 
 	{ layer8_out_7_V_ap_vld sc_out sc_logic 1 outvld 8 } 
-	{ layer8_out_8_V sc_out sc_lv 16 signal 9 } 
+	{ layer8_out_8_V sc_out sc_lv 6 signal 9 } 
 	{ layer8_out_8_V_ap_vld sc_out sc_logic 1 outvld 9 } 
-	{ layer8_out_9_V sc_out sc_lv 16 signal 10 } 
+	{ layer8_out_9_V sc_out sc_lv 6 signal 10 } 
 	{ layer8_out_9_V_ap_vld sc_out sc_logic 1 outvld 10 } 
-	{ layer8_out_10_V sc_out sc_lv 16 signal 11 } 
+	{ layer8_out_10_V sc_out sc_lv 6 signal 11 } 
 	{ layer8_out_10_V_ap_vld sc_out sc_logic 1 outvld 11 } 
-	{ layer8_out_11_V sc_out sc_lv 16 signal 12 } 
+	{ layer8_out_11_V sc_out sc_lv 6 signal 12 } 
 	{ layer8_out_11_V_ap_vld sc_out sc_logic 1 outvld 12 } 
-	{ layer8_out_12_V sc_out sc_lv 16 signal 13 } 
+	{ layer8_out_12_V sc_out sc_lv 6 signal 13 } 
 	{ layer8_out_12_V_ap_vld sc_out sc_logic 1 outvld 13 } 
-	{ layer8_out_13_V sc_out sc_lv 16 signal 14 } 
+	{ layer8_out_13_V sc_out sc_lv 6 signal 14 } 
 	{ layer8_out_13_V_ap_vld sc_out sc_logic 1 outvld 14 } 
-	{ layer8_out_14_V sc_out sc_lv 16 signal 15 } 
+	{ layer8_out_14_V sc_out sc_lv 6 signal 15 } 
 	{ layer8_out_14_V_ap_vld sc_out sc_logic 1 outvld 15 } 
-	{ layer8_out_15_V sc_out sc_lv 16 signal 16 } 
+	{ layer8_out_15_V sc_out sc_lv 6 signal 16 } 
 	{ layer8_out_15_V_ap_vld sc_out sc_logic 1 outvld 16 } 
 	{ const_size_in_1 sc_out sc_lv 16 signal 17 } 
 	{ const_size_in_1_ap_vld sc_out sc_logic 1 outvld 17 } 
@@ -111,37 +111,37 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "input_V_ap_vld", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "invld", "bundle":{"name": "input_V", "role": "ap_vld" }} , 
  	{ "name": "input_V", "direction": "in", "datatype": "sc_lv", "bitwidth":192, "type": "signal", "bundle":{"name": "input_V", "role": "default" }} , 
- 	{ "name": "layer8_out_0_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_0_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_0_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_0_V", "role": "default" }} , 
  	{ "name": "layer8_out_0_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_0_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_1_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_1_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_1_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_1_V", "role": "default" }} , 
  	{ "name": "layer8_out_1_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_1_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_2_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_2_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_2_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_2_V", "role": "default" }} , 
  	{ "name": "layer8_out_2_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_2_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_3_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_3_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_3_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_3_V", "role": "default" }} , 
  	{ "name": "layer8_out_3_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_3_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_4_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_4_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_4_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_4_V", "role": "default" }} , 
  	{ "name": "layer8_out_4_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_4_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_5_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_5_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_5_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_5_V", "role": "default" }} , 
  	{ "name": "layer8_out_5_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_5_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_6_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_6_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_6_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_6_V", "role": "default" }} , 
  	{ "name": "layer8_out_6_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_6_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_7_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_7_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_7_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_7_V", "role": "default" }} , 
  	{ "name": "layer8_out_7_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_7_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_8_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_8_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_8_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_8_V", "role": "default" }} , 
  	{ "name": "layer8_out_8_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_8_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_9_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_9_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_9_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_9_V", "role": "default" }} , 
  	{ "name": "layer8_out_9_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_9_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_10_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_10_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_10_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_10_V", "role": "default" }} , 
  	{ "name": "layer8_out_10_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_10_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_11_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_11_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_11_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_11_V", "role": "default" }} , 
  	{ "name": "layer8_out_11_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_11_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_12_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_12_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_12_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_12_V", "role": "default" }} , 
  	{ "name": "layer8_out_12_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_12_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_13_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_13_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_13_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_13_V", "role": "default" }} , 
  	{ "name": "layer8_out_13_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_13_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_14_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_14_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_14_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_14_V", "role": "default" }} , 
  	{ "name": "layer8_out_14_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_14_V", "role": "ap_vld" }} , 
- 	{ "name": "layer8_out_15_V", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "layer8_out_15_V", "role": "default" }} , 
+ 	{ "name": "layer8_out_15_V", "direction": "out", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer8_out_15_V", "role": "default" }} , 
  	{ "name": "layer8_out_15_V_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "layer8_out_15_V", "role": "ap_vld" }} , 
  	{ "name": "const_size_in_1", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "const_size_in_1", "role": "default" }} , 
  	{ "name": "const_size_in_1_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "const_size_in_1", "role": "ap_vld" }} , 
@@ -4917,22 +4917,22 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	input_V { ap_vld {  { input_V_ap_vld in_vld 0 1 }  { input_V in_data 0 192 } } }
-	layer8_out_0_V { ap_vld {  { layer8_out_0_V out_data 1 16 }  { layer8_out_0_V_ap_vld out_vld 1 1 } } }
-	layer8_out_1_V { ap_vld {  { layer8_out_1_V out_data 1 16 }  { layer8_out_1_V_ap_vld out_vld 1 1 } } }
-	layer8_out_2_V { ap_vld {  { layer8_out_2_V out_data 1 16 }  { layer8_out_2_V_ap_vld out_vld 1 1 } } }
-	layer8_out_3_V { ap_vld {  { layer8_out_3_V out_data 1 16 }  { layer8_out_3_V_ap_vld out_vld 1 1 } } }
-	layer8_out_4_V { ap_vld {  { layer8_out_4_V out_data 1 16 }  { layer8_out_4_V_ap_vld out_vld 1 1 } } }
-	layer8_out_5_V { ap_vld {  { layer8_out_5_V out_data 1 16 }  { layer8_out_5_V_ap_vld out_vld 1 1 } } }
-	layer8_out_6_V { ap_vld {  { layer8_out_6_V out_data 1 16 }  { layer8_out_6_V_ap_vld out_vld 1 1 } } }
-	layer8_out_7_V { ap_vld {  { layer8_out_7_V out_data 1 16 }  { layer8_out_7_V_ap_vld out_vld 1 1 } } }
-	layer8_out_8_V { ap_vld {  { layer8_out_8_V out_data 1 16 }  { layer8_out_8_V_ap_vld out_vld 1 1 } } }
-	layer8_out_9_V { ap_vld {  { layer8_out_9_V out_data 1 16 }  { layer8_out_9_V_ap_vld out_vld 1 1 } } }
-	layer8_out_10_V { ap_vld {  { layer8_out_10_V out_data 1 16 }  { layer8_out_10_V_ap_vld out_vld 1 1 } } }
-	layer8_out_11_V { ap_vld {  { layer8_out_11_V out_data 1 16 }  { layer8_out_11_V_ap_vld out_vld 1 1 } } }
-	layer8_out_12_V { ap_vld {  { layer8_out_12_V out_data 1 16 }  { layer8_out_12_V_ap_vld out_vld 1 1 } } }
-	layer8_out_13_V { ap_vld {  { layer8_out_13_V out_data 1 16 }  { layer8_out_13_V_ap_vld out_vld 1 1 } } }
-	layer8_out_14_V { ap_vld {  { layer8_out_14_V out_data 1 16 }  { layer8_out_14_V_ap_vld out_vld 1 1 } } }
-	layer8_out_15_V { ap_vld {  { layer8_out_15_V out_data 1 16 }  { layer8_out_15_V_ap_vld out_vld 1 1 } } }
+	layer8_out_0_V { ap_vld {  { layer8_out_0_V out_data 1 6 }  { layer8_out_0_V_ap_vld out_vld 1 1 } } }
+	layer8_out_1_V { ap_vld {  { layer8_out_1_V out_data 1 6 }  { layer8_out_1_V_ap_vld out_vld 1 1 } } }
+	layer8_out_2_V { ap_vld {  { layer8_out_2_V out_data 1 6 }  { layer8_out_2_V_ap_vld out_vld 1 1 } } }
+	layer8_out_3_V { ap_vld {  { layer8_out_3_V out_data 1 6 }  { layer8_out_3_V_ap_vld out_vld 1 1 } } }
+	layer8_out_4_V { ap_vld {  { layer8_out_4_V out_data 1 6 }  { layer8_out_4_V_ap_vld out_vld 1 1 } } }
+	layer8_out_5_V { ap_vld {  { layer8_out_5_V out_data 1 6 }  { layer8_out_5_V_ap_vld out_vld 1 1 } } }
+	layer8_out_6_V { ap_vld {  { layer8_out_6_V out_data 1 6 }  { layer8_out_6_V_ap_vld out_vld 1 1 } } }
+	layer8_out_7_V { ap_vld {  { layer8_out_7_V out_data 1 6 }  { layer8_out_7_V_ap_vld out_vld 1 1 } } }
+	layer8_out_8_V { ap_vld {  { layer8_out_8_V out_data 1 6 }  { layer8_out_8_V_ap_vld out_vld 1 1 } } }
+	layer8_out_9_V { ap_vld {  { layer8_out_9_V out_data 1 6 }  { layer8_out_9_V_ap_vld out_vld 1 1 } } }
+	layer8_out_10_V { ap_vld {  { layer8_out_10_V out_data 1 6 }  { layer8_out_10_V_ap_vld out_vld 1 1 } } }
+	layer8_out_11_V { ap_vld {  { layer8_out_11_V out_data 1 6 }  { layer8_out_11_V_ap_vld out_vld 1 1 } } }
+	layer8_out_12_V { ap_vld {  { layer8_out_12_V out_data 1 6 }  { layer8_out_12_V_ap_vld out_vld 1 1 } } }
+	layer8_out_13_V { ap_vld {  { layer8_out_13_V out_data 1 6 }  { layer8_out_13_V_ap_vld out_vld 1 1 } } }
+	layer8_out_14_V { ap_vld {  { layer8_out_14_V out_data 1 6 }  { layer8_out_14_V_ap_vld out_vld 1 1 } } }
+	layer8_out_15_V { ap_vld {  { layer8_out_15_V out_data 1 6 }  { layer8_out_15_V_ap_vld out_vld 1 1 } } }
 	const_size_in_1 { ap_vld {  { const_size_in_1 out_data 1 16 }  { const_size_in_1_ap_vld out_vld 1 1 } } }
 	const_size_out_1 { ap_vld {  { const_size_out_1 out_data 1 16 }  { const_size_out_1_ap_vld out_vld 1 1 } } }
 }

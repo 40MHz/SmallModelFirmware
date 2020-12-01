@@ -25,7 +25,7 @@ set Pointer1 "0"
 set Reference1 "0"
 set Dims1 [list 16]
 set Interface1 "wire"
-set DataType1 "[list ap_fixed 16 6 0 0 0 ]"
+set DataType1 "[list ap_fixed 6 1 0 0 0 ]"
 set Port1 [list $PortName1 $Interface1 $DataType1 $Pointer1 $Dims1 $Const1 $Volatile1 $ArrayOpt1]
 lappend PortList $Port1
 set PortName2 "const_size_in_1"

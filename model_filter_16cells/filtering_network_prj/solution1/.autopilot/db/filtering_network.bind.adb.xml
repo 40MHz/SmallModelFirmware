@@ -1076,9 +1076,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="116" bw="256" op_0_bw="256" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="10">
+<Node id="116" bw="96" op_0_bw="96" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="10">
 <![CDATA[
-:94  %call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)
+:94  %call_ret4 = call fastcc { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ret4"/></StgValue>
@@ -1094,9 +1094,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="22" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:0  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_15_V), !map !190
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_15_V), !map !190
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1109,9 +1109,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="23" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:1  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_14_V), !map !196
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_14_V), !map !196
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1124,9 +1124,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:2  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_13_V), !map !202
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_13_V), !map !202
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1139,9 +1139,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="25" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="25" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:3  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_12_V), !map !208
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_12_V), !map !208
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1154,9 +1154,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="26" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:4  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_11_V), !map !214
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_11_V), !map !214
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1169,9 +1169,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:5  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_10_V), !map !220
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_10_V), !map !220
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1184,9 +1184,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="28" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:6  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_9_V), !map !226
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_9_V), !map !226
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1199,9 +1199,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="29" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:7  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_8_V), !map !232
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_8_V), !map !232
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1214,9 +1214,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="30" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:8  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_7_V), !map !238
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_7_V), !map !238
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1229,9 +1229,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="31" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:9  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_6_V), !map !244
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_6_V), !map !244
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1244,9 +1244,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:10  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_5_V), !map !250
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_5_V), !map !250
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1259,9 +1259,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="33" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:11  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_4_V), !map !256
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_4_V), !map !256
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1274,9 +1274,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="34" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:12  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_3_V), !map !262
+:12  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_3_V), !map !262
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1289,9 +1289,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="35" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:13  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_2_V), !map !268
+:13  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_2_V), !map !268
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1304,9 +1304,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="36" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:14  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_1_V), !map !274
+:14  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_1_V), !map !274
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1319,9 +1319,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="37" bw="0" op_0_bw="0" op_1_bw="6">
 <![CDATA[
-:15  call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_0_V), !map !280
+:15  call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_0_V), !map !280
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1409,9 +1409,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="0" op_18_bw="32" op_19_bw="32" op_20_bw="0" op_21_bw="32" op_22_bw="32" op_23_bw="0" op_24_bw="0" op_25_bw="0" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="0" op_31_bw="0">
+<Node id="43" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6" op_3_bw="6" op_4_bw="6" op_5_bw="6" op_6_bw="6" op_7_bw="6" op_8_bw="6" op_9_bw="6" op_10_bw="6" op_11_bw="6" op_12_bw="6" op_13_bw="6" op_14_bw="6" op_15_bw="6" op_16_bw="6" op_17_bw="0" op_18_bw="32" op_19_bw="32" op_20_bw="0" op_21_bw="32" op_22_bw="32" op_23_bw="0" op_24_bw="0" op_25_bw="0" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="0" op_31_bw="0">
 <![CDATA[
-:21  call void (...)* @_ssdm_op_SpecInterface(i16* %layer8_out_0_V, i16* %layer8_out_1_V, i16* %layer8_out_2_V, i16* %layer8_out_3_V, i16* %layer8_out_4_V, i16* %layer8_out_5_V, i16* %layer8_out_6_V, i16* %layer8_out_7_V, i16* %layer8_out_8_V, i16* %layer8_out_9_V, i16* %layer8_out_10_V, i16* %layer8_out_11_V, i16* %layer8_out_12_V, i16* %layer8_out_13_V, i16* %layer8_out_14_V, i16* %layer8_out_15_V, [7 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7) nounwind
+:21  call void (...)* @_ssdm_op_SpecInterface(i6* %layer8_out_0_V, i6* %layer8_out_1_V, i6* %layer8_out_2_V, i6* %layer8_out_3_V, i6* %layer8_out_4_V, i6* %layer8_out_5_V, i6* %layer8_out_6_V, i6* %layer8_out_7_V, i6* %layer8_out_8_V, i6* %layer8_out_9_V, i6* %layer8_out_10_V, i6* %layer8_out_11_V, i6* %layer8_out_12_V, i6* %layer8_out_13_V, i6* %layer8_out_14_V, i6* %layer8_out_15_V, [7 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln34"/></StgValue>
@@ -1469,9 +1469,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="116" bw="256" op_0_bw="256" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="10">
+<Node id="116" bw="96" op_0_bw="96" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="10">
 <![CDATA[
-:94  %call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)
+:94  %call_ret4 = call fastcc { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ret4"/></StgValue>
@@ -1484,9 +1484,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="117" bw="16" op_0_bw="256">
+<Node id="117" bw="6" op_0_bw="96">
 <![CDATA[
-:95  %layer8_out_V_0_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 0
+:95  %layer8_out_V_0_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 0
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_0_ret"/></StgValue>
@@ -1499,9 +1499,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="118" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="118" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:96  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_0_V, i16 %layer8_out_V_0_ret)
+:96  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_0_V, i6 %layer8_out_V_0_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1514,9 +1514,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="119" bw="16" op_0_bw="256">
+<Node id="119" bw="6" op_0_bw="96">
 <![CDATA[
-:97  %layer8_out_V_1_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 1
+:97  %layer8_out_V_1_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 1
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_1_ret"/></StgValue>
@@ -1529,9 +1529,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="120" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="120" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:98  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_1_V, i16 %layer8_out_V_1_ret)
+:98  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_1_V, i6 %layer8_out_V_1_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1544,9 +1544,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="121" bw="16" op_0_bw="256">
+<Node id="121" bw="6" op_0_bw="96">
 <![CDATA[
-:99  %layer8_out_V_2_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 2
+:99  %layer8_out_V_2_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 2
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_2_ret"/></StgValue>
@@ -1559,9 +1559,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="122" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="122" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:100  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_2_V, i16 %layer8_out_V_2_ret)
+:100  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_2_V, i6 %layer8_out_V_2_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1574,9 +1574,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="123" bw="16" op_0_bw="256">
+<Node id="123" bw="6" op_0_bw="96">
 <![CDATA[
-:101  %layer8_out_V_3_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 3
+:101  %layer8_out_V_3_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 3
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_3_ret"/></StgValue>
@@ -1589,9 +1589,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="124" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="124" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:102  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_3_V, i16 %layer8_out_V_3_ret)
+:102  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_3_V, i6 %layer8_out_V_3_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1604,9 +1604,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="125" bw="16" op_0_bw="256">
+<Node id="125" bw="6" op_0_bw="96">
 <![CDATA[
-:103  %layer8_out_V_4_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 4
+:103  %layer8_out_V_4_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 4
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_4_ret"/></StgValue>
@@ -1619,9 +1619,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="126" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="126" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:104  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_4_V, i16 %layer8_out_V_4_ret)
+:104  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_4_V, i6 %layer8_out_V_4_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1634,9 +1634,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="127" bw="16" op_0_bw="256">
+<Node id="127" bw="6" op_0_bw="96">
 <![CDATA[
-:105  %layer8_out_V_5_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 5
+:105  %layer8_out_V_5_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 5
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_5_ret"/></StgValue>
@@ -1649,9 +1649,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="128" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="128" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:106  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_5_V, i16 %layer8_out_V_5_ret)
+:106  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_5_V, i6 %layer8_out_V_5_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1664,9 +1664,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="129" bw="16" op_0_bw="256">
+<Node id="129" bw="6" op_0_bw="96">
 <![CDATA[
-:107  %layer8_out_V_6_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 6
+:107  %layer8_out_V_6_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 6
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_6_ret"/></StgValue>
@@ -1679,9 +1679,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="130" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="130" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:108  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_6_V, i16 %layer8_out_V_6_ret)
+:108  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_6_V, i6 %layer8_out_V_6_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1694,9 +1694,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="131" bw="16" op_0_bw="256">
+<Node id="131" bw="6" op_0_bw="96">
 <![CDATA[
-:109  %layer8_out_V_7_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 7
+:109  %layer8_out_V_7_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 7
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_7_ret"/></StgValue>
@@ -1709,9 +1709,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="132" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="132" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:110  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_7_V, i16 %layer8_out_V_7_ret)
+:110  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_7_V, i6 %layer8_out_V_7_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1724,9 +1724,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="133" bw="16" op_0_bw="256">
+<Node id="133" bw="6" op_0_bw="96">
 <![CDATA[
-:111  %layer8_out_V_8_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 8
+:111  %layer8_out_V_8_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 8
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_8_ret"/></StgValue>
@@ -1739,9 +1739,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="134" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="134" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:112  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_8_V, i16 %layer8_out_V_8_ret)
+:112  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_8_V, i6 %layer8_out_V_8_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1754,9 +1754,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="135" bw="16" op_0_bw="256">
+<Node id="135" bw="6" op_0_bw="96">
 <![CDATA[
-:113  %layer8_out_V_9_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 9
+:113  %layer8_out_V_9_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 9
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_9_ret"/></StgValue>
@@ -1769,9 +1769,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="136" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="136" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:114  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_9_V, i16 %layer8_out_V_9_ret)
+:114  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_9_V, i6 %layer8_out_V_9_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1784,9 +1784,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="137" bw="16" op_0_bw="256">
+<Node id="137" bw="6" op_0_bw="96">
 <![CDATA[
-:115  %layer8_out_V_10_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 10
+:115  %layer8_out_V_10_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 10
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_10_ret"/></StgValue>
@@ -1799,9 +1799,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="138" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="138" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:116  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_10_V, i16 %layer8_out_V_10_ret)
+:116  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_10_V, i6 %layer8_out_V_10_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1814,9 +1814,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="139" bw="16" op_0_bw="256">
+<Node id="139" bw="6" op_0_bw="96">
 <![CDATA[
-:117  %layer8_out_V_11_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 11
+:117  %layer8_out_V_11_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 11
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_11_ret"/></StgValue>
@@ -1829,9 +1829,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="140" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="140" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:118  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_11_V, i16 %layer8_out_V_11_ret)
+:118  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_11_V, i6 %layer8_out_V_11_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1844,9 +1844,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="141" bw="16" op_0_bw="256">
+<Node id="141" bw="6" op_0_bw="96">
 <![CDATA[
-:119  %layer8_out_V_12_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 12
+:119  %layer8_out_V_12_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 12
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_12_ret"/></StgValue>
@@ -1859,9 +1859,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="142" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="142" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:120  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_12_V, i16 %layer8_out_V_12_ret)
+:120  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_12_V, i6 %layer8_out_V_12_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1874,9 +1874,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="143" bw="16" op_0_bw="256">
+<Node id="143" bw="6" op_0_bw="96">
 <![CDATA[
-:121  %layer8_out_V_13_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 13
+:121  %layer8_out_V_13_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 13
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_13_ret"/></StgValue>
@@ -1889,9 +1889,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="144" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="144" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:122  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_13_V, i16 %layer8_out_V_13_ret)
+:122  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_13_V, i6 %layer8_out_V_13_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1904,9 +1904,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="145" bw="16" op_0_bw="256">
+<Node id="145" bw="6" op_0_bw="96">
 <![CDATA[
-:123  %layer8_out_V_14_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 14
+:123  %layer8_out_V_14_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 14
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_14_ret"/></StgValue>
@@ -1919,9 +1919,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="146" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="146" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:124  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_14_V, i16 %layer8_out_V_14_ret)
+:124  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_14_V, i6 %layer8_out_V_14_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -1934,9 +1934,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="147" bw="16" op_0_bw="256">
+<Node id="147" bw="6" op_0_bw="96">
 <![CDATA[
-:125  %layer8_out_V_15_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 15
+:125  %layer8_out_V_15_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 15
 
 ]]></Node>
 <StgValue><ssdm name="layer8_out_V_15_ret"/></StgValue>
@@ -1949,9 +1949,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="148" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="16">
+<Node id="148" bw="0" op_0_bw="0" op_1_bw="6" op_2_bw="6">
 <![CDATA[
-:126  call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_15_V, i16 %layer8_out_V_15_ret)
+:126  call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_15_V, i6 %layer8_out_V_15_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln76"/></StgValue>
@@ -2555,7 +2555,7 @@
 </dataflow>
 <dataflow id="435" from="call_ret4" to="layer8_out_V_0_ret" fromId="100" toId="101">
 </dataflow>
-<dataflow id="437" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="102">
+<dataflow id="437" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="102">
 </dataflow>
 <dataflow id="438" from="layer8_out_0_V" to="write_ln76" fromId="142" toId="102">
 </dataflow>
@@ -2563,7 +2563,7 @@
 </dataflow>
 <dataflow id="440" from="call_ret4" to="layer8_out_V_1_ret" fromId="100" toId="103">
 </dataflow>
-<dataflow id="441" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="104">
+<dataflow id="441" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="104">
 </dataflow>
 <dataflow id="442" from="layer8_out_1_V" to="write_ln76" fromId="143" toId="104">
 </dataflow>
@@ -2571,7 +2571,7 @@
 </dataflow>
 <dataflow id="444" from="call_ret4" to="layer8_out_V_2_ret" fromId="100" toId="105">
 </dataflow>
-<dataflow id="445" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="106">
+<dataflow id="445" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="106">
 </dataflow>
 <dataflow id="446" from="layer8_out_2_V" to="write_ln76" fromId="144" toId="106">
 </dataflow>
@@ -2579,7 +2579,7 @@
 </dataflow>
 <dataflow id="448" from="call_ret4" to="layer8_out_V_3_ret" fromId="100" toId="107">
 </dataflow>
-<dataflow id="449" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="108">
+<dataflow id="449" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="108">
 </dataflow>
 <dataflow id="450" from="layer8_out_3_V" to="write_ln76" fromId="145" toId="108">
 </dataflow>
@@ -2587,7 +2587,7 @@
 </dataflow>
 <dataflow id="452" from="call_ret4" to="layer8_out_V_4_ret" fromId="100" toId="109">
 </dataflow>
-<dataflow id="453" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="110">
+<dataflow id="453" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="110">
 </dataflow>
 <dataflow id="454" from="layer8_out_4_V" to="write_ln76" fromId="146" toId="110">
 </dataflow>
@@ -2595,7 +2595,7 @@
 </dataflow>
 <dataflow id="456" from="call_ret4" to="layer8_out_V_5_ret" fromId="100" toId="111">
 </dataflow>
-<dataflow id="457" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="112">
+<dataflow id="457" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="112">
 </dataflow>
 <dataflow id="458" from="layer8_out_5_V" to="write_ln76" fromId="147" toId="112">
 </dataflow>
@@ -2603,7 +2603,7 @@
 </dataflow>
 <dataflow id="460" from="call_ret4" to="layer8_out_V_6_ret" fromId="100" toId="113">
 </dataflow>
-<dataflow id="461" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="114">
+<dataflow id="461" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="114">
 </dataflow>
 <dataflow id="462" from="layer8_out_6_V" to="write_ln76" fromId="148" toId="114">
 </dataflow>
@@ -2611,7 +2611,7 @@
 </dataflow>
 <dataflow id="464" from="call_ret4" to="layer8_out_V_7_ret" fromId="100" toId="115">
 </dataflow>
-<dataflow id="465" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="116">
+<dataflow id="465" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="116">
 </dataflow>
 <dataflow id="466" from="layer8_out_7_V" to="write_ln76" fromId="149" toId="116">
 </dataflow>
@@ -2619,7 +2619,7 @@
 </dataflow>
 <dataflow id="468" from="call_ret4" to="layer8_out_V_8_ret" fromId="100" toId="117">
 </dataflow>
-<dataflow id="469" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="118">
+<dataflow id="469" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="118">
 </dataflow>
 <dataflow id="470" from="layer8_out_8_V" to="write_ln76" fromId="150" toId="118">
 </dataflow>
@@ -2627,7 +2627,7 @@
 </dataflow>
 <dataflow id="472" from="call_ret4" to="layer8_out_V_9_ret" fromId="100" toId="119">
 </dataflow>
-<dataflow id="473" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="120">
+<dataflow id="473" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="120">
 </dataflow>
 <dataflow id="474" from="layer8_out_9_V" to="write_ln76" fromId="151" toId="120">
 </dataflow>
@@ -2635,7 +2635,7 @@
 </dataflow>
 <dataflow id="476" from="call_ret4" to="layer8_out_V_10_ret" fromId="100" toId="121">
 </dataflow>
-<dataflow id="477" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="122">
+<dataflow id="477" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="122">
 </dataflow>
 <dataflow id="478" from="layer8_out_10_V" to="write_ln76" fromId="152" toId="122">
 </dataflow>
@@ -2643,7 +2643,7 @@
 </dataflow>
 <dataflow id="480" from="call_ret4" to="layer8_out_V_11_ret" fromId="100" toId="123">
 </dataflow>
-<dataflow id="481" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="124">
+<dataflow id="481" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="124">
 </dataflow>
 <dataflow id="482" from="layer8_out_11_V" to="write_ln76" fromId="153" toId="124">
 </dataflow>
@@ -2651,7 +2651,7 @@
 </dataflow>
 <dataflow id="484" from="call_ret4" to="layer8_out_V_12_ret" fromId="100" toId="125">
 </dataflow>
-<dataflow id="485" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="126">
+<dataflow id="485" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="126">
 </dataflow>
 <dataflow id="486" from="layer8_out_12_V" to="write_ln76" fromId="154" toId="126">
 </dataflow>
@@ -2659,7 +2659,7 @@
 </dataflow>
 <dataflow id="488" from="call_ret4" to="layer8_out_V_13_ret" fromId="100" toId="127">
 </dataflow>
-<dataflow id="489" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="128">
+<dataflow id="489" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="128">
 </dataflow>
 <dataflow id="490" from="layer8_out_13_V" to="write_ln76" fromId="155" toId="128">
 </dataflow>
@@ -2667,7 +2667,7 @@
 </dataflow>
 <dataflow id="492" from="call_ret4" to="layer8_out_V_14_ret" fromId="100" toId="129">
 </dataflow>
-<dataflow id="493" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="130">
+<dataflow id="493" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="130">
 </dataflow>
 <dataflow id="494" from="layer8_out_14_V" to="write_ln76" fromId="156" toId="130">
 </dataflow>
@@ -2675,7 +2675,7 @@
 </dataflow>
 <dataflow id="496" from="call_ret4" to="layer8_out_V_15_ret" fromId="100" toId="131">
 </dataflow>
-<dataflow id="497" from="_ssdm_op_Write.ap_vld.i16P" to="write_ln76" fromId="436" toId="132">
+<dataflow id="497" from="_ssdm_op_Write.ap_vld.i6P" to="write_ln76" fromId="436" toId="132">
 </dataflow>
 <dataflow id="498" from="layer8_out_15_V" to="write_ln76" fromId="157" toId="132">
 </dataflow>

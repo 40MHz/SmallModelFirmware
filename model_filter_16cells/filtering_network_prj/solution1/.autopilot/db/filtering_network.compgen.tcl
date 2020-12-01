@@ -34,7 +34,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_0_V \
     op interface \
-    ports { layer8_out_0_V { O 16 vector } layer8_out_0_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_0_V { O 6 vector } layer8_out_0_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -49,7 +49,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_1_V \
     op interface \
-    ports { layer8_out_1_V { O 16 vector } layer8_out_1_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_1_V { O 6 vector } layer8_out_1_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -64,7 +64,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_2_V \
     op interface \
-    ports { layer8_out_2_V { O 16 vector } layer8_out_2_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_2_V { O 6 vector } layer8_out_2_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -79,7 +79,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_3_V \
     op interface \
-    ports { layer8_out_3_V { O 16 vector } layer8_out_3_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_3_V { O 6 vector } layer8_out_3_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -94,7 +94,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_4_V \
     op interface \
-    ports { layer8_out_4_V { O 16 vector } layer8_out_4_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_4_V { O 6 vector } layer8_out_4_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -109,7 +109,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_5_V \
     op interface \
-    ports { layer8_out_5_V { O 16 vector } layer8_out_5_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_5_V { O 6 vector } layer8_out_5_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -124,7 +124,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_6_V \
     op interface \
-    ports { layer8_out_6_V { O 16 vector } layer8_out_6_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_6_V { O 6 vector } layer8_out_6_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -139,7 +139,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_7_V \
     op interface \
-    ports { layer8_out_7_V { O 16 vector } layer8_out_7_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_7_V { O 6 vector } layer8_out_7_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -154,7 +154,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_8_V \
     op interface \
-    ports { layer8_out_8_V { O 16 vector } layer8_out_8_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_8_V { O 6 vector } layer8_out_8_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -169,7 +169,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_9_V \
     op interface \
-    ports { layer8_out_9_V { O 16 vector } layer8_out_9_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_9_V { O 6 vector } layer8_out_9_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -184,7 +184,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_10_V \
     op interface \
-    ports { layer8_out_10_V { O 16 vector } layer8_out_10_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_10_V { O 6 vector } layer8_out_10_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -199,7 +199,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_11_V \
     op interface \
-    ports { layer8_out_11_V { O 16 vector } layer8_out_11_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_11_V { O 6 vector } layer8_out_11_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -214,7 +214,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_12_V \
     op interface \
-    ports { layer8_out_12_V { O 16 vector } layer8_out_12_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_12_V { O 6 vector } layer8_out_12_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -229,7 +229,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_13_V \
     op interface \
-    ports { layer8_out_13_V { O 16 vector } layer8_out_13_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_13_V { O 6 vector } layer8_out_13_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -244,7 +244,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_14_V \
     op interface \
-    ports { layer8_out_14_V { O 16 vector } layer8_out_14_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_14_V { O 6 vector } layer8_out_14_V_ap_vld { O 1 bit } } \
 } "
 }
 
@@ -259,7 +259,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer8_out_15_V \
     op interface \
-    ports { layer8_out_15_V { O 16 vector } layer8_out_15_V_ap_vld { O 1 bit } } \
+    ports { layer8_out_15_V { O 6 vector } layer8_out_15_V_ap_vld { O 1 bit } } \
 } "
 }
 

@@ -170,10 +170,10 @@
     "layer8_out_0_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_0_V",
       "bundle_role": "default"
@@ -181,10 +181,10 @@
     "layer8_out_1_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_1_V",
       "bundle_role": "default"
@@ -192,10 +192,10 @@
     "layer8_out_2_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_2_V",
       "bundle_role": "default"
@@ -203,10 +203,10 @@
     "layer8_out_3_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_3_V",
       "bundle_role": "default"
@@ -214,10 +214,10 @@
     "layer8_out_4_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_4_V",
       "bundle_role": "default"
@@ -225,10 +225,10 @@
     "layer8_out_5_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_5_V",
       "bundle_role": "default"
@@ -236,10 +236,10 @@
     "layer8_out_6_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_6_V",
       "bundle_role": "default"
@@ -247,10 +247,10 @@
     "layer8_out_7_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_7_V",
       "bundle_role": "default"
@@ -258,10 +258,10 @@
     "layer8_out_8_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_8_V",
       "bundle_role": "default"
@@ -269,10 +269,10 @@
     "layer8_out_9_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_9_V",
       "bundle_role": "default"
@@ -280,10 +280,10 @@
     "layer8_out_10_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_10_V",
       "bundle_role": "default"
@@ -291,10 +291,10 @@
     "layer8_out_11_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_11_V",
       "bundle_role": "default"
@@ -302,10 +302,10 @@
     "layer8_out_12_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_12_V",
       "bundle_role": "default"
@@ -313,10 +313,10 @@
     "layer8_out_13_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_13_V",
       "bundle_role": "default"
@@ -324,10 +324,10 @@
     "layer8_out_14_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_14_V",
       "bundle_role": "default"
@@ -335,10 +335,10 @@
     "layer8_out_15_V": {
       "type": "data",
       "dir": "out",
-      "width": "16",
+      "width": "6",
       "ctype": {"DATA": {
-          "Type": "real fixed signed 10",
-          "Width": "16"
+          "Type": "real fixed signed 5",
+          "Width": "6"
         }},
       "bundle_name": "layer8_out_15_V",
       "bundle_role": "default"
@@ -379,7 +379,7 @@
     },
     "layer8_out_0_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_0_V_ap_vld": {
       "dir": "out",
@@ -387,7 +387,7 @@
     },
     "layer8_out_1_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_1_V_ap_vld": {
       "dir": "out",
@@ -395,7 +395,7 @@
     },
     "layer8_out_2_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_2_V_ap_vld": {
       "dir": "out",
@@ -403,7 +403,7 @@
     },
     "layer8_out_3_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_3_V_ap_vld": {
       "dir": "out",
@@ -411,7 +411,7 @@
     },
     "layer8_out_4_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_4_V_ap_vld": {
       "dir": "out",
@@ -419,7 +419,7 @@
     },
     "layer8_out_5_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_5_V_ap_vld": {
       "dir": "out",
@@ -427,7 +427,7 @@
     },
     "layer8_out_6_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_6_V_ap_vld": {
       "dir": "out",
@@ -435,7 +435,7 @@
     },
     "layer8_out_7_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_7_V_ap_vld": {
       "dir": "out",
@@ -443,7 +443,7 @@
     },
     "layer8_out_8_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_8_V_ap_vld": {
       "dir": "out",
@@ -451,7 +451,7 @@
     },
     "layer8_out_9_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_9_V_ap_vld": {
       "dir": "out",
@@ -459,7 +459,7 @@
     },
     "layer8_out_10_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_10_V_ap_vld": {
       "dir": "out",
@@ -467,7 +467,7 @@
     },
     "layer8_out_11_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_11_V_ap_vld": {
       "dir": "out",
@@ -475,7 +475,7 @@
     },
     "layer8_out_12_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_12_V_ap_vld": {
       "dir": "out",
@@ -483,7 +483,7 @@
     },
     "layer8_out_13_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_13_V_ap_vld": {
       "dir": "out",
@@ -491,7 +491,7 @@
     },
     "layer8_out_14_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_14_V_ap_vld": {
       "dir": "out",
@@ -499,7 +499,7 @@
     },
     "layer8_out_15_V": {
       "dir": "out",
-      "width": "16"
+      "width": "6"
     },
     "layer8_out_15_V_ap_vld": {
       "dir": "out",
@@ -1680,7 +1680,7 @@
         "Area": {
           "BRAM_18K": "8",
           "FF": "2",
-          "LUT": "2374",
+          "LUT": "2934",
           "DSP48E": "0",
           "URAM": "0"
         }
@@ -1703,7 +1703,7 @@
           "BRAM_18K": "8",
           "DSP48E": "114",
           "FF": "712",
-          "LUT": "17495",
+          "LUT": "18055",
           "URAM": "0"
         }
       }
@@ -1719,7 +1719,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-12-01 14:27:15 CET",
+    "Time": "2020-12-01 14:48:18 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.1"
   }

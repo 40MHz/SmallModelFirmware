@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'filtering_network'
 ================================================================
-* Date:           Tue Dec  1 14:27:06 2020
+* Date:           Tue Dec  1 14:48:08 2020
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        filtering_network_prj
@@ -164,67 +164,67 @@ ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%layer6_out_14_V = extractvalue { i
 ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%layer6_out_15_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 15" [firmware/filtering_network.cpp:74]   --->   Operation 73 'extractvalue' 'layer6_out_15_V' <Predicate = true> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 6.08>
-ST_3 : Operation 74 [2/2] (6.08ns)   --->   "%call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)" [firmware/filtering_network.cpp:76]   --->   Operation 74 'call' 'call_ret4' <Predicate = true> <Delay = 6.08> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 74 [2/2] (6.08ns)   --->   "%call_ret4 = call fastcc { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)" [firmware/filtering_network.cpp:76]   --->   Operation 74 'call' 'call_ret4' <Predicate = true> <Delay = 6.08> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 4 <SV = 3> <Delay = 1.77>
-ST_4 : Operation 75 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_15_V), !map !190"   --->   Operation 75 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_14_V), !map !196"   --->   Operation 76 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_13_V), !map !202"   --->   Operation 77 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_12_V), !map !208"   --->   Operation 78 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_11_V), !map !214"   --->   Operation 79 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_10_V), !map !220"   --->   Operation 80 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_9_V), !map !226"   --->   Operation 81 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_8_V), !map !232"   --->   Operation 82 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_7_V), !map !238"   --->   Operation 83 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_6_V), !map !244"   --->   Operation 84 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_5_V), !map !250"   --->   Operation 85 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_4_V), !map !256"   --->   Operation 86 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_3_V), !map !262"   --->   Operation 87 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_2_V), !map !268"   --->   Operation 88 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_1_V), !map !274"   --->   Operation 89 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_0_V), !map !280"   --->   Operation 90 'specbitsmap' <Predicate = true> <Delay = 0.00>
+State 4 <SV = 3> <Delay = 3.09>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_15_V), !map !190"   --->   Operation 75 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_14_V), !map !196"   --->   Operation 76 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_13_V), !map !202"   --->   Operation 77 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_12_V), !map !208"   --->   Operation 78 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_11_V), !map !214"   --->   Operation 79 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_10_V), !map !220"   --->   Operation 80 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_9_V), !map !226"   --->   Operation 81 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_8_V), !map !232"   --->   Operation 82 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_7_V), !map !238"   --->   Operation 83 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_6_V), !map !244"   --->   Operation 84 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_5_V), !map !250"   --->   Operation 85 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_4_V), !map !256"   --->   Operation 86 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_3_V), !map !262"   --->   Operation 87 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_2_V), !map !268"   --->   Operation 88 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_1_V), !map !274"   --->   Operation 89 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i6* %layer8_out_0_V), !map !280"   --->   Operation 90 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i192* %input_V), !map !286"   --->   Operation 91 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_in_1), !map !335"   --->   Operation 92 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_out_1), !map !339"   --->   Operation 93 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @filtering_network_st) nounwind"   --->   Operation 94 'spectopmodule' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 95 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i192* %input_V, [7 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7) nounwind"   --->   Operation 95 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 96 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer8_out_0_V, i16* %layer8_out_1_V, i16* %layer8_out_2_V, i16* %layer8_out_3_V, i16* %layer8_out_4_V, i16* %layer8_out_5_V, i16* %layer8_out_6_V, i16* %layer8_out_7_V, i16* %layer8_out_8_V, i16* %layer8_out_9_V, i16* %layer8_out_10_V, i16* %layer8_out_11_V, i16* %layer8_out_12_V, i16* %layer8_out_13_V, i16* %layer8_out_14_V, i16* %layer8_out_15_V, [7 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7) nounwind" [firmware/filtering_network.cpp:34]   --->   Operation 96 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 96 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i6* %layer8_out_0_V, i6* %layer8_out_1_V, i6* %layer8_out_2_V, i6* %layer8_out_3_V, i6* %layer8_out_4_V, i6* %layer8_out_5_V, i6* %layer8_out_6_V, i6* %layer8_out_7_V, i6* %layer8_out_8_V, i6* %layer8_out_9_V, i6* %layer8_out_10_V, i6* %layer8_out_11_V, i6* %layer8_out_12_V, i6* %layer8_out_13_V, i6* %layer8_out_14_V, i6* %layer8_out_15_V, [7 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7) nounwind" [firmware/filtering_network.cpp:34]   --->   Operation 96 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 97 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str7) nounwind" [firmware/filtering_network.cpp:35]   --->   Operation 97 'specpipeline' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 98 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i16P(i16* %const_size_in_1, i16 16)" [firmware/filtering_network.cpp:37]   --->   Operation 98 'write' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 99 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i16P(i16* %const_size_out_1, i16 16)" [firmware/filtering_network.cpp:38]   --->   Operation 99 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 100 [1/2] (1.77ns)   --->   "%call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)" [firmware/filtering_network.cpp:76]   --->   Operation 100 'call' 'call_ret4' <Predicate = true> <Delay = 1.77> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%layer8_out_V_0_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 0" [firmware/filtering_network.cpp:76]   --->   Operation 101 'extractvalue' 'layer8_out_V_0_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 102 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_0_V, i16 %layer8_out_V_0_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 102 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 103 [1/1] (0.00ns)   --->   "%layer8_out_V_1_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 1" [firmware/filtering_network.cpp:76]   --->   Operation 103 'extractvalue' 'layer8_out_V_1_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 104 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_1_V, i16 %layer8_out_V_1_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 104 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%layer8_out_V_2_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 2" [firmware/filtering_network.cpp:76]   --->   Operation 105 'extractvalue' 'layer8_out_V_2_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 106 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_2_V, i16 %layer8_out_V_2_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 106 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 107 [1/1] (0.00ns)   --->   "%layer8_out_V_3_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 3" [firmware/filtering_network.cpp:76]   --->   Operation 107 'extractvalue' 'layer8_out_V_3_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 108 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_3_V, i16 %layer8_out_V_3_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 108 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 109 [1/1] (0.00ns)   --->   "%layer8_out_V_4_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 4" [firmware/filtering_network.cpp:76]   --->   Operation 109 'extractvalue' 'layer8_out_V_4_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 110 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_4_V, i16 %layer8_out_V_4_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 110 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 111 [1/1] (0.00ns)   --->   "%layer8_out_V_5_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 5" [firmware/filtering_network.cpp:76]   --->   Operation 111 'extractvalue' 'layer8_out_V_5_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 112 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_5_V, i16 %layer8_out_V_5_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 112 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 113 [1/1] (0.00ns)   --->   "%layer8_out_V_6_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 6" [firmware/filtering_network.cpp:76]   --->   Operation 113 'extractvalue' 'layer8_out_V_6_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 114 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_6_V, i16 %layer8_out_V_6_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 114 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 115 [1/1] (0.00ns)   --->   "%layer8_out_V_7_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 7" [firmware/filtering_network.cpp:76]   --->   Operation 115 'extractvalue' 'layer8_out_V_7_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 116 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_7_V, i16 %layer8_out_V_7_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 116 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%layer8_out_V_8_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 8" [firmware/filtering_network.cpp:76]   --->   Operation 117 'extractvalue' 'layer8_out_V_8_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 118 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_8_V, i16 %layer8_out_V_8_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 118 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%layer8_out_V_9_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 9" [firmware/filtering_network.cpp:76]   --->   Operation 119 'extractvalue' 'layer8_out_V_9_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 120 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_9_V, i16 %layer8_out_V_9_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 120 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%layer8_out_V_10_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 10" [firmware/filtering_network.cpp:76]   --->   Operation 121 'extractvalue' 'layer8_out_V_10_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 122 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_10_V, i16 %layer8_out_V_10_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 122 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%layer8_out_V_11_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 11" [firmware/filtering_network.cpp:76]   --->   Operation 123 'extractvalue' 'layer8_out_V_11_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 124 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_11_V, i16 %layer8_out_V_11_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 124 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 125 [1/1] (0.00ns)   --->   "%layer8_out_V_12_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 12" [firmware/filtering_network.cpp:76]   --->   Operation 125 'extractvalue' 'layer8_out_V_12_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 126 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_12_V, i16 %layer8_out_V_12_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 126 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 127 [1/1] (0.00ns)   --->   "%layer8_out_V_13_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 13" [firmware/filtering_network.cpp:76]   --->   Operation 127 'extractvalue' 'layer8_out_V_13_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 128 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_13_V, i16 %layer8_out_V_13_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 128 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 129 [1/1] (0.00ns)   --->   "%layer8_out_V_14_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 14" [firmware/filtering_network.cpp:76]   --->   Operation 129 'extractvalue' 'layer8_out_V_14_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 130 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_14_V, i16 %layer8_out_V_14_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 130 'write' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%layer8_out_V_15_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 15" [firmware/filtering_network.cpp:76]   --->   Operation 131 'extractvalue' 'layer8_out_V_15_ret' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 132 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_15_V, i16 %layer8_out_V_15_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 132 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 100 [1/2] (3.09ns)   --->   "%call_ret4 = call fastcc { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)" [firmware/filtering_network.cpp:76]   --->   Operation 100 'call' 'call_ret4' <Predicate = true> <Delay = 3.09> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%layer8_out_V_0_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 0" [firmware/filtering_network.cpp:76]   --->   Operation 101 'extractvalue' 'layer8_out_V_0_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 102 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_0_V, i6 %layer8_out_V_0_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 102 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 103 [1/1] (0.00ns)   --->   "%layer8_out_V_1_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 1" [firmware/filtering_network.cpp:76]   --->   Operation 103 'extractvalue' 'layer8_out_V_1_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 104 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_1_V, i6 %layer8_out_V_1_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 104 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%layer8_out_V_2_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 2" [firmware/filtering_network.cpp:76]   --->   Operation 105 'extractvalue' 'layer8_out_V_2_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 106 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_2_V, i6 %layer8_out_V_2_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 106 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 107 [1/1] (0.00ns)   --->   "%layer8_out_V_3_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 3" [firmware/filtering_network.cpp:76]   --->   Operation 107 'extractvalue' 'layer8_out_V_3_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 108 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_3_V, i6 %layer8_out_V_3_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 108 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 109 [1/1] (0.00ns)   --->   "%layer8_out_V_4_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 4" [firmware/filtering_network.cpp:76]   --->   Operation 109 'extractvalue' 'layer8_out_V_4_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 110 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_4_V, i6 %layer8_out_V_4_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 110 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 111 [1/1] (0.00ns)   --->   "%layer8_out_V_5_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 5" [firmware/filtering_network.cpp:76]   --->   Operation 111 'extractvalue' 'layer8_out_V_5_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 112 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_5_V, i6 %layer8_out_V_5_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 112 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 113 [1/1] (0.00ns)   --->   "%layer8_out_V_6_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 6" [firmware/filtering_network.cpp:76]   --->   Operation 113 'extractvalue' 'layer8_out_V_6_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 114 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_6_V, i6 %layer8_out_V_6_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 114 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 115 [1/1] (0.00ns)   --->   "%layer8_out_V_7_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 7" [firmware/filtering_network.cpp:76]   --->   Operation 115 'extractvalue' 'layer8_out_V_7_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 116 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_7_V, i6 %layer8_out_V_7_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 116 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%layer8_out_V_8_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 8" [firmware/filtering_network.cpp:76]   --->   Operation 117 'extractvalue' 'layer8_out_V_8_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 118 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_8_V, i6 %layer8_out_V_8_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 118 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%layer8_out_V_9_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 9" [firmware/filtering_network.cpp:76]   --->   Operation 119 'extractvalue' 'layer8_out_V_9_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 120 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_9_V, i6 %layer8_out_V_9_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 120 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%layer8_out_V_10_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 10" [firmware/filtering_network.cpp:76]   --->   Operation 121 'extractvalue' 'layer8_out_V_10_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 122 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_10_V, i6 %layer8_out_V_10_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 122 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%layer8_out_V_11_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 11" [firmware/filtering_network.cpp:76]   --->   Operation 123 'extractvalue' 'layer8_out_V_11_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_11_V, i6 %layer8_out_V_11_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 124 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 125 [1/1] (0.00ns)   --->   "%layer8_out_V_12_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 12" [firmware/filtering_network.cpp:76]   --->   Operation 125 'extractvalue' 'layer8_out_V_12_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 126 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_12_V, i6 %layer8_out_V_12_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 126 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 127 [1/1] (0.00ns)   --->   "%layer8_out_V_13_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 13" [firmware/filtering_network.cpp:76]   --->   Operation 127 'extractvalue' 'layer8_out_V_13_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 128 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_13_V, i6 %layer8_out_V_13_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 128 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 129 [1/1] (0.00ns)   --->   "%layer8_out_V_14_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 14" [firmware/filtering_network.cpp:76]   --->   Operation 129 'extractvalue' 'layer8_out_V_14_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_14_V, i6 %layer8_out_V_14_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 130 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%layer8_out_V_15_ret = extractvalue { i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6, i6 } %call_ret4, 15" [firmware/filtering_network.cpp:76]   --->   Operation 131 'extractvalue' 'layer8_out_V_15_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i6P(i6* %layer8_out_15_V, i6 %layer8_out_V_15_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 132 'write' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 133 [1/1] (0.00ns)   --->   "ret void" [firmware/filtering_network.cpp:78]   --->   Operation 133 'ret' <Predicate = true> <Delay = 0.00>
 
 
@@ -746,7 +746,7 @@ ret_ln78            (ret          ) [ 00000]
 <pin id="77" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_Write.ap_vld.i16P"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_Write.ap_vld.i6P"/></StgValue>
 </bind>
 </comp>
 
@@ -791,8 +791,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="100" class="1004" name="write_ln76_write_fu_100">
 <pin_list>
 <pin id="101" dir="0" index="0" bw="0" slack="0"/>
-<pin id="102" dir="0" index="1" bw="16" slack="0"/>
-<pin id="103" dir="0" index="2" bw="16" slack="0"/>
+<pin id="102" dir="0" index="1" bw="6" slack="0"/>
+<pin id="103" dir="0" index="2" bw="6" slack="0"/>
 <pin id="104" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -804,8 +804,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="107" class="1004" name="write_ln76_write_fu_107">
 <pin_list>
 <pin id="108" dir="0" index="0" bw="0" slack="0"/>
-<pin id="109" dir="0" index="1" bw="16" slack="0"/>
-<pin id="110" dir="0" index="2" bw="16" slack="0"/>
+<pin id="109" dir="0" index="1" bw="6" slack="0"/>
+<pin id="110" dir="0" index="2" bw="6" slack="0"/>
 <pin id="111" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -817,8 +817,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="114" class="1004" name="write_ln76_write_fu_114">
 <pin_list>
 <pin id="115" dir="0" index="0" bw="0" slack="0"/>
-<pin id="116" dir="0" index="1" bw="16" slack="0"/>
-<pin id="117" dir="0" index="2" bw="16" slack="0"/>
+<pin id="116" dir="0" index="1" bw="6" slack="0"/>
+<pin id="117" dir="0" index="2" bw="6" slack="0"/>
 <pin id="118" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -830,8 +830,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="121" class="1004" name="write_ln76_write_fu_121">
 <pin_list>
 <pin id="122" dir="0" index="0" bw="0" slack="0"/>
-<pin id="123" dir="0" index="1" bw="16" slack="0"/>
-<pin id="124" dir="0" index="2" bw="16" slack="0"/>
+<pin id="123" dir="0" index="1" bw="6" slack="0"/>
+<pin id="124" dir="0" index="2" bw="6" slack="0"/>
 <pin id="125" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -843,8 +843,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="128" class="1004" name="write_ln76_write_fu_128">
 <pin_list>
 <pin id="129" dir="0" index="0" bw="0" slack="0"/>
-<pin id="130" dir="0" index="1" bw="16" slack="0"/>
-<pin id="131" dir="0" index="2" bw="16" slack="0"/>
+<pin id="130" dir="0" index="1" bw="6" slack="0"/>
+<pin id="131" dir="0" index="2" bw="6" slack="0"/>
 <pin id="132" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -856,8 +856,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="135" class="1004" name="write_ln76_write_fu_135">
 <pin_list>
 <pin id="136" dir="0" index="0" bw="0" slack="0"/>
-<pin id="137" dir="0" index="1" bw="16" slack="0"/>
-<pin id="138" dir="0" index="2" bw="16" slack="0"/>
+<pin id="137" dir="0" index="1" bw="6" slack="0"/>
+<pin id="138" dir="0" index="2" bw="6" slack="0"/>
 <pin id="139" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -869,8 +869,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="142" class="1004" name="write_ln76_write_fu_142">
 <pin_list>
 <pin id="143" dir="0" index="0" bw="0" slack="0"/>
-<pin id="144" dir="0" index="1" bw="16" slack="0"/>
-<pin id="145" dir="0" index="2" bw="16" slack="0"/>
+<pin id="144" dir="0" index="1" bw="6" slack="0"/>
+<pin id="145" dir="0" index="2" bw="6" slack="0"/>
 <pin id="146" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -882,8 +882,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="149" class="1004" name="write_ln76_write_fu_149">
 <pin_list>
 <pin id="150" dir="0" index="0" bw="0" slack="0"/>
-<pin id="151" dir="0" index="1" bw="16" slack="0"/>
-<pin id="152" dir="0" index="2" bw="16" slack="0"/>
+<pin id="151" dir="0" index="1" bw="6" slack="0"/>
+<pin id="152" dir="0" index="2" bw="6" slack="0"/>
 <pin id="153" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -895,8 +895,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="156" class="1004" name="write_ln76_write_fu_156">
 <pin_list>
 <pin id="157" dir="0" index="0" bw="0" slack="0"/>
-<pin id="158" dir="0" index="1" bw="16" slack="0"/>
-<pin id="159" dir="0" index="2" bw="16" slack="0"/>
+<pin id="158" dir="0" index="1" bw="6" slack="0"/>
+<pin id="159" dir="0" index="2" bw="6" slack="0"/>
 <pin id="160" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -908,8 +908,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="163" class="1004" name="write_ln76_write_fu_163">
 <pin_list>
 <pin id="164" dir="0" index="0" bw="0" slack="0"/>
-<pin id="165" dir="0" index="1" bw="16" slack="0"/>
-<pin id="166" dir="0" index="2" bw="16" slack="0"/>
+<pin id="165" dir="0" index="1" bw="6" slack="0"/>
+<pin id="166" dir="0" index="2" bw="6" slack="0"/>
 <pin id="167" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -921,8 +921,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="170" class="1004" name="write_ln76_write_fu_170">
 <pin_list>
 <pin id="171" dir="0" index="0" bw="0" slack="0"/>
-<pin id="172" dir="0" index="1" bw="16" slack="0"/>
-<pin id="173" dir="0" index="2" bw="16" slack="0"/>
+<pin id="172" dir="0" index="1" bw="6" slack="0"/>
+<pin id="173" dir="0" index="2" bw="6" slack="0"/>
 <pin id="174" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -934,8 +934,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="177" class="1004" name="write_ln76_write_fu_177">
 <pin_list>
 <pin id="178" dir="0" index="0" bw="0" slack="0"/>
-<pin id="179" dir="0" index="1" bw="16" slack="0"/>
-<pin id="180" dir="0" index="2" bw="16" slack="0"/>
+<pin id="179" dir="0" index="1" bw="6" slack="0"/>
+<pin id="180" dir="0" index="2" bw="6" slack="0"/>
 <pin id="181" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -947,8 +947,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="184" class="1004" name="write_ln76_write_fu_184">
 <pin_list>
 <pin id="185" dir="0" index="0" bw="0" slack="0"/>
-<pin id="186" dir="0" index="1" bw="16" slack="0"/>
-<pin id="187" dir="0" index="2" bw="16" slack="0"/>
+<pin id="186" dir="0" index="1" bw="6" slack="0"/>
+<pin id="187" dir="0" index="2" bw="6" slack="0"/>
 <pin id="188" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -960,8 +960,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="191" class="1004" name="write_ln76_write_fu_191">
 <pin_list>
 <pin id="192" dir="0" index="0" bw="0" slack="0"/>
-<pin id="193" dir="0" index="1" bw="16" slack="0"/>
-<pin id="194" dir="0" index="2" bw="16" slack="0"/>
+<pin id="193" dir="0" index="1" bw="6" slack="0"/>
+<pin id="194" dir="0" index="2" bw="6" slack="0"/>
 <pin id="195" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -973,8 +973,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="198" class="1004" name="write_ln76_write_fu_198">
 <pin_list>
 <pin id="199" dir="0" index="0" bw="0" slack="0"/>
-<pin id="200" dir="0" index="1" bw="16" slack="0"/>
-<pin id="201" dir="0" index="2" bw="16" slack="0"/>
+<pin id="200" dir="0" index="1" bw="6" slack="0"/>
+<pin id="201" dir="0" index="2" bw="6" slack="0"/>
 <pin id="202" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -986,8 +986,8 @@ ret_ln78            (ret          ) [ 00000]
 <comp id="205" class="1004" name="write_ln76_write_fu_205">
 <pin_list>
 <pin id="206" dir="0" index="0" bw="0" slack="0"/>
-<pin id="207" dir="0" index="1" bw="16" slack="0"/>
-<pin id="208" dir="0" index="2" bw="16" slack="0"/>
+<pin id="207" dir="0" index="1" bw="6" slack="0"/>
+<pin id="208" dir="0" index="2" bw="6" slack="0"/>
 <pin id="209" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1052,7 +1052,7 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="252" class="1004" name="grp_sigmoid_fu_252">
 <pin_list>
-<pin id="253" dir="0" index="0" bw="256" slack="0"/>
+<pin id="253" dir="0" index="0" bw="96" slack="0"/>
 <pin id="254" dir="0" index="1" bw="16" slack="1"/>
 <pin id="255" dir="0" index="2" bw="16" slack="1"/>
 <pin id="256" dir="0" index="3" bw="16" slack="1"/>
@@ -1070,7 +1070,7 @@ ret_ln78            (ret          ) [ 00000]
 <pin id="268" dir="0" index="15" bw="16" slack="1"/>
 <pin id="269" dir="0" index="16" bw="16" slack="1"/>
 <pin id="270" dir="0" index="17" bw="10" slack="0"/>
-<pin id="271" dir="1" index="18" bw="256" slack="0"/>
+<pin id="271" dir="1" index="18" bw="96" slack="0"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
@@ -1823,8 +1823,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="588" class="1004" name="layer8_out_V_0_ret_fu_588">
 <pin_list>
-<pin id="589" dir="0" index="0" bw="256" slack="0"/>
-<pin id="590" dir="1" index="1" bw="16" slack="0"/>
+<pin id="589" dir="0" index="0" bw="96" slack="0"/>
+<pin id="590" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1834,8 +1834,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="593" class="1004" name="layer8_out_V_1_ret_fu_593">
 <pin_list>
-<pin id="594" dir="0" index="0" bw="256" slack="0"/>
-<pin id="595" dir="1" index="1" bw="16" slack="0"/>
+<pin id="594" dir="0" index="0" bw="96" slack="0"/>
+<pin id="595" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1845,8 +1845,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="598" class="1004" name="layer8_out_V_2_ret_fu_598">
 <pin_list>
-<pin id="599" dir="0" index="0" bw="256" slack="0"/>
-<pin id="600" dir="1" index="1" bw="16" slack="0"/>
+<pin id="599" dir="0" index="0" bw="96" slack="0"/>
+<pin id="600" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1856,8 +1856,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="603" class="1004" name="layer8_out_V_3_ret_fu_603">
 <pin_list>
-<pin id="604" dir="0" index="0" bw="256" slack="0"/>
-<pin id="605" dir="1" index="1" bw="16" slack="0"/>
+<pin id="604" dir="0" index="0" bw="96" slack="0"/>
+<pin id="605" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1867,8 +1867,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="608" class="1004" name="layer8_out_V_4_ret_fu_608">
 <pin_list>
-<pin id="609" dir="0" index="0" bw="256" slack="0"/>
-<pin id="610" dir="1" index="1" bw="16" slack="0"/>
+<pin id="609" dir="0" index="0" bw="96" slack="0"/>
+<pin id="610" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1878,8 +1878,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="613" class="1004" name="layer8_out_V_5_ret_fu_613">
 <pin_list>
-<pin id="614" dir="0" index="0" bw="256" slack="0"/>
-<pin id="615" dir="1" index="1" bw="16" slack="0"/>
+<pin id="614" dir="0" index="0" bw="96" slack="0"/>
+<pin id="615" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1889,8 +1889,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="618" class="1004" name="layer8_out_V_6_ret_fu_618">
 <pin_list>
-<pin id="619" dir="0" index="0" bw="256" slack="0"/>
-<pin id="620" dir="1" index="1" bw="16" slack="0"/>
+<pin id="619" dir="0" index="0" bw="96" slack="0"/>
+<pin id="620" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1900,8 +1900,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="623" class="1004" name="layer8_out_V_7_ret_fu_623">
 <pin_list>
-<pin id="624" dir="0" index="0" bw="256" slack="0"/>
-<pin id="625" dir="1" index="1" bw="16" slack="0"/>
+<pin id="624" dir="0" index="0" bw="96" slack="0"/>
+<pin id="625" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1911,8 +1911,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="628" class="1004" name="layer8_out_V_8_ret_fu_628">
 <pin_list>
-<pin id="629" dir="0" index="0" bw="256" slack="0"/>
-<pin id="630" dir="1" index="1" bw="16" slack="0"/>
+<pin id="629" dir="0" index="0" bw="96" slack="0"/>
+<pin id="630" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1922,8 +1922,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="633" class="1004" name="layer8_out_V_9_ret_fu_633">
 <pin_list>
-<pin id="634" dir="0" index="0" bw="256" slack="0"/>
-<pin id="635" dir="1" index="1" bw="16" slack="0"/>
+<pin id="634" dir="0" index="0" bw="96" slack="0"/>
+<pin id="635" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1933,8 +1933,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="638" class="1004" name="layer8_out_V_10_ret_fu_638">
 <pin_list>
-<pin id="639" dir="0" index="0" bw="256" slack="0"/>
-<pin id="640" dir="1" index="1" bw="16" slack="0"/>
+<pin id="639" dir="0" index="0" bw="96" slack="0"/>
+<pin id="640" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1944,8 +1944,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="643" class="1004" name="layer8_out_V_11_ret_fu_643">
 <pin_list>
-<pin id="644" dir="0" index="0" bw="256" slack="0"/>
-<pin id="645" dir="1" index="1" bw="16" slack="0"/>
+<pin id="644" dir="0" index="0" bw="96" slack="0"/>
+<pin id="645" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1955,8 +1955,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="648" class="1004" name="layer8_out_V_12_ret_fu_648">
 <pin_list>
-<pin id="649" dir="0" index="0" bw="256" slack="0"/>
-<pin id="650" dir="1" index="1" bw="16" slack="0"/>
+<pin id="649" dir="0" index="0" bw="96" slack="0"/>
+<pin id="650" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1966,8 +1966,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="653" class="1004" name="layer8_out_V_13_ret_fu_653">
 <pin_list>
-<pin id="654" dir="0" index="0" bw="256" slack="0"/>
-<pin id="655" dir="1" index="1" bw="16" slack="0"/>
+<pin id="654" dir="0" index="0" bw="96" slack="0"/>
+<pin id="655" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1977,8 +1977,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="658" class="1004" name="layer8_out_V_14_ret_fu_658">
 <pin_list>
-<pin id="659" dir="0" index="0" bw="256" slack="0"/>
-<pin id="660" dir="1" index="1" bw="16" slack="0"/>
+<pin id="659" dir="0" index="0" bw="96" slack="0"/>
+<pin id="660" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -1988,8 +1988,8 @@ ret_ln78            (ret          ) [ 00000]
 
 <comp id="663" class="1004" name="layer8_out_V_15_ret_fu_663">
 <pin_list>
-<pin id="664" dir="0" index="0" bw="256" slack="0"/>
-<pin id="665" dir="1" index="1" bw="16" slack="0"/>
+<pin id="664" dir="0" index="0" bw="96" slack="0"/>
+<pin id="665" dir="1" index="1" bw="6" slack="0"/>
 </pin_list>
 <bind>
 <opcode="extractvalue(56) " fcode="extractvalue"/>
@@ -2941,7 +2941,7 @@ ret_ln78            (ret          ) [ 00000]
 |----------|----------------------------------------|---------|---------|---------|---------|
 |          | call_ret3_dense_latency_0_0_0_s_fu_212 |    0    |    0    |    0    |   8949  |
 |          | call_ret1_dense_latency_0_0_0_1_fu_232 |   114   |    0    |    0    |   4073  |
-|   call   |           grp_sigmoid_fu_252           |    0    |  13.36  |   160   |   2496  |
+|   call   |           grp_sigmoid_fu_252           |    0    |  13.36  |   160   |   3056  |
 |          |          call_ret2_relu_fu_274         |    0    |    0    |    0    |   1424  |
 |          |  call_ret_normalize_0_0_0_0_0_s_fu_294 |    0    |    0    |    0    |   450   |
 |----------|----------------------------------------|---------|---------|---------|---------|
@@ -3047,7 +3047,7 @@ ret_ln78            (ret          ) [ 00000]
 |          |       layer8_out_V_14_ret_fu_658       |    0    |    0    |    0    |    0    |
 |          |       layer8_out_V_15_ret_fu_663       |    0    |    0    |    0    |    0    |
 |----------|----------------------------------------|---------|---------|---------|---------|
-|   Total  |                                        |   114   |  13.36  |   160   |  17392  |
+|   Total  |                                        |   114   |  13.36  |   160   |  17952  |
 |----------|----------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -3112,10 +3112,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+
 |           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+--------+
-|  Function |    -   |   114  |   13   |   160  |  17392 |
+|  Function |    -   |   114  |   13   |   160  |  17952 |
 |   Memory  |    8   |    -   |    -   |    0   |    0   |
 |Multiplexer|    -   |    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |   512  |    -   |
 +-----------+--------+--------+--------+--------+--------+
-|   Total   |    8   |   114  |   13   |   672  |  17392 |
+|   Total   |    8   |   114  |   13   |   672  |  17952 |
 +-----------+--------+--------+--------+--------+--------+

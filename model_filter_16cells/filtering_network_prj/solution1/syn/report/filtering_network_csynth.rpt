@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'filtering_network'
 ================================================================
-* Date:           Tue Dec  1 14:27:12 2020
+* Date:           Tue Dec  1 14:48:15 2020
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        filtering_network_prj
@@ -60,12 +60,12 @@
 |DSP                  |        -|      -|        -|       -|    -|
 |Expression           |        -|      -|        0|       6|    -|
 |FIFO                 |        -|      -|        -|       -|    -|
-|Instance             |        8|    114|        2|   17453|    -|
+|Instance             |        8|    114|        2|   18013|    -|
 |Memory               |        -|      -|        -|       -|    -|
 |Multiplexer          |        -|      -|        -|      36|    -|
 |Register             |        -|      -|      710|       -|    -|
 +---------------------+---------+-------+---------+--------+-----+
-|Total                |        8|    114|      712|   17495|    0|
+|Total                |        8|    114|      712|   18055|    0|
 +---------------------+---------+-------+---------+--------+-----+
 |Available SLR        |     2160|   2760|   663360|  331680|    0|
 +---------------------+---------+-------+---------+--------+-----+
@@ -85,9 +85,9 @@
     |call_ret3_dense_latency_0_0_0_s_fu_212  |dense_latency_0_0_0_s  |        0|      0|  0|  9127|    0|
     |call_ret_normalize_0_0_0_0_0_s_fu_294   |normalize_0_0_0_0_0_s  |        0|      0|  0|   455|    0|
     |call_ret2_relu_fu_274                   |relu                   |        0|      0|  0|  1424|    0|
-    |grp_sigmoid_fu_252                      |sigmoid                |        8|      0|  2|  2374|    0|
+    |grp_sigmoid_fu_252                      |sigmoid                |        8|      0|  2|  2934|    0|
     +----------------------------------------+-----------------------+---------+-------+---+------+-----+
-    |Total                                   |                       |        8|    114|  2| 17453|    0|
+    |Total                                   |                       |        8|    114|  2| 18013|    0|
     +----------------------------------------+-----------------------+---------+-------+---+------+-----+
 
     * DSP48E: 
@@ -186,37 +186,37 @@
 |ap_ready                 | out |    1| ap_ctrl_hs | filtering_network | return value |
 |input_V_ap_vld           |  in |    1|   ap_vld   |      input_V      |    pointer   |
 |input_V                  |  in |  192|   ap_vld   |      input_V      |    pointer   |
-|layer8_out_0_V           | out |   16|   ap_vld   |   layer8_out_0_V  |    pointer   |
+|layer8_out_0_V           | out |    6|   ap_vld   |   layer8_out_0_V  |    pointer   |
 |layer8_out_0_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_0_V  |    pointer   |
-|layer8_out_1_V           | out |   16|   ap_vld   |   layer8_out_1_V  |    pointer   |
+|layer8_out_1_V           | out |    6|   ap_vld   |   layer8_out_1_V  |    pointer   |
 |layer8_out_1_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_1_V  |    pointer   |
-|layer8_out_2_V           | out |   16|   ap_vld   |   layer8_out_2_V  |    pointer   |
+|layer8_out_2_V           | out |    6|   ap_vld   |   layer8_out_2_V  |    pointer   |
 |layer8_out_2_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_2_V  |    pointer   |
-|layer8_out_3_V           | out |   16|   ap_vld   |   layer8_out_3_V  |    pointer   |
+|layer8_out_3_V           | out |    6|   ap_vld   |   layer8_out_3_V  |    pointer   |
 |layer8_out_3_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_3_V  |    pointer   |
-|layer8_out_4_V           | out |   16|   ap_vld   |   layer8_out_4_V  |    pointer   |
+|layer8_out_4_V           | out |    6|   ap_vld   |   layer8_out_4_V  |    pointer   |
 |layer8_out_4_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_4_V  |    pointer   |
-|layer8_out_5_V           | out |   16|   ap_vld   |   layer8_out_5_V  |    pointer   |
+|layer8_out_5_V           | out |    6|   ap_vld   |   layer8_out_5_V  |    pointer   |
 |layer8_out_5_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_5_V  |    pointer   |
-|layer8_out_6_V           | out |   16|   ap_vld   |   layer8_out_6_V  |    pointer   |
+|layer8_out_6_V           | out |    6|   ap_vld   |   layer8_out_6_V  |    pointer   |
 |layer8_out_6_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_6_V  |    pointer   |
-|layer8_out_7_V           | out |   16|   ap_vld   |   layer8_out_7_V  |    pointer   |
+|layer8_out_7_V           | out |    6|   ap_vld   |   layer8_out_7_V  |    pointer   |
 |layer8_out_7_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_7_V  |    pointer   |
-|layer8_out_8_V           | out |   16|   ap_vld   |   layer8_out_8_V  |    pointer   |
+|layer8_out_8_V           | out |    6|   ap_vld   |   layer8_out_8_V  |    pointer   |
 |layer8_out_8_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_8_V  |    pointer   |
-|layer8_out_9_V           | out |   16|   ap_vld   |   layer8_out_9_V  |    pointer   |
+|layer8_out_9_V           | out |    6|   ap_vld   |   layer8_out_9_V  |    pointer   |
 |layer8_out_9_V_ap_vld    | out |    1|   ap_vld   |   layer8_out_9_V  |    pointer   |
-|layer8_out_10_V          | out |   16|   ap_vld   |  layer8_out_10_V  |    pointer   |
+|layer8_out_10_V          | out |    6|   ap_vld   |  layer8_out_10_V  |    pointer   |
 |layer8_out_10_V_ap_vld   | out |    1|   ap_vld   |  layer8_out_10_V  |    pointer   |
-|layer8_out_11_V          | out |   16|   ap_vld   |  layer8_out_11_V  |    pointer   |
+|layer8_out_11_V          | out |    6|   ap_vld   |  layer8_out_11_V  |    pointer   |
 |layer8_out_11_V_ap_vld   | out |    1|   ap_vld   |  layer8_out_11_V  |    pointer   |
-|layer8_out_12_V          | out |   16|   ap_vld   |  layer8_out_12_V  |    pointer   |
+|layer8_out_12_V          | out |    6|   ap_vld   |  layer8_out_12_V  |    pointer   |
 |layer8_out_12_V_ap_vld   | out |    1|   ap_vld   |  layer8_out_12_V  |    pointer   |
-|layer8_out_13_V          | out |   16|   ap_vld   |  layer8_out_13_V  |    pointer   |
+|layer8_out_13_V          | out |    6|   ap_vld   |  layer8_out_13_V  |    pointer   |
 |layer8_out_13_V_ap_vld   | out |    1|   ap_vld   |  layer8_out_13_V  |    pointer   |
-|layer8_out_14_V          | out |   16|   ap_vld   |  layer8_out_14_V  |    pointer   |
+|layer8_out_14_V          | out |    6|   ap_vld   |  layer8_out_14_V  |    pointer   |
 |layer8_out_14_V_ap_vld   | out |    1|   ap_vld   |  layer8_out_14_V  |    pointer   |
-|layer8_out_15_V          | out |   16|   ap_vld   |  layer8_out_15_V  |    pointer   |
+|layer8_out_15_V          | out |    6|   ap_vld   |  layer8_out_15_V  |    pointer   |
 |layer8_out_15_V_ap_vld   | out |    1|   ap_vld   |  layer8_out_15_V  |    pointer   |
 |const_size_in_1          | out |   16|   ap_vld   |  const_size_in_1  |    pointer   |
 |const_size_in_1_ap_vld   | out |    1|   ap_vld   |  const_size_in_1  |    pointer   |
