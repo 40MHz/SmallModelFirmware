@@ -1,0 +1,161 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'dense_latency_0_0_0_s'" level="0">
+<item name = "Date">Tue Dec  1 11:40:42 2020
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">kintexu</item>
+<item name = "Target device">xcku115-flvb2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">12.50 ns, 7.596 ns, 1.56 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="mult_0_V_product_fu_282">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_5_V_product_fu_290">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_6_V_product_fu_298">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_12_V_product_fu_306">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_13_V_product_fu_314">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_16_V_product_fu_322">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_17_V_product_fu_330">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_18_V_product_fu_338">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_19_V_product_fu_346">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_22_V_product_fu_354">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_23_V_product_fu_362">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_25_V_product_fu_370">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_31_V_product_fu_378">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_32_V_product_fu_386">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_33_V_product_fu_394">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_34_V_product_fu_402">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_37_V_product_fu_410">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_43_V_product_fu_418">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_48_V_product_fu_426">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_51_V_product_fu_434">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_57_V_product_fu_442">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_58_V_product_fu_450">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_59_V_product_fu_458">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_63_V_product_fu_466">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_64_V_product_fu_474">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_68_V_product_fu_482">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_69_V_product_fu_490">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_70_V_product_fu_498">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_76_V_product_fu_506">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_80_V_product_fu_514">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_82_V_product_fu_522">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_89_V_product_fu_530">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_91_V_product_fu_538">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_92_V_product_fu_546">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_93_V_product_fu_554">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_96_V_product_fu_562">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_97_V_product_fu_570">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_98_V_product_fu_578">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_100_V_product_fu_586">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_101_V_product_fu_594">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_103_V_product_fu_602">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_104_V_product_fu_610">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_106_V_product_fu_618">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_107_V_product_fu_626">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_112_V_product_fu_634">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_120_V_product_fu_642">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_124_V_product_fu_650">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_125_V_product_fu_658">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_128_V_product_fu_666">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_129_V_product_fu_674">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_135_V_product_fu_682">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_138_V_product_fu_690">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_140_V_product_fu_698">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_141_V_product_fu_706">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_144_V_product_fu_714">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_145_V_product_fu_722">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_146_V_product_fu_730">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_147_V_product_fu_738">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_149_V_product_fu_746">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_151_V_product_fu_754">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_156_V_product_fu_762">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_157_V_product_fu_770">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_159_V_product_fu_778">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_160_V_product_fu_786">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_161_V_product_fu_794">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_163_V_product_fu_802">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_167_V_product_fu_810">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_169_V_product_fu_818">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_171_V_product_fu_826">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_174_V_product_fu_834">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_175_V_product_fu_842">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_176_V_product_fu_850">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_177_V_product_fu_858">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_180_V_product_fu_866">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_181_V_product_fu_874">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_183_V_product_fu_882">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_190_V_product_fu_890">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_191_V_product_fu_898">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_192_V_product_fu_906">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_193_V_product_fu_914">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_194_V_product_fu_922">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_195_V_product_fu_930">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_198_V_product_fu_938">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_199_V_product_fu_946">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_201_V_product_fu_954">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_202_V_product_fu_962">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_204_V_product_fu_970">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_206_V_product_fu_978">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_207_V_product_fu_986">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_208_V_product_fu_994">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_212_V_product_fu_1002">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_214_V_product_fu_1010">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_216_V_product_fu_1018">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_219_V_product_fu_1026">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_220_V_product_fu_1034">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_221_V_product_fu_1042">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_224_V_product_fu_1050">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_225_V_product_fu_1058">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_228_V_product_fu_1066">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_229_V_product_fu_1074">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_230_V_product_fu_1082">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_233_V_product_fu_1090">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_237_V_product_fu_1098">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_240_V_product_fu_1106">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_241_V_product_fu_1114">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_242_V_product_fu_1122">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_243_V_product_fu_1130">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_244_V_product_fu_1138">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_245_V_product_fu_1146">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_246_V_product_fu_1154">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_247_V_product_fu_1162">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_248_V_product_fu_1170">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_250_V_product_fu_1178">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_252_V_product_fu_1186">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="mult_254_V_product_fu_1194">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="op_V_assign_0_15_s_product_fu_1202">product, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
