@@ -1,0 +1,264 @@
+
+
+================================================================
+== Vivado HLS Report for 'filtering_network'
+================================================================
+* Date:           Tue Dec  1 14:27:04 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        filtering_network_prj
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 12.50 ns | 9.958 ns |   1.56 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        3|        3| 37.500 ns | 37.500 ns |    1|    1| function |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 9.95>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%input_V_read = call i192 @_ssdm_op_Read.ap_vld.i192P(i192* %input_V)"   --->   Operation 5 'read' 'input_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (1.36ns)   --->   "%call_ret = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @normalize.0.0.0.0.0.(i192 %input_V_read)"   --->   Operation 6 'call' 'call_ret' <Predicate = true> <Delay = 1.36> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%layer2_out_0_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 0"   --->   Operation 7 'extractvalue' 'layer2_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%layer2_out_1_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 1"   --->   Operation 8 'extractvalue' 'layer2_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%layer2_out_2_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 2"   --->   Operation 9 'extractvalue' 'layer2_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%layer2_out_3_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 3"   --->   Operation 10 'extractvalue' 'layer2_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%layer2_out_4_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 4"   --->   Operation 11 'extractvalue' 'layer2_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%layer2_out_5_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 5"   --->   Operation 12 'extractvalue' 'layer2_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%layer2_out_6_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 6"   --->   Operation 13 'extractvalue' 'layer2_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%layer2_out_7_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 7"   --->   Operation 14 'extractvalue' 'layer2_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%layer2_out_8_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 8"   --->   Operation 15 'extractvalue' 'layer2_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%layer2_out_9_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 9"   --->   Operation 16 'extractvalue' 'layer2_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%layer2_out_10_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 10"   --->   Operation 17 'extractvalue' 'layer2_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%layer2_out_11_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 11"   --->   Operation 18 'extractvalue' 'layer2_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%layer2_out_12_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 12"   --->   Operation 19 'extractvalue' 'layer2_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%layer2_out_13_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 13"   --->   Operation 20 'extractvalue' 'layer2_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%layer2_out_14_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 14"   --->   Operation 21 'extractvalue' 'layer2_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%layer2_out_15_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret, 15"   --->   Operation 22 'extractvalue' 'layer2_out_15_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (8.58ns)   --->   "%call_ret1 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @dense_latency.0.0.0..1(i16 %layer2_out_0_V, i16 %layer2_out_1_V, i16 %layer2_out_2_V, i16 %layer2_out_3_V, i16 %layer2_out_4_V, i16 %layer2_out_5_V, i16 %layer2_out_6_V, i16 %layer2_out_7_V, i16 %layer2_out_8_V, i16 %layer2_out_9_V, i16 %layer2_out_10_V, i16 %layer2_out_11_V, i16 %layer2_out_12_V, i16 %layer2_out_13_V, i16 %layer2_out_14_V, i16 %layer2_out_15_V)" [firmware/filtering_network.cpp:66]   --->   Operation 23 'call' 'call_ret1' <Predicate = true> <Delay = 8.58> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%layer3_out_0_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 0" [firmware/filtering_network.cpp:66]   --->   Operation 24 'extractvalue' 'layer3_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%layer3_out_1_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 1" [firmware/filtering_network.cpp:66]   --->   Operation 25 'extractvalue' 'layer3_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%layer3_out_2_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 2" [firmware/filtering_network.cpp:66]   --->   Operation 26 'extractvalue' 'layer3_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%layer3_out_3_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 3" [firmware/filtering_network.cpp:66]   --->   Operation 27 'extractvalue' 'layer3_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%layer3_out_4_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 4" [firmware/filtering_network.cpp:66]   --->   Operation 28 'extractvalue' 'layer3_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%layer3_out_5_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 5" [firmware/filtering_network.cpp:66]   --->   Operation 29 'extractvalue' 'layer3_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%layer3_out_6_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 6" [firmware/filtering_network.cpp:66]   --->   Operation 30 'extractvalue' 'layer3_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%layer3_out_7_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 7" [firmware/filtering_network.cpp:66]   --->   Operation 31 'extractvalue' 'layer3_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%layer3_out_8_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 8" [firmware/filtering_network.cpp:66]   --->   Operation 32 'extractvalue' 'layer3_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%layer3_out_9_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 9" [firmware/filtering_network.cpp:66]   --->   Operation 33 'extractvalue' 'layer3_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%layer3_out_10_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 10" [firmware/filtering_network.cpp:66]   --->   Operation 34 'extractvalue' 'layer3_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%layer3_out_11_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 11" [firmware/filtering_network.cpp:66]   --->   Operation 35 'extractvalue' 'layer3_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%layer3_out_12_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 12" [firmware/filtering_network.cpp:66]   --->   Operation 36 'extractvalue' 'layer3_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%layer3_out_13_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 13" [firmware/filtering_network.cpp:66]   --->   Operation 37 'extractvalue' 'layer3_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%layer3_out_14_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 14" [firmware/filtering_network.cpp:66]   --->   Operation 38 'extractvalue' 'layer3_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%layer3_out_15_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 15" [firmware/filtering_network.cpp:66]   --->   Operation 39 'extractvalue' 'layer3_out_15_V' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 9.65>
+ST_2 : Operation 40 [1/1] (2.06ns)   --->   "%call_ret2 = call fastcc { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } @relu(i16 %layer3_out_0_V, i16 %layer3_out_1_V, i16 %layer3_out_2_V, i16 %layer3_out_3_V, i16 %layer3_out_4_V, i16 %layer3_out_5_V, i16 %layer3_out_6_V, i16 %layer3_out_7_V, i16 %layer3_out_8_V, i16 %layer3_out_9_V, i16 %layer3_out_10_V, i16 %layer3_out_11_V, i16 %layer3_out_12_V, i16 %layer3_out_13_V, i16 %layer3_out_14_V, i16 %layer3_out_15_V)" [firmware/filtering_network.cpp:70]   --->   Operation 40 'call' 'call_ret2' <Predicate = true> <Delay = 2.06> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%layer5_out_0_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 0" [firmware/filtering_network.cpp:70]   --->   Operation 41 'extractvalue' 'layer5_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%layer5_out_1_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 1" [firmware/filtering_network.cpp:70]   --->   Operation 42 'extractvalue' 'layer5_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%layer5_out_2_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 2" [firmware/filtering_network.cpp:70]   --->   Operation 43 'extractvalue' 'layer5_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%layer5_out_3_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 3" [firmware/filtering_network.cpp:70]   --->   Operation 44 'extractvalue' 'layer5_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%layer5_out_4_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 4" [firmware/filtering_network.cpp:70]   --->   Operation 45 'extractvalue' 'layer5_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%layer5_out_5_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 5" [firmware/filtering_network.cpp:70]   --->   Operation 46 'extractvalue' 'layer5_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%layer5_out_6_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 6" [firmware/filtering_network.cpp:70]   --->   Operation 47 'extractvalue' 'layer5_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%layer5_out_7_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 7" [firmware/filtering_network.cpp:70]   --->   Operation 48 'extractvalue' 'layer5_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%layer5_out_8_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 8" [firmware/filtering_network.cpp:70]   --->   Operation 49 'extractvalue' 'layer5_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%layer5_out_9_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 9" [firmware/filtering_network.cpp:70]   --->   Operation 50 'extractvalue' 'layer5_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%layer5_out_10_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 10" [firmware/filtering_network.cpp:70]   --->   Operation 51 'extractvalue' 'layer5_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (0.00ns)   --->   "%layer5_out_11_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 11" [firmware/filtering_network.cpp:70]   --->   Operation 52 'extractvalue' 'layer5_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%layer5_out_12_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 12" [firmware/filtering_network.cpp:70]   --->   Operation 53 'extractvalue' 'layer5_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%layer5_out_13_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 13" [firmware/filtering_network.cpp:70]   --->   Operation 54 'extractvalue' 'layer5_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%layer5_out_14_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 14" [firmware/filtering_network.cpp:70]   --->   Operation 55 'extractvalue' 'layer5_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%layer5_out_15_V = extractvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %call_ret2, 15" [firmware/filtering_network.cpp:70]   --->   Operation 56 'extractvalue' 'layer5_out_15_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (7.59ns)   --->   "%call_ret3 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @dense_latency.0.0.0.(i8 %layer5_out_0_V, i8 %layer5_out_1_V, i8 %layer5_out_2_V, i8 %layer5_out_3_V, i8 %layer5_out_4_V, i8 %layer5_out_5_V, i8 %layer5_out_6_V, i8 %layer5_out_7_V, i8 %layer5_out_8_V, i8 %layer5_out_9_V, i8 %layer5_out_10_V, i8 %layer5_out_11_V, i8 %layer5_out_12_V, i8 %layer5_out_13_V, i8 %layer5_out_14_V, i8 %layer5_out_15_V)" [firmware/filtering_network.cpp:74]   --->   Operation 57 'call' 'call_ret3' <Predicate = true> <Delay = 7.59> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%layer6_out_0_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 0" [firmware/filtering_network.cpp:74]   --->   Operation 58 'extractvalue' 'layer6_out_0_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%layer6_out_1_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 1" [firmware/filtering_network.cpp:74]   --->   Operation 59 'extractvalue' 'layer6_out_1_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%layer6_out_2_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 2" [firmware/filtering_network.cpp:74]   --->   Operation 60 'extractvalue' 'layer6_out_2_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%layer6_out_3_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 3" [firmware/filtering_network.cpp:74]   --->   Operation 61 'extractvalue' 'layer6_out_3_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%layer6_out_4_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 4" [firmware/filtering_network.cpp:74]   --->   Operation 62 'extractvalue' 'layer6_out_4_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%layer6_out_5_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 5" [firmware/filtering_network.cpp:74]   --->   Operation 63 'extractvalue' 'layer6_out_5_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%layer6_out_6_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 6" [firmware/filtering_network.cpp:74]   --->   Operation 64 'extractvalue' 'layer6_out_6_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%layer6_out_7_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 7" [firmware/filtering_network.cpp:74]   --->   Operation 65 'extractvalue' 'layer6_out_7_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%layer6_out_8_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 8" [firmware/filtering_network.cpp:74]   --->   Operation 66 'extractvalue' 'layer6_out_8_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%layer6_out_9_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 9" [firmware/filtering_network.cpp:74]   --->   Operation 67 'extractvalue' 'layer6_out_9_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%layer6_out_10_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 10" [firmware/filtering_network.cpp:74]   --->   Operation 68 'extractvalue' 'layer6_out_10_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 69 [1/1] (0.00ns)   --->   "%layer6_out_11_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 11" [firmware/filtering_network.cpp:74]   --->   Operation 69 'extractvalue' 'layer6_out_11_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 70 [1/1] (0.00ns)   --->   "%layer6_out_12_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 12" [firmware/filtering_network.cpp:74]   --->   Operation 70 'extractvalue' 'layer6_out_12_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 71 [1/1] (0.00ns)   --->   "%layer6_out_13_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 13" [firmware/filtering_network.cpp:74]   --->   Operation 71 'extractvalue' 'layer6_out_13_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%layer6_out_14_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 14" [firmware/filtering_network.cpp:74]   --->   Operation 72 'extractvalue' 'layer6_out_14_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%layer6_out_15_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 15" [firmware/filtering_network.cpp:74]   --->   Operation 73 'extractvalue' 'layer6_out_15_V' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 6.08>
+ST_3 : Operation 74 [2/2] (6.08ns)   --->   "%call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)" [firmware/filtering_network.cpp:76]   --->   Operation 74 'call' 'call_ret4' <Predicate = true> <Delay = 6.08> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 1.77>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_15_V), !map !190"   --->   Operation 75 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 76 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_14_V), !map !196"   --->   Operation 76 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_13_V), !map !202"   --->   Operation 77 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_12_V), !map !208"   --->   Operation 78 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_11_V), !map !214"   --->   Operation 79 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_10_V), !map !220"   --->   Operation 80 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_9_V), !map !226"   --->   Operation 81 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_8_V), !map !232"   --->   Operation 82 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_7_V), !map !238"   --->   Operation 83 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_6_V), !map !244"   --->   Operation 84 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_5_V), !map !250"   --->   Operation 85 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_4_V), !map !256"   --->   Operation 86 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_3_V), !map !262"   --->   Operation 87 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_2_V), !map !268"   --->   Operation 88 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 89 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_1_V), !map !274"   --->   Operation 89 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 90 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %layer8_out_0_V), !map !280"   --->   Operation 90 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i192* %input_V), !map !286"   --->   Operation 91 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_in_1), !map !335"   --->   Operation 92 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_out_1), !map !339"   --->   Operation 93 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @filtering_network_st) nounwind"   --->   Operation 94 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 95 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i192* %input_V, [7 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7) nounwind"   --->   Operation 95 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 96 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer8_out_0_V, i16* %layer8_out_1_V, i16* %layer8_out_2_V, i16* %layer8_out_3_V, i16* %layer8_out_4_V, i16* %layer8_out_5_V, i16* %layer8_out_6_V, i16* %layer8_out_7_V, i16* %layer8_out_8_V, i16* %layer8_out_9_V, i16* %layer8_out_10_V, i16* %layer8_out_11_V, i16* %layer8_out_12_V, i16* %layer8_out_13_V, i16* %layer8_out_14_V, i16* %layer8_out_15_V, [7 x i8]* @p_str8, i32 0, i32 0, [1 x i8]* @p_str7, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7, [1 x i8]* @p_str7, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str7, [1 x i8]* @p_str7) nounwind" [firmware/filtering_network.cpp:34]   --->   Operation 96 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 97 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str7) nounwind" [firmware/filtering_network.cpp:35]   --->   Operation 97 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i16P(i16* %const_size_in_1, i16 16)" [firmware/filtering_network.cpp:37]   --->   Operation 98 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 99 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i16P(i16* %const_size_out_1, i16 16)" [firmware/filtering_network.cpp:38]   --->   Operation 99 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 100 [1/2] (1.77ns)   --->   "%call_ret4 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)" [firmware/filtering_network.cpp:76]   --->   Operation 100 'call' 'call_ret4' <Predicate = true> <Delay = 1.77> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 101 [1/1] (0.00ns)   --->   "%layer8_out_V_0_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 0" [firmware/filtering_network.cpp:76]   --->   Operation 101 'extractvalue' 'layer8_out_V_0_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 102 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_0_V, i16 %layer8_out_V_0_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 102 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 103 [1/1] (0.00ns)   --->   "%layer8_out_V_1_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 1" [firmware/filtering_network.cpp:76]   --->   Operation 103 'extractvalue' 'layer8_out_V_1_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 104 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_1_V, i16 %layer8_out_V_1_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 104 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 105 [1/1] (0.00ns)   --->   "%layer8_out_V_2_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 2" [firmware/filtering_network.cpp:76]   --->   Operation 105 'extractvalue' 'layer8_out_V_2_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 106 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_2_V, i16 %layer8_out_V_2_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 106 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 107 [1/1] (0.00ns)   --->   "%layer8_out_V_3_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 3" [firmware/filtering_network.cpp:76]   --->   Operation 107 'extractvalue' 'layer8_out_V_3_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 108 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_3_V, i16 %layer8_out_V_3_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 108 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 109 [1/1] (0.00ns)   --->   "%layer8_out_V_4_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 4" [firmware/filtering_network.cpp:76]   --->   Operation 109 'extractvalue' 'layer8_out_V_4_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 110 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_4_V, i16 %layer8_out_V_4_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 110 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 111 [1/1] (0.00ns)   --->   "%layer8_out_V_5_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 5" [firmware/filtering_network.cpp:76]   --->   Operation 111 'extractvalue' 'layer8_out_V_5_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 112 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_5_V, i16 %layer8_out_V_5_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 112 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 113 [1/1] (0.00ns)   --->   "%layer8_out_V_6_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 6" [firmware/filtering_network.cpp:76]   --->   Operation 113 'extractvalue' 'layer8_out_V_6_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 114 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_6_V, i16 %layer8_out_V_6_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 114 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 115 [1/1] (0.00ns)   --->   "%layer8_out_V_7_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 7" [firmware/filtering_network.cpp:76]   --->   Operation 115 'extractvalue' 'layer8_out_V_7_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 116 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_7_V, i16 %layer8_out_V_7_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 116 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%layer8_out_V_8_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 8" [firmware/filtering_network.cpp:76]   --->   Operation 117 'extractvalue' 'layer8_out_V_8_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 118 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_8_V, i16 %layer8_out_V_8_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 118 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%layer8_out_V_9_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 9" [firmware/filtering_network.cpp:76]   --->   Operation 119 'extractvalue' 'layer8_out_V_9_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 120 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_9_V, i16 %layer8_out_V_9_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 120 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%layer8_out_V_10_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 10" [firmware/filtering_network.cpp:76]   --->   Operation 121 'extractvalue' 'layer8_out_V_10_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 122 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_10_V, i16 %layer8_out_V_10_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 122 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%layer8_out_V_11_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 11" [firmware/filtering_network.cpp:76]   --->   Operation 123 'extractvalue' 'layer8_out_V_11_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_11_V, i16 %layer8_out_V_11_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 124 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 125 [1/1] (0.00ns)   --->   "%layer8_out_V_12_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 12" [firmware/filtering_network.cpp:76]   --->   Operation 125 'extractvalue' 'layer8_out_V_12_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 126 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_12_V, i16 %layer8_out_V_12_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 126 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 127 [1/1] (0.00ns)   --->   "%layer8_out_V_13_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 13" [firmware/filtering_network.cpp:76]   --->   Operation 127 'extractvalue' 'layer8_out_V_13_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 128 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_13_V, i16 %layer8_out_V_13_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 128 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 129 [1/1] (0.00ns)   --->   "%layer8_out_V_14_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 14" [firmware/filtering_network.cpp:76]   --->   Operation 129 'extractvalue' 'layer8_out_V_14_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_14_V, i16 %layer8_out_V_14_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 130 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%layer8_out_V_15_ret = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret4, 15" [firmware/filtering_network.cpp:76]   --->   Operation 131 'extractvalue' 'layer8_out_V_15_ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_vld.i16P(i16* %layer8_out_15_V, i16 %layer8_out_V_15_ret)" [firmware/filtering_network.cpp:76]   --->   Operation 132 'write' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 133 [1/1] (0.00ns)   --->   "ret void" [firmware/filtering_network.cpp:78]   --->   Operation 133 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 12.5ns, clock uncertainty: 1.56ns.
+
+ <State 1>: 9.96ns
+The critical path consists of the following:
+	wire read on port 'input_V' [47]  (0 ns)
+	'call' operation ('call_ret') to 'normalize.0.0.0.0.0.' [48]  (1.37 ns)
+	'call' operation ('call_ret1', firmware/filtering_network.cpp:66) to 'dense_latency.0.0.0..1' [65]  (8.59 ns)
+
+ <State 2>: 9.66ns
+The critical path consists of the following:
+	'call' operation ('call_ret2', firmware/filtering_network.cpp:70) to 'relu' [82]  (2.06 ns)
+	'call' operation ('call_ret3', firmware/filtering_network.cpp:74) to 'dense_latency.0.0.0.' [99]  (7.6 ns)
+
+ <State 3>: 6.09ns
+The critical path consists of the following:
+	'call' operation ('call_ret4', firmware/filtering_network.cpp:76) to 'sigmoid' [116]  (6.09 ns)
+
+ <State 4>: 1.77ns
+The critical path consists of the following:
+	'call' operation ('call_ret4', firmware/filtering_network.cpp:76) to 'sigmoid' [116]  (1.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
