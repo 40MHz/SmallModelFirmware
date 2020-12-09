@@ -18,7 +18,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_0_V_read \
     op interface \
-    ports { data_0_V_read { I 20 vector } } \
+    ports { data_0_V_read { I 21 vector } } \
 } "
 }
 
@@ -33,7 +33,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_1_V_read \
     op interface \
-    ports { data_1_V_read { I 20 vector } } \
+    ports { data_1_V_read { I 21 vector } } \
 } "
 }
 
@@ -48,7 +48,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_2_V_read \
     op interface \
-    ports { data_2_V_read { I 20 vector } } \
+    ports { data_2_V_read { I 21 vector } } \
 } "
 }
 
@@ -63,7 +63,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_3_V_read \
     op interface \
-    ports { data_3_V_read { I 20 vector } } \
+    ports { data_3_V_read { I 21 vector } } \
 } "
 }
 
@@ -78,7 +78,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_4_V_read \
     op interface \
-    ports { data_4_V_read { I 20 vector } } \
+    ports { data_4_V_read { I 21 vector } } \
 } "
 }
 
@@ -93,7 +93,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_5_V_read \
     op interface \
-    ports { data_5_V_read { I 20 vector } } \
+    ports { data_5_V_read { I 21 vector } } \
 } "
 }
 
@@ -108,7 +108,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_6_V_read \
     op interface \
-    ports { data_6_V_read { I 20 vector } } \
+    ports { data_6_V_read { I 21 vector } } \
 } "
 }
 
@@ -123,7 +123,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_7_V_read \
     op interface \
-    ports { data_7_V_read { I 20 vector } } \
+    ports { data_7_V_read { I 21 vector } } \
 } "
 }
 
@@ -138,7 +138,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_8_V_read \
     op interface \
-    ports { data_8_V_read { I 20 vector } } \
+    ports { data_8_V_read { I 21 vector } } \
 } "
 }
 
@@ -153,7 +153,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_9_V_read \
     op interface \
-    ports { data_9_V_read { I 20 vector } } \
+    ports { data_9_V_read { I 21 vector } } \
 } "
 }
 
@@ -168,7 +168,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_10_V_read \
     op interface \
-    ports { data_10_V_read { I 20 vector } } \
+    ports { data_10_V_read { I 21 vector } } \
 } "
 }
 
@@ -183,7 +183,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_11_V_read \
     op interface \
-    ports { data_11_V_read { I 20 vector } } \
+    ports { data_11_V_read { I 21 vector } } \
 } "
 }
 
@@ -198,7 +198,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_12_V_read \
     op interface \
-    ports { data_12_V_read { I 20 vector } } \
+    ports { data_12_V_read { I 21 vector } } \
 } "
 }
 
@@ -213,7 +213,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_13_V_read \
     op interface \
-    ports { data_13_V_read { I 20 vector } } \
+    ports { data_13_V_read { I 21 vector } } \
 } "
 }
 
@@ -228,7 +228,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_14_V_read \
     op interface \
-    ports { data_14_V_read { I 20 vector } } \
+    ports { data_14_V_read { I 21 vector } } \
 } "
 }
 
@@ -243,7 +243,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_data_15_V_read \
     op interface \
-    ports { data_15_V_read { I 20 vector } } \
+    ports { data_15_V_read { I 21 vector } } \
 } "
 }
 

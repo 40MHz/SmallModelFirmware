@@ -18,7 +18,7 @@ namespace ap_rtl {
 struct product_1 : public sc_module {
     // Port declarations 4
     sc_out< sc_logic > ap_ready;
-    sc_in< sc_lv<20> > a_V;
+    sc_in< sc_lv<21> > a_V;
     sc_in< sc_lv<6> > w_V;
     sc_out< sc_lv<16> > ap_return;
 
@@ -31,12 +31,12 @@ struct product_1 : public sc_module {
 
     sc_trace_file* mVcdFile;
 
-    filtering_networkbkb<1,1,20,6,23>* filtering_networkbkb_U2;
-    sc_signal< sc_lv<23> > r_V_fu_43_p2;
+    filtering_networkbkb<1,1,21,6,24>* filtering_networkbkb_U2;
+    sc_signal< sc_lv<24> > r_V_fu_43_p2;
     static const sc_logic ap_const_logic_1;
     static const bool ap_const_boolean_1;
-    static const sc_lv<32> ap_const_lv32_7;
-    static const sc_lv<32> ap_const_lv32_16;
+    static const sc_lv<32> ap_const_lv32_8;
+    static const sc_lv<32> ap_const_lv32_17;
     static const sc_logic ap_const_logic_0;
     // Thread declarations
     void thread_ap_ready();

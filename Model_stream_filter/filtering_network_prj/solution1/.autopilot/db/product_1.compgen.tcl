@@ -7,13 +7,13 @@ set op mul
 set stage_num 1
 set max_latency -1
 set registered_input 1
-set in0_width 20
+set in0_width 21
 set in0_signed 1
 set in1_width 6
 set in1_signed 1
-set out_width 23
+set out_width 24
 set exp i0*i1
-set arg_lists {i0 {20 1 +} i1 {6 1 +} p {23 1 +} acc {0} }
+set arg_lists {i0 {21 1 +} i1 {6 1 +} p {24 1 +} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
@@ -94,7 +94,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_a_V \
     op interface \
-    ports { a_V { I 20 vector } } \
+    ports { a_V { I 21 vector } } \
 } "
 }
 

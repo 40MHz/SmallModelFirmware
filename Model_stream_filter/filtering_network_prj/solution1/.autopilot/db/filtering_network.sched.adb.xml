@@ -3,25 +3,25 @@
 
 <trans_list>
 
-<trans id="158" from="1" to="2">
+<trans id="172" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="159" from="2" to="3">
+<trans id="173" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="160" from="3" to="4">
+<trans id="174" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="161" from="4" to="5">
+<trans id="175" from="4" to="5">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -56,9 +56,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="48" bw="320" op_0_bw="320" op_1_bw="192">
+<Node id="48" bw="336" op_0_bw="336" op_1_bw="192">
 <![CDATA[
-:26  %call_ret = call fastcc { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } @normalize.0.0.0.0.0.(i192 %input_V_read)
+:26  %call_ret = call fastcc { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } @normalize.0.0.0.0.0.(i192 %input_V_read)
 
 ]]></Node>
 <StgValue><ssdm name="call_ret"/></StgValue>
@@ -71,9 +71,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="49" bw="20" op_0_bw="320">
+<Node id="49" bw="21" op_0_bw="336">
 <![CDATA[
-:27  %layer2_out_0_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 0
+:27  %layer2_out_0_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 0
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_0_V"/></StgValue>
@@ -86,9 +86,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="20" op_0_bw="320">
+<Node id="50" bw="21" op_0_bw="336">
 <![CDATA[
-:28  %layer2_out_1_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 1
+:28  %layer2_out_1_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 1
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_1_V"/></StgValue>
@@ -101,9 +101,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="20" op_0_bw="320">
+<Node id="51" bw="21" op_0_bw="336">
 <![CDATA[
-:29  %layer2_out_2_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 2
+:29  %layer2_out_2_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 2
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_2_V"/></StgValue>
@@ -116,9 +116,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="20" op_0_bw="320">
+<Node id="52" bw="21" op_0_bw="336">
 <![CDATA[
-:30  %layer2_out_3_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 3
+:30  %layer2_out_3_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 3
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_3_V"/></StgValue>
@@ -131,9 +131,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="20" op_0_bw="320">
+<Node id="53" bw="21" op_0_bw="336">
 <![CDATA[
-:31  %layer2_out_4_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 4
+:31  %layer2_out_4_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 4
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_4_V"/></StgValue>
@@ -146,9 +146,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="20" op_0_bw="320">
+<Node id="54" bw="21" op_0_bw="336">
 <![CDATA[
-:32  %layer2_out_5_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 5
+:32  %layer2_out_5_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 5
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_5_V"/></StgValue>
@@ -161,9 +161,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="20" op_0_bw="320">
+<Node id="55" bw="21" op_0_bw="336">
 <![CDATA[
-:33  %layer2_out_6_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 6
+:33  %layer2_out_6_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 6
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_6_V"/></StgValue>
@@ -176,9 +176,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="56" bw="20" op_0_bw="320">
+<Node id="56" bw="21" op_0_bw="336">
 <![CDATA[
-:34  %layer2_out_7_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 7
+:34  %layer2_out_7_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 7
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_7_V"/></StgValue>
@@ -191,9 +191,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="57" bw="20" op_0_bw="320">
+<Node id="57" bw="21" op_0_bw="336">
 <![CDATA[
-:35  %layer2_out_8_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 8
+:35  %layer2_out_8_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 8
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_8_V"/></StgValue>
@@ -206,9 +206,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="58" bw="20" op_0_bw="320">
+<Node id="58" bw="21" op_0_bw="336">
 <![CDATA[
-:36  %layer2_out_9_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 9
+:36  %layer2_out_9_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 9
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_9_V"/></StgValue>
@@ -221,9 +221,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="59" bw="20" op_0_bw="320">
+<Node id="59" bw="21" op_0_bw="336">
 <![CDATA[
-:37  %layer2_out_10_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 10
+:37  %layer2_out_10_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 10
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_10_V"/></StgValue>
@@ -236,9 +236,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="60" bw="20" op_0_bw="320">
+<Node id="60" bw="21" op_0_bw="336">
 <![CDATA[
-:38  %layer2_out_11_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 11
+:38  %layer2_out_11_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 11
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_11_V"/></StgValue>
@@ -251,9 +251,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="20" op_0_bw="320">
+<Node id="61" bw="21" op_0_bw="336">
 <![CDATA[
-:39  %layer2_out_12_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 12
+:39  %layer2_out_12_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 12
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_12_V"/></StgValue>
@@ -266,9 +266,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="62" bw="20" op_0_bw="320">
+<Node id="62" bw="21" op_0_bw="336">
 <![CDATA[
-:40  %layer2_out_13_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 13
+:40  %layer2_out_13_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 13
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_13_V"/></StgValue>
@@ -281,9 +281,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="20" op_0_bw="320">
+<Node id="63" bw="21" op_0_bw="336">
 <![CDATA[
-:41  %layer2_out_14_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 14
+:41  %layer2_out_14_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 14
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_14_V"/></StgValue>
@@ -296,9 +296,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="20" op_0_bw="320">
+<Node id="64" bw="21" op_0_bw="336">
 <![CDATA[
-:42  %layer2_out_15_V = extractvalue { i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20, i20 } %call_ret, 15
+:42  %layer2_out_15_V = extractvalue { i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21, i21 } %call_ret, 15
 
 ]]></Node>
 <StgValue><ssdm name="layer2_out_15_V"/></StgValue>
@@ -314,9 +314,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="65" bw="400" op_0_bw="400" op_1_bw="20" op_2_bw="20" op_3_bw="20" op_4_bw="20" op_5_bw="20" op_6_bw="20" op_7_bw="20" op_8_bw="20" op_9_bw="20" op_10_bw="20" op_11_bw="20" op_12_bw="20" op_13_bw="20" op_14_bw="20" op_15_bw="20" op_16_bw="20">
+<Node id="65" bw="512" op_0_bw="512" op_1_bw="21" op_2_bw="21" op_3_bw="21" op_4_bw="21" op_5_bw="21" op_6_bw="21" op_7_bw="21" op_8_bw="21" op_9_bw="21" op_10_bw="21" op_11_bw="21" op_12_bw="21" op_13_bw="21" op_14_bw="21" op_15_bw="21" op_16_bw="21">
 <![CDATA[
-:43  %call_ret1 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @dense_latency.0.0.0..1(i20 %layer2_out_0_V, i20 %layer2_out_1_V, i20 %layer2_out_2_V, i20 %layer2_out_3_V, i20 %layer2_out_4_V, i20 %layer2_out_5_V, i20 %layer2_out_6_V, i20 %layer2_out_7_V, i20 %layer2_out_8_V, i20 %layer2_out_9_V, i20 %layer2_out_10_V, i20 %layer2_out_11_V, i20 %layer2_out_12_V, i20 %layer2_out_13_V, i20 %layer2_out_14_V, i20 %layer2_out_15_V)
+:43  %call_ret1 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @dense_latency.0.0.0..1(i21 %layer2_out_0_V, i21 %layer2_out_1_V, i21 %layer2_out_2_V, i21 %layer2_out_3_V, i21 %layer2_out_4_V, i21 %layer2_out_5_V, i21 %layer2_out_6_V, i21 %layer2_out_7_V, i21 %layer2_out_8_V, i21 %layer2_out_9_V, i21 %layer2_out_10_V, i21 %layer2_out_11_V, i21 %layer2_out_12_V, i21 %layer2_out_13_V, i21 %layer2_out_14_V, i21 %layer2_out_15_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ret1"/></StgValue>
@@ -329,9 +329,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="16" op_0_bw="400">
+<Node id="66" bw="16" op_0_bw="512">
 <![CDATA[
-:44  %layer3_out_0_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 0
+:44  %layer3_out_0_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 0
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_0_V"/></StgValue>
@@ -344,9 +344,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="67" bw="16" op_0_bw="400">
+<Node id="67" bw="16" op_0_bw="512">
 <![CDATA[
-:45  %layer3_out_1_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 1
+:45  %layer3_out_1_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 1
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_1_V"/></StgValue>
@@ -359,9 +359,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="68" bw="16" op_0_bw="400">
+<Node id="68" bw="16" op_0_bw="512">
 <![CDATA[
-:46  %layer3_out_2_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 2
+:46  %layer3_out_2_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 2
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_2_V"/></StgValue>
@@ -374,9 +374,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="69" bw="16" op_0_bw="400">
+<Node id="69" bw="16" op_0_bw="512">
 <![CDATA[
-:47  %layer3_out_3_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 3
+:47  %layer3_out_3_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 3
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_3_V"/></StgValue>
@@ -389,9 +389,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="70" bw="16" op_0_bw="400">
+<Node id="70" bw="16" op_0_bw="512">
 <![CDATA[
-:48  %layer3_out_4_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 4
+:48  %layer3_out_4_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 4
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_4_V"/></StgValue>
@@ -404,9 +404,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="71" bw="16" op_0_bw="400">
+<Node id="71" bw="16" op_0_bw="512">
 <![CDATA[
-:49  %layer3_out_5_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 5
+:49  %layer3_out_5_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 5
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_5_V"/></StgValue>
@@ -419,9 +419,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="72" bw="16" op_0_bw="400">
+<Node id="72" bw="16" op_0_bw="512">
 <![CDATA[
-:50  %layer3_out_6_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 6
+:50  %layer3_out_6_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 6
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_6_V"/></StgValue>
@@ -434,9 +434,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="73" bw="16" op_0_bw="400">
+<Node id="73" bw="16" op_0_bw="512">
 <![CDATA[
-:51  %layer3_out_7_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 7
+:51  %layer3_out_7_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 7
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_7_V"/></StgValue>
@@ -449,9 +449,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="74" bw="16" op_0_bw="400">
+<Node id="74" bw="16" op_0_bw="512">
 <![CDATA[
-:52  %layer3_out_8_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 8
+:52  %layer3_out_8_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 8
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_8_V"/></StgValue>
@@ -464,9 +464,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="75" bw="16" op_0_bw="400">
+<Node id="75" bw="16" op_0_bw="512">
 <![CDATA[
-:53  %layer3_out_9_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 9
+:53  %layer3_out_9_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 9
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_9_V"/></StgValue>
@@ -479,9 +479,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="76" bw="16" op_0_bw="400">
+<Node id="76" bw="16" op_0_bw="512">
 <![CDATA[
-:54  %layer3_out_10_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 10
+:54  %layer3_out_10_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 10
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_10_V"/></StgValue>
@@ -494,9 +494,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="77" bw="16" op_0_bw="400">
+<Node id="77" bw="16" op_0_bw="512">
 <![CDATA[
-:55  %layer3_out_11_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 11
+:55  %layer3_out_11_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 11
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_11_V"/></StgValue>
@@ -509,9 +509,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="78" bw="16" op_0_bw="400">
+<Node id="78" bw="16" op_0_bw="512">
 <![CDATA[
-:56  %layer3_out_12_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 12
+:56  %layer3_out_12_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 12
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_12_V"/></StgValue>
@@ -524,9 +524,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="79" bw="16" op_0_bw="400">
+<Node id="79" bw="16" op_0_bw="512">
 <![CDATA[
-:57  %layer3_out_13_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 13
+:57  %layer3_out_13_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 13
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_13_V"/></StgValue>
@@ -539,9 +539,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="80" bw="16" op_0_bw="400">
+<Node id="80" bw="16" op_0_bw="512">
 <![CDATA[
-:58  %layer3_out_14_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 14
+:58  %layer3_out_14_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 14
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_14_V"/></StgValue>
@@ -554,9 +554,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="81" bw="16" op_0_bw="400">
+<Node id="81" bw="16" op_0_bw="512">
 <![CDATA[
-:59  %layer3_out_15_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 15
+:59  %layer3_out_15_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 15
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_15_V"/></StgValue>
@@ -569,9 +569,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="82" bw="16" op_0_bw="400">
+<Node id="82" bw="16" op_0_bw="512">
 <![CDATA[
-:60  %layer3_out_16_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 16
+:60  %layer3_out_16_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 16
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_16_V"/></StgValue>
@@ -584,9 +584,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="83" bw="16" op_0_bw="400">
+<Node id="83" bw="16" op_0_bw="512">
 <![CDATA[
-:61  %layer3_out_17_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 17
+:61  %layer3_out_17_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 17
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_17_V"/></StgValue>
@@ -599,9 +599,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="84" bw="16" op_0_bw="400">
+<Node id="84" bw="16" op_0_bw="512">
 <![CDATA[
-:62  %layer3_out_18_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 18
+:62  %layer3_out_18_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 18
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_18_V"/></StgValue>
@@ -614,9 +614,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="85" bw="16" op_0_bw="400">
+<Node id="85" bw="16" op_0_bw="512">
 <![CDATA[
-:63  %layer3_out_19_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 19
+:63  %layer3_out_19_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 19
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_19_V"/></StgValue>
@@ -629,9 +629,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="86" bw="16" op_0_bw="400">
+<Node id="86" bw="16" op_0_bw="512">
 <![CDATA[
-:64  %layer3_out_20_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 20
+:64  %layer3_out_20_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 20
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_20_V"/></StgValue>
@@ -644,9 +644,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="87" bw="16" op_0_bw="400">
+<Node id="87" bw="16" op_0_bw="512">
 <![CDATA[
-:65  %layer3_out_21_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 21
+:65  %layer3_out_21_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 21
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_21_V"/></StgValue>
@@ -659,9 +659,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="88" bw="16" op_0_bw="400">
+<Node id="88" bw="16" op_0_bw="512">
 <![CDATA[
-:66  %layer3_out_22_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 22
+:66  %layer3_out_22_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 22
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_22_V"/></StgValue>
@@ -674,9 +674,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="89" bw="16" op_0_bw="400">
+<Node id="89" bw="16" op_0_bw="512">
 <![CDATA[
-:67  %layer3_out_23_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 23
+:67  %layer3_out_23_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 23
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_23_V"/></StgValue>
@@ -689,135 +689,135 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="90" bw="16" op_0_bw="400">
+<Node id="90" bw="16" op_0_bw="512">
 <![CDATA[
-:68  %layer3_out_24_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 24
+:68  %layer3_out_24_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 24
 
 ]]></Node>
 <StgValue><ssdm name="layer3_out_24_V"/></StgValue>
+</operation>
+
+<operation id="50" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="91" bw="16" op_0_bw="512">
+<![CDATA[
+:69  %layer3_out_25_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 25
+
+]]></Node>
+<StgValue><ssdm name="layer3_out_25_V"/></StgValue>
+</operation>
+
+<operation id="51" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="92" bw="16" op_0_bw="512">
+<![CDATA[
+:70  %layer3_out_26_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 26
+
+]]></Node>
+<StgValue><ssdm name="layer3_out_26_V"/></StgValue>
+</operation>
+
+<operation id="52" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="93" bw="16" op_0_bw="512">
+<![CDATA[
+:71  %layer3_out_27_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 27
+
+]]></Node>
+<StgValue><ssdm name="layer3_out_27_V"/></StgValue>
+</operation>
+
+<operation id="53" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="94" bw="16" op_0_bw="512">
+<![CDATA[
+:72  %layer3_out_28_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 28
+
+]]></Node>
+<StgValue><ssdm name="layer3_out_28_V"/></StgValue>
+</operation>
+
+<operation id="54" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="95" bw="16" op_0_bw="512">
+<![CDATA[
+:73  %layer3_out_29_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 29
+
+]]></Node>
+<StgValue><ssdm name="layer3_out_29_V"/></StgValue>
+</operation>
+
+<operation id="55" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="96" bw="16" op_0_bw="512">
+<![CDATA[
+:74  %layer3_out_30_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 30
+
+]]></Node>
+<StgValue><ssdm name="layer3_out_30_V"/></StgValue>
+</operation>
+
+<operation id="56" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="97" bw="16" op_0_bw="512">
+<![CDATA[
+:75  %layer3_out_31_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret1, 31
+
+]]></Node>
+<StgValue><ssdm name="layer3_out_31_V"/></StgValue>
 </operation>
 </state>
 
 <state id="3" st_id="3">
 
-<operation id="50" st_id="3" stage="1" lat="1">
+<operation id="57" st_id="3" stage="1" lat="1">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="91" bw="175" op_0_bw="175" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="16" op_18_bw="16" op_19_bw="16" op_20_bw="16" op_21_bw="16" op_22_bw="16" op_23_bw="16" op_24_bw="16" op_25_bw="16">
+<Node id="98" bw="224" op_0_bw="224" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="16" op_18_bw="16" op_19_bw="16" op_20_bw="16" op_21_bw="16" op_22_bw="16" op_23_bw="16" op_24_bw="16" op_25_bw="16" op_26_bw="16" op_27_bw="16" op_28_bw="16" op_29_bw="16" op_30_bw="16" op_31_bw="16" op_32_bw="16">
 <![CDATA[
-:69  %call_ret2 = call fastcc { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } @relu(i16 %layer3_out_0_V, i16 %layer3_out_1_V, i16 %layer3_out_2_V, i16 %layer3_out_3_V, i16 %layer3_out_4_V, i16 %layer3_out_5_V, i16 %layer3_out_6_V, i16 %layer3_out_7_V, i16 %layer3_out_8_V, i16 %layer3_out_9_V, i16 %layer3_out_10_V, i16 %layer3_out_11_V, i16 %layer3_out_12_V, i16 %layer3_out_13_V, i16 %layer3_out_14_V, i16 %layer3_out_15_V, i16 %layer3_out_16_V, i16 %layer3_out_17_V, i16 %layer3_out_18_V, i16 %layer3_out_19_V, i16 %layer3_out_20_V, i16 %layer3_out_21_V, i16 %layer3_out_22_V, i16 %layer3_out_23_V, i16 %layer3_out_24_V)
+:76  %call_ret2 = call fastcc { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } @relu(i16 %layer3_out_0_V, i16 %layer3_out_1_V, i16 %layer3_out_2_V, i16 %layer3_out_3_V, i16 %layer3_out_4_V, i16 %layer3_out_5_V, i16 %layer3_out_6_V, i16 %layer3_out_7_V, i16 %layer3_out_8_V, i16 %layer3_out_9_V, i16 %layer3_out_10_V, i16 %layer3_out_11_V, i16 %layer3_out_12_V, i16 %layer3_out_13_V, i16 %layer3_out_14_V, i16 %layer3_out_15_V, i16 %layer3_out_16_V, i16 %layer3_out_17_V, i16 %layer3_out_18_V, i16 %layer3_out_19_V, i16 %layer3_out_20_V, i16 %layer3_out_21_V, i16 %layer3_out_22_V, i16 %layer3_out_23_V, i16 %layer3_out_24_V, i16 %layer3_out_25_V, i16 %layer3_out_26_V, i16 %layer3_out_27_V, i16 %layer3_out_28_V, i16 %layer3_out_29_V, i16 %layer3_out_30_V, i16 %layer3_out_31_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ret2"/></StgValue>
-</operation>
-
-<operation id="51" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="92" bw="7" op_0_bw="175">
-<![CDATA[
-:70  %layer5_out_0_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 0
-
-]]></Node>
-<StgValue><ssdm name="layer5_out_0_V"/></StgValue>
-</operation>
-
-<operation id="52" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="93" bw="7" op_0_bw="175">
-<![CDATA[
-:71  %layer5_out_1_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 1
-
-]]></Node>
-<StgValue><ssdm name="layer5_out_1_V"/></StgValue>
-</operation>
-
-<operation id="53" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="94" bw="7" op_0_bw="175">
-<![CDATA[
-:72  %layer5_out_2_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 2
-
-]]></Node>
-<StgValue><ssdm name="layer5_out_2_V"/></StgValue>
-</operation>
-
-<operation id="54" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="95" bw="7" op_0_bw="175">
-<![CDATA[
-:73  %layer5_out_3_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 3
-
-]]></Node>
-<StgValue><ssdm name="layer5_out_3_V"/></StgValue>
-</operation>
-
-<operation id="55" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="96" bw="7" op_0_bw="175">
-<![CDATA[
-:74  %layer5_out_4_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 4
-
-]]></Node>
-<StgValue><ssdm name="layer5_out_4_V"/></StgValue>
-</operation>
-
-<operation id="56" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="97" bw="7" op_0_bw="175">
-<![CDATA[
-:75  %layer5_out_5_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 5
-
-]]></Node>
-<StgValue><ssdm name="layer5_out_5_V"/></StgValue>
-</operation>
-
-<operation id="57" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="98" bw="7" op_0_bw="175">
-<![CDATA[
-:76  %layer5_out_6_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 6
-
-]]></Node>
-<StgValue><ssdm name="layer5_out_6_V"/></StgValue>
 </operation>
 
 <operation id="58" st_id="3" stage="1" lat="1">
@@ -827,12 +827,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="99" bw="7" op_0_bw="175">
+<Node id="99" bw="7" op_0_bw="224">
 <![CDATA[
-:77  %layer5_out_7_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 7
+:77  %layer5_out_0_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 0
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_7_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_0_V"/></StgValue>
 </operation>
 
 <operation id="59" st_id="3" stage="1" lat="1">
@@ -842,12 +842,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="100" bw="7" op_0_bw="175">
+<Node id="100" bw="7" op_0_bw="224">
 <![CDATA[
-:78  %layer5_out_8_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 8
+:78  %layer5_out_1_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 1
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_8_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_1_V"/></StgValue>
 </operation>
 
 <operation id="60" st_id="3" stage="1" lat="1">
@@ -857,12 +857,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="101" bw="7" op_0_bw="175">
+<Node id="101" bw="7" op_0_bw="224">
 <![CDATA[
-:79  %layer5_out_9_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 9
+:79  %layer5_out_2_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 2
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_9_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_2_V"/></StgValue>
 </operation>
 
 <operation id="61" st_id="3" stage="1" lat="1">
@@ -872,12 +872,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="102" bw="7" op_0_bw="175">
+<Node id="102" bw="7" op_0_bw="224">
 <![CDATA[
-:80  %layer5_out_10_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 10
+:80  %layer5_out_3_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 3
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_10_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_3_V"/></StgValue>
 </operation>
 
 <operation id="62" st_id="3" stage="1" lat="1">
@@ -887,12 +887,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="103" bw="7" op_0_bw="175">
+<Node id="103" bw="7" op_0_bw="224">
 <![CDATA[
-:81  %layer5_out_11_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 11
+:81  %layer5_out_4_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 4
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_11_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_4_V"/></StgValue>
 </operation>
 
 <operation id="63" st_id="3" stage="1" lat="1">
@@ -902,12 +902,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="104" bw="7" op_0_bw="175">
+<Node id="104" bw="7" op_0_bw="224">
 <![CDATA[
-:82  %layer5_out_12_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 12
+:82  %layer5_out_5_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 5
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_12_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_5_V"/></StgValue>
 </operation>
 
 <operation id="64" st_id="3" stage="1" lat="1">
@@ -917,12 +917,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="105" bw="7" op_0_bw="175">
+<Node id="105" bw="7" op_0_bw="224">
 <![CDATA[
-:83  %layer5_out_13_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 13
+:83  %layer5_out_6_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 6
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_13_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_6_V"/></StgValue>
 </operation>
 
 <operation id="65" st_id="3" stage="1" lat="1">
@@ -932,12 +932,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="106" bw="7" op_0_bw="175">
+<Node id="106" bw="7" op_0_bw="224">
 <![CDATA[
-:84  %layer5_out_14_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 14
+:84  %layer5_out_7_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 7
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_14_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_7_V"/></StgValue>
 </operation>
 
 <operation id="66" st_id="3" stage="1" lat="1">
@@ -947,12 +947,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="107" bw="7" op_0_bw="175">
+<Node id="107" bw="7" op_0_bw="224">
 <![CDATA[
-:85  %layer5_out_15_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 15
+:85  %layer5_out_8_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 8
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_15_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_8_V"/></StgValue>
 </operation>
 
 <operation id="67" st_id="3" stage="1" lat="1">
@@ -962,12 +962,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="108" bw="7" op_0_bw="175">
+<Node id="108" bw="7" op_0_bw="224">
 <![CDATA[
-:86  %layer5_out_16_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 16
+:86  %layer5_out_9_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 9
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_16_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_9_V"/></StgValue>
 </operation>
 
 <operation id="68" st_id="3" stage="1" lat="1">
@@ -977,12 +977,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="109" bw="7" op_0_bw="175">
+<Node id="109" bw="7" op_0_bw="224">
 <![CDATA[
-:87  %layer5_out_17_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 17
+:87  %layer5_out_10_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 10
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_17_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_10_V"/></StgValue>
 </operation>
 
 <operation id="69" st_id="3" stage="1" lat="1">
@@ -992,12 +992,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="110" bw="7" op_0_bw="175">
+<Node id="110" bw="7" op_0_bw="224">
 <![CDATA[
-:88  %layer5_out_18_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 18
+:88  %layer5_out_11_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 11
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_18_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_11_V"/></StgValue>
 </operation>
 
 <operation id="70" st_id="3" stage="1" lat="1">
@@ -1007,12 +1007,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="111" bw="7" op_0_bw="175">
+<Node id="111" bw="7" op_0_bw="224">
 <![CDATA[
-:89  %layer5_out_19_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 19
+:89  %layer5_out_12_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 12
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_19_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_12_V"/></StgValue>
 </operation>
 
 <operation id="71" st_id="3" stage="1" lat="1">
@@ -1022,12 +1022,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="112" bw="7" op_0_bw="175">
+<Node id="112" bw="7" op_0_bw="224">
 <![CDATA[
-:90  %layer5_out_20_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 20
+:90  %layer5_out_13_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 13
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_20_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_13_V"/></StgValue>
 </operation>
 
 <operation id="72" st_id="3" stage="1" lat="1">
@@ -1037,12 +1037,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="113" bw="7" op_0_bw="175">
+<Node id="113" bw="7" op_0_bw="224">
 <![CDATA[
-:91  %layer5_out_21_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 21
+:91  %layer5_out_14_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 14
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_21_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_14_V"/></StgValue>
 </operation>
 
 <operation id="73" st_id="3" stage="1" lat="1">
@@ -1052,12 +1052,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="114" bw="7" op_0_bw="175">
+<Node id="114" bw="7" op_0_bw="224">
 <![CDATA[
-:92  %layer5_out_22_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 22
+:92  %layer5_out_15_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 15
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_22_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_15_V"/></StgValue>
 </operation>
 
 <operation id="74" st_id="3" stage="1" lat="1">
@@ -1067,12 +1067,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="115" bw="7" op_0_bw="175">
+<Node id="115" bw="7" op_0_bw="224">
 <![CDATA[
-:93  %layer5_out_23_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 23
+:93  %layer5_out_16_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 16
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_23_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_16_V"/></StgValue>
 </operation>
 
 <operation id="75" st_id="3" stage="1" lat="1">
@@ -1082,27 +1082,27 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="116" bw="7" op_0_bw="175">
+<Node id="116" bw="7" op_0_bw="224">
 <![CDATA[
-:94  %layer5_out_24_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 24
+:94  %layer5_out_17_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 17
 
 ]]></Node>
-<StgValue><ssdm name="layer5_out_24_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_17_V"/></StgValue>
 </operation>
 
 <operation id="76" st_id="3" stage="1" lat="1">
-<core></core>
+<core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="117" bw="256" op_0_bw="256" op_1_bw="7" op_2_bw="7" op_3_bw="7" op_4_bw="7" op_5_bw="7" op_6_bw="7" op_7_bw="7" op_8_bw="7" op_9_bw="7" op_10_bw="7" op_11_bw="7" op_12_bw="7" op_13_bw="7" op_14_bw="7" op_15_bw="7" op_16_bw="7" op_17_bw="7" op_18_bw="7" op_19_bw="7" op_20_bw="7" op_21_bw="7" op_22_bw="7" op_23_bw="7" op_24_bw="7" op_25_bw="7">
+<Node id="117" bw="7" op_0_bw="224">
 <![CDATA[
-:95  %call_ret3 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @dense_latency.0.0.0.(i7 %layer5_out_0_V, i7 %layer5_out_1_V, i7 %layer5_out_2_V, i7 %layer5_out_3_V, i7 %layer5_out_4_V, i7 %layer5_out_5_V, i7 %layer5_out_6_V, i7 %layer5_out_7_V, i7 %layer5_out_8_V, i7 %layer5_out_9_V, i7 %layer5_out_10_V, i7 %layer5_out_11_V, i7 %layer5_out_12_V, i7 %layer5_out_13_V, i7 %layer5_out_14_V, i7 %layer5_out_15_V, i7 %layer5_out_16_V, i7 %layer5_out_17_V, i7 %layer5_out_18_V, i7 %layer5_out_19_V, i7 %layer5_out_20_V, i7 %layer5_out_21_V, i7 %layer5_out_22_V, i7 %layer5_out_23_V, i7 %layer5_out_24_V)
+:95  %layer5_out_18_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 18
 
 ]]></Node>
-<StgValue><ssdm name="call_ret3"/></StgValue>
+<StgValue><ssdm name="layer5_out_18_V"/></StgValue>
 </operation>
 
 <operation id="77" st_id="3" stage="1" lat="1">
@@ -1112,12 +1112,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="118" bw="16" op_0_bw="256">
+<Node id="118" bw="7" op_0_bw="224">
 <![CDATA[
-:96  %layer6_out_0_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 0
+:96  %layer5_out_19_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 19
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_0_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_19_V"/></StgValue>
 </operation>
 
 <operation id="78" st_id="3" stage="1" lat="1">
@@ -1127,12 +1127,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="119" bw="16" op_0_bw="256">
+<Node id="119" bw="7" op_0_bw="224">
 <![CDATA[
-:97  %layer6_out_1_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 1
+:97  %layer5_out_20_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 20
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_1_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_20_V"/></StgValue>
 </operation>
 
 <operation id="79" st_id="3" stage="1" lat="1">
@@ -1142,12 +1142,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="120" bw="16" op_0_bw="256">
+<Node id="120" bw="7" op_0_bw="224">
 <![CDATA[
-:98  %layer6_out_2_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 2
+:98  %layer5_out_21_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 21
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_2_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_21_V"/></StgValue>
 </operation>
 
 <operation id="80" st_id="3" stage="1" lat="1">
@@ -1157,12 +1157,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="121" bw="16" op_0_bw="256">
+<Node id="121" bw="7" op_0_bw="224">
 <![CDATA[
-:99  %layer6_out_3_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 3
+:99  %layer5_out_22_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 22
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_3_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_22_V"/></StgValue>
 </operation>
 
 <operation id="81" st_id="3" stage="1" lat="1">
@@ -1172,12 +1172,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="122" bw="16" op_0_bw="256">
+<Node id="122" bw="7" op_0_bw="224">
 <![CDATA[
-:100  %layer6_out_4_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 4
+:100  %layer5_out_23_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 23
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_4_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_23_V"/></StgValue>
 </operation>
 
 <operation id="82" st_id="3" stage="1" lat="1">
@@ -1187,12 +1187,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="123" bw="16" op_0_bw="256">
+<Node id="123" bw="7" op_0_bw="224">
 <![CDATA[
-:101  %layer6_out_5_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 5
+:101  %layer5_out_24_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 24
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_5_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_24_V"/></StgValue>
 </operation>
 
 <operation id="83" st_id="3" stage="1" lat="1">
@@ -1202,12 +1202,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="124" bw="16" op_0_bw="256">
+<Node id="124" bw="7" op_0_bw="224">
 <![CDATA[
-:102  %layer6_out_6_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 6
+:102  %layer5_out_25_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 25
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_6_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_25_V"/></StgValue>
 </operation>
 
 <operation id="84" st_id="3" stage="1" lat="1">
@@ -1217,12 +1217,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="125" bw="16" op_0_bw="256">
+<Node id="125" bw="7" op_0_bw="224">
 <![CDATA[
-:103  %layer6_out_7_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 7
+:103  %layer5_out_26_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 26
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_7_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_26_V"/></StgValue>
 </operation>
 
 <operation id="85" st_id="3" stage="1" lat="1">
@@ -1232,12 +1232,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="126" bw="16" op_0_bw="256">
+<Node id="126" bw="7" op_0_bw="224">
 <![CDATA[
-:104  %layer6_out_8_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 8
+:104  %layer5_out_27_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 27
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_8_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_27_V"/></StgValue>
 </operation>
 
 <operation id="86" st_id="3" stage="1" lat="1">
@@ -1247,12 +1247,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="127" bw="16" op_0_bw="256">
+<Node id="127" bw="7" op_0_bw="224">
 <![CDATA[
-:105  %layer6_out_9_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 9
+:105  %layer5_out_28_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 28
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_9_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_28_V"/></StgValue>
 </operation>
 
 <operation id="87" st_id="3" stage="1" lat="1">
@@ -1262,12 +1262,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="128" bw="16" op_0_bw="256">
+<Node id="128" bw="7" op_0_bw="224">
 <![CDATA[
-:106  %layer6_out_10_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 10
+:106  %layer5_out_29_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 29
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_10_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_29_V"/></StgValue>
 </operation>
 
 <operation id="88" st_id="3" stage="1" lat="1">
@@ -1277,12 +1277,12 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="129" bw="16" op_0_bw="256">
+<Node id="129" bw="7" op_0_bw="224">
 <![CDATA[
-:107  %layer6_out_11_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 11
+:107  %layer5_out_30_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 30
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_11_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_30_V"/></StgValue>
 </operation>
 
 <operation id="89" st_id="3" stage="1" lat="1">
@@ -1292,27 +1292,27 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="130" bw="16" op_0_bw="256">
+<Node id="130" bw="7" op_0_bw="224">
 <![CDATA[
-:108  %layer6_out_12_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 12
+:108  %layer5_out_31_V = extractvalue { i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7, i7 } %call_ret2, 31
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_12_V"/></StgValue>
+<StgValue><ssdm name="layer5_out_31_V"/></StgValue>
 </operation>
 
 <operation id="90" st_id="3" stage="1" lat="1">
-<core>NULL</core>
+<core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="131" bw="16" op_0_bw="256">
+<Node id="131" bw="256" op_0_bw="256" op_1_bw="7" op_2_bw="7" op_3_bw="7" op_4_bw="7" op_5_bw="7" op_6_bw="7" op_7_bw="7" op_8_bw="7" op_9_bw="7" op_10_bw="7" op_11_bw="7" op_12_bw="7" op_13_bw="7" op_14_bw="7" op_15_bw="7" op_16_bw="7" op_17_bw="7" op_18_bw="7" op_19_bw="7" op_20_bw="7" op_21_bw="7" op_22_bw="7" op_23_bw="7" op_24_bw="7" op_25_bw="7" op_26_bw="7" op_27_bw="7" op_28_bw="7" op_29_bw="7" op_30_bw="7" op_31_bw="7" op_32_bw="7">
 <![CDATA[
-:109  %layer6_out_13_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 13
+:109  %call_ret3 = call fastcc { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } @dense_latency.0.0.0.(i7 %layer5_out_0_V, i7 %layer5_out_1_V, i7 %layer5_out_2_V, i7 %layer5_out_3_V, i7 %layer5_out_4_V, i7 %layer5_out_5_V, i7 %layer5_out_6_V, i7 %layer5_out_7_V, i7 %layer5_out_8_V, i7 %layer5_out_9_V, i7 %layer5_out_10_V, i7 %layer5_out_11_V, i7 %layer5_out_12_V, i7 %layer5_out_13_V, i7 %layer5_out_14_V, i7 %layer5_out_15_V, i7 %layer5_out_16_V, i7 %layer5_out_17_V, i7 %layer5_out_18_V, i7 %layer5_out_19_V, i7 %layer5_out_20_V, i7 %layer5_out_21_V, i7 %layer5_out_22_V, i7 %layer5_out_23_V, i7 %layer5_out_24_V, i7 %layer5_out_25_V, i7 %layer5_out_26_V, i7 %layer5_out_27_V, i7 %layer5_out_28_V, i7 %layer5_out_29_V, i7 %layer5_out_30_V, i7 %layer5_out_31_V)
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_13_V"/></StgValue>
+<StgValue><ssdm name="call_ret3"/></StgValue>
 </operation>
 
 <operation id="91" st_id="3" stage="1" lat="1">
@@ -1324,10 +1324,10 @@
 
 <Node id="132" bw="16" op_0_bw="256">
 <![CDATA[
-:110  %layer6_out_14_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 14
+:110  %layer6_out_0_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 0
 
 ]]></Node>
-<StgValue><ssdm name="layer6_out_14_V"/></StgValue>
+<StgValue><ssdm name="layer6_out_0_V"/></StgValue>
 </operation>
 
 <operation id="92" st_id="3" stage="1" lat="1">
@@ -1339,7 +1339,217 @@
 
 <Node id="133" bw="16" op_0_bw="256">
 <![CDATA[
-:111  %layer6_out_15_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 15
+:111  %layer6_out_1_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 1
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_1_V"/></StgValue>
+</operation>
+
+<operation id="93" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="134" bw="16" op_0_bw="256">
+<![CDATA[
+:112  %layer6_out_2_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 2
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_2_V"/></StgValue>
+</operation>
+
+<operation id="94" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="135" bw="16" op_0_bw="256">
+<![CDATA[
+:113  %layer6_out_3_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 3
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_3_V"/></StgValue>
+</operation>
+
+<operation id="95" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="136" bw="16" op_0_bw="256">
+<![CDATA[
+:114  %layer6_out_4_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 4
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_4_V"/></StgValue>
+</operation>
+
+<operation id="96" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="137" bw="16" op_0_bw="256">
+<![CDATA[
+:115  %layer6_out_5_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 5
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_5_V"/></StgValue>
+</operation>
+
+<operation id="97" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="138" bw="16" op_0_bw="256">
+<![CDATA[
+:116  %layer6_out_6_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 6
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_6_V"/></StgValue>
+</operation>
+
+<operation id="98" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="139" bw="16" op_0_bw="256">
+<![CDATA[
+:117  %layer6_out_7_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 7
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_7_V"/></StgValue>
+</operation>
+
+<operation id="99" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="140" bw="16" op_0_bw="256">
+<![CDATA[
+:118  %layer6_out_8_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 8
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_8_V"/></StgValue>
+</operation>
+
+<operation id="100" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="141" bw="16" op_0_bw="256">
+<![CDATA[
+:119  %layer6_out_9_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 9
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_9_V"/></StgValue>
+</operation>
+
+<operation id="101" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="142" bw="16" op_0_bw="256">
+<![CDATA[
+:120  %layer6_out_10_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 10
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_10_V"/></StgValue>
+</operation>
+
+<operation id="102" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="143" bw="16" op_0_bw="256">
+<![CDATA[
+:121  %layer6_out_11_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 11
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_11_V"/></StgValue>
+</operation>
+
+<operation id="103" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="144" bw="16" op_0_bw="256">
+<![CDATA[
+:122  %layer6_out_12_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 12
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_12_V"/></StgValue>
+</operation>
+
+<operation id="104" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="145" bw="16" op_0_bw="256">
+<![CDATA[
+:123  %layer6_out_13_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 13
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_13_V"/></StgValue>
+</operation>
+
+<operation id="105" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="146" bw="16" op_0_bw="256">
+<![CDATA[
+:124  %layer6_out_14_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 14
+
+]]></Node>
+<StgValue><ssdm name="layer6_out_14_V"/></StgValue>
+</operation>
+
+<operation id="106" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="147" bw="16" op_0_bw="256">
+<![CDATA[
+:125  %layer6_out_15_V = extractvalue { i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16 } %call_ret3, 15
 
 ]]></Node>
 <StgValue><ssdm name="layer6_out_15_V"/></StgValue>
@@ -1348,16 +1558,16 @@
 
 <state id="4" st_id="4">
 
-<operation id="93" st_id="4" stage="2" lat="2">
+<operation id="107" st_id="4" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="134" bw="80" op_0_bw="80" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="10">
+<Node id="148" bw="80" op_0_bw="80" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="10">
 <![CDATA[
-:112  %call_ret4 = call fastcc { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)
+:126  %call_ret4 = call fastcc { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ret4"/></StgValue>
@@ -1366,7 +1576,7 @@
 
 <state id="5" st_id="5">
 
-<operation id="94" st_id="5" stage="1" lat="1">
+<operation id="108" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1375,217 +1585,7 @@
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="5">
 <![CDATA[
-:0  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_15_V), !map !194
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="95" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="23" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:1  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_14_V), !map !200
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="96" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="24" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:2  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_13_V), !map !206
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="97" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="25" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:3  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_12_V), !map !212
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="98" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="26" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:4  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_11_V), !map !218
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="99" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="27" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:5  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_10_V), !map !224
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="100" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="28" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:6  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_9_V), !map !230
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="101" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="29" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:7  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_8_V), !map !236
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="102" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:8  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_7_V), !map !242
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="103" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="31" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:9  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_6_V), !map !248
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="104" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:10  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_5_V), !map !254
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="105" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="33" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:11  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_4_V), !map !260
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="106" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="34" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:12  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_3_V), !map !266
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="107" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="35" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:13  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_2_V), !map !272
-
-]]></Node>
-<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
-</operation>
-
-<operation id="108" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="36" bw="0" op_0_bw="0" op_1_bw="5">
-<![CDATA[
-:14  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_1_V), !map !278
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_15_V), !map !196
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1598,9 +1598,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="0" op_0_bw="0" op_1_bw="5">
+<Node id="23" bw="0" op_0_bw="0" op_1_bw="5">
 <![CDATA[
-:15  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_0_V), !map !284
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_14_V), !map !202
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1613,9 +1613,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="0" op_0_bw="0" op_1_bw="192">
+<Node id="24" bw="0" op_0_bw="0" op_1_bw="5">
 <![CDATA[
-:16  call void (...)* @_ssdm_op_SpecBitsMap(i192* %input_V), !map !290
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_13_V), !map !208
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1628,9 +1628,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="25" bw="0" op_0_bw="0" op_1_bw="5">
 <![CDATA[
-:17  call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_in_1), !map !339
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_12_V), !map !214
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -1643,15 +1643,225 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="0" op_1_bw="16">
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="5">
 <![CDATA[
-:18  call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_out_1), !map !343
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_11_V), !map !220
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
 </operation>
 
 <operation id="113" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_10_V), !map !226
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="114" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="28" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_9_V), !map !232
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="115" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="29" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_8_V), !map !238
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="116" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="30" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_7_V), !map !244
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="117" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="31" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_6_V), !map !250
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="118" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_5_V), !map !256
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="119" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="33" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_4_V), !map !262
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="120" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="34" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:12  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_3_V), !map !268
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="121" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="35" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:13  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_2_V), !map !274
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="122" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="36" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:14  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_1_V), !map !280
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="123" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="37" bw="0" op_0_bw="0" op_1_bw="5">
+<![CDATA[
+:15  call void (...)* @_ssdm_op_SpecBitsMap(i5* %layer8_out_0_V), !map !286
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="124" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="38" bw="0" op_0_bw="0" op_1_bw="192">
+<![CDATA[
+:16  call void (...)* @_ssdm_op_SpecBitsMap(i192* %input_V), !map !292
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="125" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="39" bw="0" op_0_bw="0" op_1_bw="16">
+<![CDATA[
+:17  call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_in_1), !map !341
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="126" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="16">
+<![CDATA[
+:18  call void (...)* @_ssdm_op_SpecBitsMap(i16* %const_size_out_1), !map !345
+
+]]></Node>
+<StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
+</operation>
+
+<operation id="127" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1666,7 +1876,7 @@
 <StgValue><ssdm name="spectopmodule_ln0"/></StgValue>
 </operation>
 
-<operation id="114" st_id="5" stage="1" lat="1">
+<operation id="128" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1681,7 +1891,7 @@
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
 </operation>
 
-<operation id="115" st_id="5" stage="1" lat="1">
+<operation id="129" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1696,7 +1906,7 @@
 <StgValue><ssdm name="specinterface_ln34"/></StgValue>
 </operation>
 
-<operation id="116" st_id="5" stage="1" lat="1">
+<operation id="130" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1711,7 +1921,7 @@
 <StgValue><ssdm name="specpipeline_ln35"/></StgValue>
 </operation>
 
-<operation id="117" st_id="5" stage="1" lat="1">
+<operation id="131" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1726,7 +1936,7 @@
 <StgValue><ssdm name="write_ln37"/></StgValue>
 </operation>
 
-<operation id="118" st_id="5" stage="1" lat="1">
+<operation id="132" st_id="5" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1741,229 +1951,19 @@
 <StgValue><ssdm name="write_ln38"/></StgValue>
 </operation>
 
-<operation id="119" st_id="5" stage="1" lat="2">
+<operation id="133" st_id="5" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="134" bw="80" op_0_bw="80" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="10">
+<Node id="148" bw="80" op_0_bw="80" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16" op_6_bw="16" op_7_bw="16" op_8_bw="16" op_9_bw="16" op_10_bw="16" op_11_bw="16" op_12_bw="16" op_13_bw="16" op_14_bw="16" op_15_bw="16" op_16_bw="16" op_17_bw="10">
 <![CDATA[
-:112  %call_ret4 = call fastcc { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)
+:126  %call_ret4 = call fastcc { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } @sigmoid(i16 %layer6_out_0_V, i16 %layer6_out_1_V, i16 %layer6_out_2_V, i16 %layer6_out_3_V, i16 %layer6_out_4_V, i16 %layer6_out_5_V, i16 %layer6_out_6_V, i16 %layer6_out_7_V, i16 %layer6_out_8_V, i16 %layer6_out_9_V, i16 %layer6_out_10_V, i16 %layer6_out_11_V, i16 %layer6_out_12_V, i16 %layer6_out_13_V, i16 %layer6_out_14_V, i16 %layer6_out_15_V)
 
 ]]></Node>
 <StgValue><ssdm name="call_ret4"/></StgValue>
-</operation>
-
-<operation id="120" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="135" bw="5" op_0_bw="80">
-<![CDATA[
-:113  %layer8_out_V_0_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 0
-
-]]></Node>
-<StgValue><ssdm name="layer8_out_V_0_ret"/></StgValue>
-</operation>
-
-<operation id="121" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="136" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
-<![CDATA[
-:114  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_0_V, i5 %layer8_out_V_0_ret)
-
-]]></Node>
-<StgValue><ssdm name="write_ln88"/></StgValue>
-</operation>
-
-<operation id="122" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="137" bw="5" op_0_bw="80">
-<![CDATA[
-:115  %layer8_out_V_1_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 1
-
-]]></Node>
-<StgValue><ssdm name="layer8_out_V_1_ret"/></StgValue>
-</operation>
-
-<operation id="123" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="138" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
-<![CDATA[
-:116  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_1_V, i5 %layer8_out_V_1_ret)
-
-]]></Node>
-<StgValue><ssdm name="write_ln88"/></StgValue>
-</operation>
-
-<operation id="124" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="139" bw="5" op_0_bw="80">
-<![CDATA[
-:117  %layer8_out_V_2_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 2
-
-]]></Node>
-<StgValue><ssdm name="layer8_out_V_2_ret"/></StgValue>
-</operation>
-
-<operation id="125" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="140" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
-<![CDATA[
-:118  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_2_V, i5 %layer8_out_V_2_ret)
-
-]]></Node>
-<StgValue><ssdm name="write_ln88"/></StgValue>
-</operation>
-
-<operation id="126" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="141" bw="5" op_0_bw="80">
-<![CDATA[
-:119  %layer8_out_V_3_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 3
-
-]]></Node>
-<StgValue><ssdm name="layer8_out_V_3_ret"/></StgValue>
-</operation>
-
-<operation id="127" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="142" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
-<![CDATA[
-:120  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_3_V, i5 %layer8_out_V_3_ret)
-
-]]></Node>
-<StgValue><ssdm name="write_ln88"/></StgValue>
-</operation>
-
-<operation id="128" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="143" bw="5" op_0_bw="80">
-<![CDATA[
-:121  %layer8_out_V_4_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 4
-
-]]></Node>
-<StgValue><ssdm name="layer8_out_V_4_ret"/></StgValue>
-</operation>
-
-<operation id="129" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="144" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
-<![CDATA[
-:122  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_4_V, i5 %layer8_out_V_4_ret)
-
-]]></Node>
-<StgValue><ssdm name="write_ln88"/></StgValue>
-</operation>
-
-<operation id="130" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="145" bw="5" op_0_bw="80">
-<![CDATA[
-:123  %layer8_out_V_5_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 5
-
-]]></Node>
-<StgValue><ssdm name="layer8_out_V_5_ret"/></StgValue>
-</operation>
-
-<operation id="131" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="146" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
-<![CDATA[
-:124  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_5_V, i5 %layer8_out_V_5_ret)
-
-]]></Node>
-<StgValue><ssdm name="write_ln88"/></StgValue>
-</operation>
-
-<operation id="132" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="147" bw="5" op_0_bw="80">
-<![CDATA[
-:125  %layer8_out_V_6_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 6
-
-]]></Node>
-<StgValue><ssdm name="layer8_out_V_6_ret"/></StgValue>
-</operation>
-
-<operation id="133" st_id="5" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="148" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
-<![CDATA[
-:126  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_6_V, i5 %layer8_out_V_6_ret)
-
-]]></Node>
-<StgValue><ssdm name="write_ln88"/></StgValue>
 </operation>
 
 <operation id="134" st_id="5" stage="1" lat="1">
@@ -1975,10 +1975,10 @@
 
 <Node id="149" bw="5" op_0_bw="80">
 <![CDATA[
-:127  %layer8_out_V_7_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 7
+:127  %layer8_out_V_0_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 0
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_7_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_0_ret"/></StgValue>
 </operation>
 
 <operation id="135" st_id="5" stage="1" lat="1">
@@ -1990,7 +1990,7 @@
 
 <Node id="150" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:128  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_7_V, i5 %layer8_out_V_7_ret)
+:128  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_0_V, i5 %layer8_out_V_0_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2005,10 +2005,10 @@
 
 <Node id="151" bw="5" op_0_bw="80">
 <![CDATA[
-:129  %layer8_out_V_8_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 8
+:129  %layer8_out_V_1_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 1
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_8_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_1_ret"/></StgValue>
 </operation>
 
 <operation id="137" st_id="5" stage="1" lat="1">
@@ -2020,7 +2020,7 @@
 
 <Node id="152" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:130  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_8_V, i5 %layer8_out_V_8_ret)
+:130  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_1_V, i5 %layer8_out_V_1_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2035,10 +2035,10 @@
 
 <Node id="153" bw="5" op_0_bw="80">
 <![CDATA[
-:131  %layer8_out_V_9_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 9
+:131  %layer8_out_V_2_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 2
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_9_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_2_ret"/></StgValue>
 </operation>
 
 <operation id="139" st_id="5" stage="1" lat="1">
@@ -2050,7 +2050,7 @@
 
 <Node id="154" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:132  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_9_V, i5 %layer8_out_V_9_ret)
+:132  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_2_V, i5 %layer8_out_V_2_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2065,10 +2065,10 @@
 
 <Node id="155" bw="5" op_0_bw="80">
 <![CDATA[
-:133  %layer8_out_V_10_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 10
+:133  %layer8_out_V_3_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 3
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_10_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_3_ret"/></StgValue>
 </operation>
 
 <operation id="141" st_id="5" stage="1" lat="1">
@@ -2080,7 +2080,7 @@
 
 <Node id="156" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:134  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_10_V, i5 %layer8_out_V_10_ret)
+:134  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_3_V, i5 %layer8_out_V_3_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2095,10 +2095,10 @@
 
 <Node id="157" bw="5" op_0_bw="80">
 <![CDATA[
-:135  %layer8_out_V_11_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 11
+:135  %layer8_out_V_4_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 4
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_11_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_4_ret"/></StgValue>
 </operation>
 
 <operation id="143" st_id="5" stage="1" lat="1">
@@ -2110,7 +2110,7 @@
 
 <Node id="158" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:136  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_11_V, i5 %layer8_out_V_11_ret)
+:136  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_4_V, i5 %layer8_out_V_4_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2125,10 +2125,10 @@
 
 <Node id="159" bw="5" op_0_bw="80">
 <![CDATA[
-:137  %layer8_out_V_12_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 12
+:137  %layer8_out_V_5_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 5
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_12_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_5_ret"/></StgValue>
 </operation>
 
 <operation id="145" st_id="5" stage="1" lat="1">
@@ -2140,7 +2140,7 @@
 
 <Node id="160" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:138  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_12_V, i5 %layer8_out_V_12_ret)
+:138  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_5_V, i5 %layer8_out_V_5_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2155,10 +2155,10 @@
 
 <Node id="161" bw="5" op_0_bw="80">
 <![CDATA[
-:139  %layer8_out_V_13_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 13
+:139  %layer8_out_V_6_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 6
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_13_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_6_ret"/></StgValue>
 </operation>
 
 <operation id="147" st_id="5" stage="1" lat="1">
@@ -2170,7 +2170,7 @@
 
 <Node id="162" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:140  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_13_V, i5 %layer8_out_V_13_ret)
+:140  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_6_V, i5 %layer8_out_V_6_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2185,10 +2185,10 @@
 
 <Node id="163" bw="5" op_0_bw="80">
 <![CDATA[
-:141  %layer8_out_V_14_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 14
+:141  %layer8_out_V_7_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 7
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_14_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_7_ret"/></StgValue>
 </operation>
 
 <operation id="149" st_id="5" stage="1" lat="1">
@@ -2200,7 +2200,7 @@
 
 <Node id="164" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:142  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_14_V, i5 %layer8_out_V_14_ret)
+:142  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_7_V, i5 %layer8_out_V_7_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2215,10 +2215,10 @@
 
 <Node id="165" bw="5" op_0_bw="80">
 <![CDATA[
-:143  %layer8_out_V_15_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 15
+:143  %layer8_out_V_8_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 8
 
 ]]></Node>
-<StgValue><ssdm name="layer8_out_V_15_ret"/></StgValue>
+<StgValue><ssdm name="layer8_out_V_8_ret"/></StgValue>
 </operation>
 
 <operation id="151" st_id="5" stage="1" lat="1">
@@ -2230,7 +2230,7 @@
 
 <Node id="166" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
 <![CDATA[
-:144  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_15_V, i5 %layer8_out_V_15_ret)
+:144  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_8_V, i5 %layer8_out_V_8_ret)
 
 ]]></Node>
 <StgValue><ssdm name="write_ln88"/></StgValue>
@@ -2243,9 +2243,219 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="167" bw="0">
+<Node id="167" bw="5" op_0_bw="80">
 <![CDATA[
-:145  ret void
+:145  %layer8_out_V_9_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 9
+
+]]></Node>
+<StgValue><ssdm name="layer8_out_V_9_ret"/></StgValue>
+</operation>
+
+<operation id="153" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="168" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
+<![CDATA[
+:146  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_9_V, i5 %layer8_out_V_9_ret)
+
+]]></Node>
+<StgValue><ssdm name="write_ln88"/></StgValue>
+</operation>
+
+<operation id="154" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="169" bw="5" op_0_bw="80">
+<![CDATA[
+:147  %layer8_out_V_10_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 10
+
+]]></Node>
+<StgValue><ssdm name="layer8_out_V_10_ret"/></StgValue>
+</operation>
+
+<operation id="155" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="170" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
+<![CDATA[
+:148  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_10_V, i5 %layer8_out_V_10_ret)
+
+]]></Node>
+<StgValue><ssdm name="write_ln88"/></StgValue>
+</operation>
+
+<operation id="156" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="171" bw="5" op_0_bw="80">
+<![CDATA[
+:149  %layer8_out_V_11_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 11
+
+]]></Node>
+<StgValue><ssdm name="layer8_out_V_11_ret"/></StgValue>
+</operation>
+
+<operation id="157" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="172" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
+<![CDATA[
+:150  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_11_V, i5 %layer8_out_V_11_ret)
+
+]]></Node>
+<StgValue><ssdm name="write_ln88"/></StgValue>
+</operation>
+
+<operation id="158" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="173" bw="5" op_0_bw="80">
+<![CDATA[
+:151  %layer8_out_V_12_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 12
+
+]]></Node>
+<StgValue><ssdm name="layer8_out_V_12_ret"/></StgValue>
+</operation>
+
+<operation id="159" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="174" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
+<![CDATA[
+:152  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_12_V, i5 %layer8_out_V_12_ret)
+
+]]></Node>
+<StgValue><ssdm name="write_ln88"/></StgValue>
+</operation>
+
+<operation id="160" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="175" bw="5" op_0_bw="80">
+<![CDATA[
+:153  %layer8_out_V_13_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 13
+
+]]></Node>
+<StgValue><ssdm name="layer8_out_V_13_ret"/></StgValue>
+</operation>
+
+<operation id="161" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="176" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
+<![CDATA[
+:154  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_13_V, i5 %layer8_out_V_13_ret)
+
+]]></Node>
+<StgValue><ssdm name="write_ln88"/></StgValue>
+</operation>
+
+<operation id="162" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="177" bw="5" op_0_bw="80">
+<![CDATA[
+:155  %layer8_out_V_14_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 14
+
+]]></Node>
+<StgValue><ssdm name="layer8_out_V_14_ret"/></StgValue>
+</operation>
+
+<operation id="163" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="178" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
+<![CDATA[
+:156  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_14_V, i5 %layer8_out_V_14_ret)
+
+]]></Node>
+<StgValue><ssdm name="write_ln88"/></StgValue>
+</operation>
+
+<operation id="164" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="179" bw="5" op_0_bw="80">
+<![CDATA[
+:157  %layer8_out_V_15_ret = extractvalue { i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5, i5 } %call_ret4, 15
+
+]]></Node>
+<StgValue><ssdm name="layer8_out_V_15_ret"/></StgValue>
+</operation>
+
+<operation id="165" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="180" bw="0" op_0_bw="0" op_1_bw="5" op_2_bw="5">
+<![CDATA[
+:158  call void @_ssdm_op_Write.ap_vld.i5P(i5* %layer8_out_15_V, i5 %layer8_out_V_15_ret)
+
+]]></Node>
+<StgValue><ssdm name="write_ln88"/></StgValue>
+</operation>
+
+<operation id="166" st_id="5" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="181" bw="0">
+<![CDATA[
+:159  ret void
 
 ]]></Node>
 <StgValue><ssdm name="ret_ln93"/></StgValue>

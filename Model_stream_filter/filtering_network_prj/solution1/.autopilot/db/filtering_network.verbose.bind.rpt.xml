@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'filtering_network'" level="0">
-<item name = "Date">Wed Dec  9 18:07:26 2020
+<item name = "Date">Wed Dec  9 19:30:14 2020
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">filtering_network_prj</item>
@@ -32,10 +32,10 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="call_ret3_dense_latency_0_0_0_s_fu_212">dense_latency_0_0_0_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="call_ret1_dense_latency_0_0_0_1_fu_241">dense_latency_0_0_0_1, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="grp_sigmoid_fu_261">sigmoid, 1, 1, 12.500 ns, 12.500 ns, 1, 1, function</column>
-<column name="call_ret_normalize_0_0_0_0_0_s_fu_283">normalize_0_0_0_0_0_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
-<column name="call_ret2_relu_fu_289">relu, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="call_ret1_dense_latency_0_0_0_1_fu_248">dense_latency_0_0_0_1, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="grp_sigmoid_fu_268">sigmoid, 1, 1, 12.500 ns, 12.500 ns, 1, 1, function</column>
+<column name="call_ret2_relu_fu_290">relu, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
+<column name="call_ret_normalize_0_0_0_0_0_s_fu_326">normalize_0_0_0_0_0_s, 0, 0, 0 ns, 0 ns, 1, 1, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

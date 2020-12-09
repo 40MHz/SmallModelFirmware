@@ -14,12 +14,12 @@ namespace ap_rtl {
 
 const sc_logic product_1::ap_const_logic_1 = sc_dt::Log_1;
 const bool product_1::ap_const_boolean_1 = true;
-const sc_lv<32> product_1::ap_const_lv32_7 = "111";
-const sc_lv<32> product_1::ap_const_lv32_16 = "10110";
+const sc_lv<32> product_1::ap_const_lv32_8 = "1000";
+const sc_lv<32> product_1::ap_const_lv32_17 = "10111";
 const sc_logic product_1::ap_const_logic_0 = sc_dt::Log_0;
 
 product_1::product_1(sc_module_name name) : sc_module(name), mVcdFile(0) {
-    filtering_networkbkb_U2 = new filtering_networkbkb<1,1,20,6,23>("filtering_networkbkb_U2");
+    filtering_networkbkb_U2 = new filtering_networkbkb<1,1,21,6,24>("filtering_networkbkb_U2");
     filtering_networkbkb_U2->din0(a_V);
     filtering_networkbkb_U2->din1(w_V);
     filtering_networkbkb_U2->dout(r_V_fu_43_p2);
@@ -61,7 +61,7 @@ void product_1::thread_ap_ready() {
 }
 
 void product_1::thread_ap_return() {
-    ap_return = r_V_fu_43_p2.read().range(22, 7);
+    ap_return = r_V_fu_43_p2.read().range(23, 8);
 }
 
 }

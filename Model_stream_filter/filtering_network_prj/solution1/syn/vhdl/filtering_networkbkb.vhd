@@ -5,23 +5,23 @@ use IEEE.numeric_std.all;
 
 entity filtering_networkbkb_DSP48_0 is
 port (
-    a: in std_logic_vector(20 - 1 downto 0);
+    a: in std_logic_vector(21 - 1 downto 0);
     b: in std_logic_vector(6 - 1 downto 0);
-    p: out std_logic_vector(23 - 1 downto 0));
+    p: out std_logic_vector(24 - 1 downto 0));
 
 end entity;
 
 architecture behav of filtering_networkbkb_DSP48_0 is
-    signal a_cvt: signed(20 - 1 downto 0);
+    signal a_cvt: signed(21 - 1 downto 0);
     signal b_cvt: signed(6 - 1 downto 0);
-    signal p_cvt: signed(23 - 1 downto 0);
+    signal p_cvt: signed(24 - 1 downto 0);
 
 
 begin
 
     a_cvt <= signed(a);
     b_cvt <= signed(b);
-    p_cvt <= signed (resize(unsigned (signed (a_cvt) * signed (b_cvt)), 23));
+    p_cvt <= signed (resize(unsigned (signed (a_cvt) * signed (b_cvt)), 24));
     p <= std_logic_vector(p_cvt);
 
 end architecture;

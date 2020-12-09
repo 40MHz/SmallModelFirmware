@@ -82,7 +82,7 @@
 <IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>20</Bits>
+<Bits>21</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

@@ -25,7 +25,7 @@ void allocate_trace_storage(size_t element_size) {
     nnet::trace_type_size = element_size;
     nnet::trace_outputs->insert(std::pair<std::string, void *>("bn1", (void *) malloc(N_INPUT_1_1 * element_size)));
     nnet::trace_outputs->insert(std::pair<std::string, void *>("q_dense", (void *) malloc(N_LAYER_3 * element_size)));
-    nnet::trace_outputs->insert(std::pair<std::string, void *>("relu", (void *) malloc(N_LAYER_3 * element_size)));
+    nnet::trace_outputs->insert(std::pair<std::string, void *>("relu1", (void *) malloc(N_LAYER_3 * element_size)));
     nnet::trace_outputs->insert(std::pair<std::string, void *>("q_dense_1", (void *) malloc(N_LAYER_6 * element_size)));
     nnet::trace_outputs->insert(std::pair<std::string, void *>("activation", (void *) malloc(N_LAYER_6 * element_size)));
 }

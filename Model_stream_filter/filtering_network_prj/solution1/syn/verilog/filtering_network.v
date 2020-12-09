@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="filtering_network,hls_ip_2020_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xcku115-flvb2104-2-i,HLS_INPUT_CLOCK=12.500000,HLS_INPUT_ARCH=pipeline,HLS_SYN_CLOCK=10.273750,HLS_SYN_LAT=4,HLS_SYN_TPT=1,HLS_SYN_MEM=8,HLS_SYN_DSP=130,HLS_SYN_FF=1177,HLS_SYN_LUT=25297,HLS_VERSION=2020_1}" *)
+(* CORE_GENERATION_INFO="filtering_network,hls_ip_2020_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=1,HLS_INPUT_PART=xcku115-flvb2104-2-i,HLS_INPUT_CLOCK=12.500000,HLS_INPUT_ARCH=pipeline,HLS_SYN_CLOCK=10.273750,HLS_SYN_LAT=4,HLS_SYN_TPT=1,HLS_SYN_MEM=8,HLS_SYN_DSP=150,HLS_SYN_FF=1305,HLS_SYN_LUT=29451,HLS_VERSION=2020_1}" *)
 
 module filtering_network (
         ap_clk,
@@ -145,63 +145,70 @@ reg   [191:0] input_V_in_sig;
 reg    input_V_ap_vld_preg;
 reg    input_V_blk_n;
 wire    ap_block_pp0_stage0;
-reg   [19:0] layer2_out_0_V_reg_751;
-reg   [19:0] layer2_out_1_V_reg_756;
-reg   [19:0] layer2_out_2_V_reg_761;
-reg   [19:0] layer2_out_3_V_reg_766;
-reg   [19:0] layer2_out_4_V_reg_771;
-reg   [19:0] layer2_out_5_V_reg_776;
-reg   [19:0] layer2_out_6_V_reg_781;
-reg   [19:0] layer2_out_7_V_reg_786;
-reg   [19:0] layer2_out_8_V_reg_791;
-reg   [19:0] layer2_out_9_V_reg_796;
-reg   [19:0] layer2_out_10_V_reg_801;
-reg   [19:0] layer2_out_11_V_reg_806;
-reg   [19:0] layer2_out_12_V_reg_811;
-reg   [19:0] layer2_out_13_V_reg_816;
-reg   [19:0] layer2_out_14_V_reg_821;
-reg   [19:0] layer2_out_15_V_reg_826;
-reg   [15:0] layer3_out_0_V_reg_831;
-reg   [15:0] layer3_out_1_V_reg_836;
-reg   [15:0] layer3_out_2_V_reg_841;
-reg   [15:0] layer3_out_3_V_reg_846;
-reg   [15:0] layer3_out_4_V_reg_851;
-reg   [15:0] layer3_out_5_V_reg_856;
-reg   [15:0] layer3_out_6_V_reg_861;
-reg   [15:0] layer3_out_7_V_reg_866;
-reg   [15:0] layer3_out_8_V_reg_871;
-reg   [15:0] layer3_out_9_V_reg_876;
-reg   [15:0] layer3_out_10_V_reg_881;
-reg   [15:0] layer3_out_11_V_reg_886;
-reg   [15:0] layer3_out_12_V_reg_891;
-reg   [15:0] layer3_out_13_V_reg_896;
-reg   [15:0] layer3_out_14_V_reg_901;
-reg   [15:0] layer3_out_15_V_reg_906;
-reg   [15:0] layer3_out_16_V_reg_911;
-reg   [15:0] layer3_out_17_V_reg_916;
-reg   [15:0] layer3_out_18_V_reg_921;
-reg   [15:0] layer3_out_19_V_reg_926;
-reg   [15:0] layer3_out_20_V_reg_931;
-reg   [15:0] layer3_out_21_V_reg_936;
-reg   [15:0] layer3_out_22_V_reg_941;
-reg   [15:0] layer3_out_23_V_reg_946;
-reg   [15:0] layer3_out_24_V_reg_951;
-reg   [15:0] layer6_out_0_V_reg_956;
-reg   [15:0] layer6_out_1_V_reg_961;
-reg   [15:0] layer6_out_2_V_reg_966;
-reg   [15:0] layer6_out_3_V_reg_971;
-reg   [15:0] layer6_out_4_V_reg_976;
-reg   [15:0] layer6_out_5_V_reg_981;
-reg   [15:0] layer6_out_6_V_reg_986;
-reg   [15:0] layer6_out_7_V_reg_991;
-reg   [15:0] layer6_out_8_V_reg_996;
-reg   [15:0] layer6_out_9_V_reg_1001;
-reg   [15:0] layer6_out_10_V_reg_1006;
-reg   [15:0] layer6_out_11_V_reg_1011;
-reg   [15:0] layer6_out_12_V_reg_1016;
-reg   [15:0] layer6_out_13_V_reg_1021;
-reg   [15:0] layer6_out_14_V_reg_1026;
-reg   [15:0] layer6_out_15_V_reg_1031;
+reg   [20:0] layer2_out_0_V_reg_828;
+reg   [20:0] layer2_out_1_V_reg_833;
+reg   [20:0] layer2_out_2_V_reg_838;
+reg   [20:0] layer2_out_3_V_reg_843;
+reg   [20:0] layer2_out_4_V_reg_848;
+reg   [20:0] layer2_out_5_V_reg_853;
+reg   [20:0] layer2_out_6_V_reg_858;
+reg   [20:0] layer2_out_7_V_reg_863;
+reg   [20:0] layer2_out_8_V_reg_868;
+reg   [20:0] layer2_out_9_V_reg_873;
+reg   [20:0] layer2_out_10_V_reg_878;
+reg   [20:0] layer2_out_11_V_reg_883;
+reg   [20:0] layer2_out_12_V_reg_888;
+reg   [20:0] layer2_out_13_V_reg_893;
+reg   [20:0] layer2_out_14_V_reg_898;
+reg   [20:0] layer2_out_15_V_reg_903;
+reg   [15:0] layer3_out_0_V_reg_908;
+reg   [15:0] layer3_out_1_V_reg_913;
+reg   [15:0] layer3_out_2_V_reg_918;
+reg   [15:0] layer3_out_3_V_reg_923;
+reg   [15:0] layer3_out_4_V_reg_928;
+reg   [15:0] layer3_out_5_V_reg_933;
+reg   [15:0] layer3_out_6_V_reg_938;
+reg   [15:0] layer3_out_7_V_reg_943;
+reg   [15:0] layer3_out_8_V_reg_948;
+reg   [15:0] layer3_out_9_V_reg_953;
+reg   [15:0] layer3_out_10_V_reg_958;
+reg   [15:0] layer3_out_11_V_reg_963;
+reg   [15:0] layer3_out_12_V_reg_968;
+reg   [15:0] layer3_out_13_V_reg_973;
+reg   [15:0] layer3_out_14_V_reg_978;
+reg   [15:0] layer3_out_15_V_reg_983;
+reg   [15:0] layer3_out_16_V_reg_988;
+reg   [15:0] layer3_out_17_V_reg_993;
+reg   [15:0] layer3_out_18_V_reg_998;
+reg   [15:0] layer3_out_19_V_reg_1003;
+reg   [15:0] layer3_out_20_V_reg_1008;
+reg   [15:0] layer3_out_21_V_reg_1013;
+reg   [15:0] layer3_out_22_V_reg_1018;
+reg   [15:0] layer3_out_23_V_reg_1023;
+reg   [15:0] layer3_out_24_V_reg_1028;
+reg   [15:0] layer3_out_25_V_reg_1033;
+reg   [15:0] layer3_out_26_V_reg_1038;
+reg   [15:0] layer3_out_27_V_reg_1043;
+reg   [15:0] layer3_out_28_V_reg_1048;
+reg   [15:0] layer3_out_29_V_reg_1053;
+reg   [15:0] layer3_out_30_V_reg_1058;
+reg   [15:0] layer3_out_31_V_reg_1063;
+reg   [15:0] layer6_out_0_V_reg_1068;
+reg   [15:0] layer6_out_1_V_reg_1073;
+reg   [15:0] layer6_out_2_V_reg_1078;
+reg   [15:0] layer6_out_3_V_reg_1083;
+reg   [15:0] layer6_out_4_V_reg_1088;
+reg   [15:0] layer6_out_5_V_reg_1093;
+reg   [15:0] layer6_out_6_V_reg_1098;
+reg   [15:0] layer6_out_7_V_reg_1103;
+reg   [15:0] layer6_out_8_V_reg_1108;
+reg   [15:0] layer6_out_9_V_reg_1113;
+reg   [15:0] layer6_out_10_V_reg_1118;
+reg   [15:0] layer6_out_11_V_reg_1123;
+reg   [15:0] layer6_out_12_V_reg_1128;
+reg   [15:0] layer6_out_13_V_reg_1133;
+reg   [15:0] layer6_out_14_V_reg_1138;
+reg   [15:0] layer6_out_15_V_reg_1143;
 reg    ap_block_pp0_stage0_subdone;
 wire    call_ret3_dense_latency_0_0_0_s_fu_212_ap_ready;
 wire   [15:0] call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_0;
@@ -220,103 +227,117 @@ wire   [15:0] call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_12;
 wire   [15:0] call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_13;
 wire   [15:0] call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_14;
 wire   [15:0] call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_15;
-wire    call_ret1_dense_latency_0_0_0_1_fu_241_ap_ready;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_0;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_1;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_2;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_3;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_4;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_5;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_6;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_7;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_8;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_9;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_10;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_11;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_12;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_13;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_14;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_15;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_16;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_17;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_18;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_19;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_20;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_21;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_22;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_23;
-wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_24;
-wire    grp_sigmoid_fu_261_ap_start;
-wire    grp_sigmoid_fu_261_ap_done;
-wire    grp_sigmoid_fu_261_ap_idle;
-wire    grp_sigmoid_fu_261_ap_ready;
-reg    grp_sigmoid_fu_261_ap_ce;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_0;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_1;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_2;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_3;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_4;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_5;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_6;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_7;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_8;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_9;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_10;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_11;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_12;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_13;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_14;
-wire   [4:0] grp_sigmoid_fu_261_ap_return_15;
-reg    ap_block_state1_pp0_stage0_iter0_ignore_call112;
-wire    ap_block_state2_pp0_stage0_iter1_ignore_call112;
-wire    ap_block_state3_pp0_stage0_iter2_ignore_call112;
-wire    ap_block_state4_pp0_stage0_iter3_ignore_call112;
-wire    ap_block_state5_pp0_stage0_iter4_ignore_call112;
-reg    ap_block_pp0_stage0_11001_ignoreCallOp93;
-wire    call_ret_normalize_0_0_0_0_0_s_fu_283_ap_ready;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_0;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_1;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_2;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_3;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_4;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_5;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_6;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_7;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_8;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_9;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_10;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_11;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_12;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_13;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_14;
-wire   [19:0] call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_15;
-wire    call_ret2_relu_fu_289_ap_ready;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_0;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_1;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_2;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_3;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_4;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_5;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_6;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_7;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_8;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_9;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_10;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_11;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_12;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_13;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_14;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_15;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_16;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_17;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_18;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_19;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_20;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_21;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_22;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_23;
-wire   [6:0] call_ret2_relu_fu_289_ap_return_24;
-reg    grp_sigmoid_fu_261_ap_start_reg;
+wire    call_ret1_dense_latency_0_0_0_1_fu_248_ap_ready;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_0;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_1;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_2;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_3;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_4;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_5;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_6;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_7;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_8;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_9;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_10;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_11;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_12;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_13;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_14;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_15;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_16;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_17;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_18;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_19;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_20;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_21;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_22;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_23;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_24;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_25;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_26;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_27;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_28;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_29;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_30;
+wire   [15:0] call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_31;
+wire    grp_sigmoid_fu_268_ap_start;
+wire    grp_sigmoid_fu_268_ap_done;
+wire    grp_sigmoid_fu_268_ap_idle;
+wire    grp_sigmoid_fu_268_ap_ready;
+reg    grp_sigmoid_fu_268_ap_ce;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_0;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_1;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_2;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_3;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_4;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_5;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_6;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_7;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_8;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_9;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_10;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_11;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_12;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_13;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_14;
+wire   [4:0] grp_sigmoid_fu_268_ap_return_15;
+reg    ap_block_state1_pp0_stage0_iter0_ignore_call126;
+wire    ap_block_state2_pp0_stage0_iter1_ignore_call126;
+wire    ap_block_state3_pp0_stage0_iter2_ignore_call126;
+wire    ap_block_state4_pp0_stage0_iter3_ignore_call126;
+wire    ap_block_state5_pp0_stage0_iter4_ignore_call126;
+reg    ap_block_pp0_stage0_11001_ignoreCallOp107;
+wire    call_ret2_relu_fu_290_ap_ready;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_0;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_1;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_2;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_3;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_4;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_5;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_6;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_7;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_8;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_9;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_10;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_11;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_12;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_13;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_14;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_15;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_16;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_17;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_18;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_19;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_20;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_21;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_22;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_23;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_24;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_25;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_26;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_27;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_28;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_29;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_30;
+wire   [6:0] call_ret2_relu_fu_290_ap_return_31;
+wire    call_ret_normalize_0_0_0_0_0_s_fu_326_ap_ready;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_0;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_1;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_2;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_3;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_4;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_5;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_6;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_7;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_8;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_9;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_10;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_11;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_12;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_13;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_14;
+wire   [20:0] call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_15;
+reg    grp_sigmoid_fu_268_ap_start_reg;
 reg    ap_block_pp0_stage0_01001;
 reg   [0:0] ap_NS_fsm;
 reg    ap_idle_pp0_0to3;
@@ -332,36 +353,43 @@ initial begin
 #0 ap_enable_reg_pp0_iter4 = 1'b0;
 #0 input_V_preg = 192'd0;
 #0 input_V_ap_vld_preg = 1'b0;
-#0 grp_sigmoid_fu_261_ap_start_reg = 1'b0;
+#0 grp_sigmoid_fu_268_ap_start_reg = 1'b0;
 end
 
 dense_latency_0_0_0_s call_ret3_dense_latency_0_0_0_s_fu_212(
     .ap_ready(call_ret3_dense_latency_0_0_0_s_fu_212_ap_ready),
-    .data_0_V_read(call_ret2_relu_fu_289_ap_return_0),
-    .data_1_V_read(call_ret2_relu_fu_289_ap_return_1),
-    .data_2_V_read(call_ret2_relu_fu_289_ap_return_2),
-    .data_3_V_read(call_ret2_relu_fu_289_ap_return_3),
-    .data_4_V_read(call_ret2_relu_fu_289_ap_return_4),
-    .data_5_V_read(call_ret2_relu_fu_289_ap_return_5),
-    .data_6_V_read(call_ret2_relu_fu_289_ap_return_6),
-    .data_7_V_read(call_ret2_relu_fu_289_ap_return_7),
-    .data_8_V_read(call_ret2_relu_fu_289_ap_return_8),
-    .data_9_V_read(call_ret2_relu_fu_289_ap_return_9),
-    .data_10_V_read(call_ret2_relu_fu_289_ap_return_10),
-    .data_11_V_read(call_ret2_relu_fu_289_ap_return_11),
-    .data_12_V_read(call_ret2_relu_fu_289_ap_return_12),
-    .data_13_V_read(call_ret2_relu_fu_289_ap_return_13),
-    .data_14_V_read(call_ret2_relu_fu_289_ap_return_14),
-    .data_15_V_read(call_ret2_relu_fu_289_ap_return_15),
-    .data_16_V_read(call_ret2_relu_fu_289_ap_return_16),
-    .data_17_V_read(call_ret2_relu_fu_289_ap_return_17),
-    .data_18_V_read(call_ret2_relu_fu_289_ap_return_18),
-    .data_19_V_read(call_ret2_relu_fu_289_ap_return_19),
-    .data_20_V_read(call_ret2_relu_fu_289_ap_return_20),
-    .data_21_V_read(call_ret2_relu_fu_289_ap_return_21),
-    .data_22_V_read(call_ret2_relu_fu_289_ap_return_22),
-    .data_23_V_read(call_ret2_relu_fu_289_ap_return_23),
-    .data_24_V_read(call_ret2_relu_fu_289_ap_return_24),
+    .data_0_V_read(call_ret2_relu_fu_290_ap_return_0),
+    .data_1_V_read(call_ret2_relu_fu_290_ap_return_1),
+    .data_2_V_read(call_ret2_relu_fu_290_ap_return_2),
+    .data_3_V_read(call_ret2_relu_fu_290_ap_return_3),
+    .data_4_V_read(call_ret2_relu_fu_290_ap_return_4),
+    .data_5_V_read(call_ret2_relu_fu_290_ap_return_5),
+    .data_6_V_read(call_ret2_relu_fu_290_ap_return_6),
+    .data_7_V_read(call_ret2_relu_fu_290_ap_return_7),
+    .data_8_V_read(call_ret2_relu_fu_290_ap_return_8),
+    .data_9_V_read(call_ret2_relu_fu_290_ap_return_9),
+    .data_10_V_read(call_ret2_relu_fu_290_ap_return_10),
+    .data_11_V_read(call_ret2_relu_fu_290_ap_return_11),
+    .data_12_V_read(call_ret2_relu_fu_290_ap_return_12),
+    .data_13_V_read(call_ret2_relu_fu_290_ap_return_13),
+    .data_14_V_read(call_ret2_relu_fu_290_ap_return_14),
+    .data_15_V_read(call_ret2_relu_fu_290_ap_return_15),
+    .data_16_V_read(call_ret2_relu_fu_290_ap_return_16),
+    .data_17_V_read(call_ret2_relu_fu_290_ap_return_17),
+    .data_18_V_read(call_ret2_relu_fu_290_ap_return_18),
+    .data_19_V_read(call_ret2_relu_fu_290_ap_return_19),
+    .data_20_V_read(call_ret2_relu_fu_290_ap_return_20),
+    .data_21_V_read(call_ret2_relu_fu_290_ap_return_21),
+    .data_22_V_read(call_ret2_relu_fu_290_ap_return_22),
+    .data_23_V_read(call_ret2_relu_fu_290_ap_return_23),
+    .data_24_V_read(call_ret2_relu_fu_290_ap_return_24),
+    .data_25_V_read(call_ret2_relu_fu_290_ap_return_25),
+    .data_26_V_read(call_ret2_relu_fu_290_ap_return_26),
+    .data_27_V_read(call_ret2_relu_fu_290_ap_return_27),
+    .data_28_V_read(call_ret2_relu_fu_290_ap_return_28),
+    .data_29_V_read(call_ret2_relu_fu_290_ap_return_29),
+    .data_30_V_read(call_ret2_relu_fu_290_ap_return_30),
+    .data_31_V_read(call_ret2_relu_fu_290_ap_return_31),
     .ap_return_0(call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_0),
     .ap_return_1(call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_1),
     .ap_return_2(call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_2),
@@ -380,166 +408,187 @@ dense_latency_0_0_0_s call_ret3_dense_latency_0_0_0_s_fu_212(
     .ap_return_15(call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_15)
 );
 
-dense_latency_0_0_0_1 call_ret1_dense_latency_0_0_0_1_fu_241(
-    .ap_ready(call_ret1_dense_latency_0_0_0_1_fu_241_ap_ready),
-    .data_0_V_read(layer2_out_0_V_reg_751),
-    .data_1_V_read(layer2_out_1_V_reg_756),
-    .data_2_V_read(layer2_out_2_V_reg_761),
-    .data_3_V_read(layer2_out_3_V_reg_766),
-    .data_4_V_read(layer2_out_4_V_reg_771),
-    .data_5_V_read(layer2_out_5_V_reg_776),
-    .data_6_V_read(layer2_out_6_V_reg_781),
-    .data_7_V_read(layer2_out_7_V_reg_786),
-    .data_8_V_read(layer2_out_8_V_reg_791),
-    .data_9_V_read(layer2_out_9_V_reg_796),
-    .data_10_V_read(layer2_out_10_V_reg_801),
-    .data_11_V_read(layer2_out_11_V_reg_806),
-    .data_12_V_read(layer2_out_12_V_reg_811),
-    .data_13_V_read(layer2_out_13_V_reg_816),
-    .data_14_V_read(layer2_out_14_V_reg_821),
-    .data_15_V_read(layer2_out_15_V_reg_826),
-    .ap_return_0(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_0),
-    .ap_return_1(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_1),
-    .ap_return_2(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_2),
-    .ap_return_3(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_3),
-    .ap_return_4(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_4),
-    .ap_return_5(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_5),
-    .ap_return_6(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_6),
-    .ap_return_7(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_7),
-    .ap_return_8(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_8),
-    .ap_return_9(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_9),
-    .ap_return_10(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_10),
-    .ap_return_11(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_11),
-    .ap_return_12(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_12),
-    .ap_return_13(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_13),
-    .ap_return_14(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_14),
-    .ap_return_15(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_15),
-    .ap_return_16(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_16),
-    .ap_return_17(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_17),
-    .ap_return_18(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_18),
-    .ap_return_19(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_19),
-    .ap_return_20(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_20),
-    .ap_return_21(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_21),
-    .ap_return_22(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_22),
-    .ap_return_23(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_23),
-    .ap_return_24(call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_24)
+dense_latency_0_0_0_1 call_ret1_dense_latency_0_0_0_1_fu_248(
+    .ap_ready(call_ret1_dense_latency_0_0_0_1_fu_248_ap_ready),
+    .data_0_V_read(layer2_out_0_V_reg_828),
+    .data_1_V_read(layer2_out_1_V_reg_833),
+    .data_2_V_read(layer2_out_2_V_reg_838),
+    .data_3_V_read(layer2_out_3_V_reg_843),
+    .data_4_V_read(layer2_out_4_V_reg_848),
+    .data_5_V_read(layer2_out_5_V_reg_853),
+    .data_6_V_read(layer2_out_6_V_reg_858),
+    .data_7_V_read(layer2_out_7_V_reg_863),
+    .data_8_V_read(layer2_out_8_V_reg_868),
+    .data_9_V_read(layer2_out_9_V_reg_873),
+    .data_10_V_read(layer2_out_10_V_reg_878),
+    .data_11_V_read(layer2_out_11_V_reg_883),
+    .data_12_V_read(layer2_out_12_V_reg_888),
+    .data_13_V_read(layer2_out_13_V_reg_893),
+    .data_14_V_read(layer2_out_14_V_reg_898),
+    .data_15_V_read(layer2_out_15_V_reg_903),
+    .ap_return_0(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_0),
+    .ap_return_1(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_1),
+    .ap_return_2(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_2),
+    .ap_return_3(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_3),
+    .ap_return_4(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_4),
+    .ap_return_5(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_5),
+    .ap_return_6(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_6),
+    .ap_return_7(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_7),
+    .ap_return_8(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_8),
+    .ap_return_9(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_9),
+    .ap_return_10(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_10),
+    .ap_return_11(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_11),
+    .ap_return_12(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_12),
+    .ap_return_13(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_13),
+    .ap_return_14(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_14),
+    .ap_return_15(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_15),
+    .ap_return_16(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_16),
+    .ap_return_17(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_17),
+    .ap_return_18(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_18),
+    .ap_return_19(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_19),
+    .ap_return_20(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_20),
+    .ap_return_21(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_21),
+    .ap_return_22(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_22),
+    .ap_return_23(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_23),
+    .ap_return_24(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_24),
+    .ap_return_25(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_25),
+    .ap_return_26(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_26),
+    .ap_return_27(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_27),
+    .ap_return_28(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_28),
+    .ap_return_29(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_29),
+    .ap_return_30(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_30),
+    .ap_return_31(call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_31)
 );
 
-sigmoid grp_sigmoid_fu_261(
+sigmoid grp_sigmoid_fu_268(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_sigmoid_fu_261_ap_start),
-    .ap_done(grp_sigmoid_fu_261_ap_done),
-    .ap_idle(grp_sigmoid_fu_261_ap_idle),
-    .ap_ready(grp_sigmoid_fu_261_ap_ready),
-    .ap_ce(grp_sigmoid_fu_261_ap_ce),
-    .data_0_V_read(layer6_out_0_V_reg_956),
-    .data_1_V_read(layer6_out_1_V_reg_961),
-    .data_2_V_read(layer6_out_2_V_reg_966),
-    .data_3_V_read(layer6_out_3_V_reg_971),
-    .data_4_V_read(layer6_out_4_V_reg_976),
-    .data_5_V_read(layer6_out_5_V_reg_981),
-    .data_6_V_read(layer6_out_6_V_reg_986),
-    .data_7_V_read(layer6_out_7_V_reg_991),
-    .data_8_V_read(layer6_out_8_V_reg_996),
-    .data_9_V_read(layer6_out_9_V_reg_1001),
-    .data_10_V_read(layer6_out_10_V_reg_1006),
-    .data_11_V_read(layer6_out_11_V_reg_1011),
-    .data_12_V_read(layer6_out_12_V_reg_1016),
-    .data_13_V_read(layer6_out_13_V_reg_1021),
-    .data_14_V_read(layer6_out_14_V_reg_1026),
-    .data_15_V_read(layer6_out_15_V_reg_1031),
-    .ap_return_0(grp_sigmoid_fu_261_ap_return_0),
-    .ap_return_1(grp_sigmoid_fu_261_ap_return_1),
-    .ap_return_2(grp_sigmoid_fu_261_ap_return_2),
-    .ap_return_3(grp_sigmoid_fu_261_ap_return_3),
-    .ap_return_4(grp_sigmoid_fu_261_ap_return_4),
-    .ap_return_5(grp_sigmoid_fu_261_ap_return_5),
-    .ap_return_6(grp_sigmoid_fu_261_ap_return_6),
-    .ap_return_7(grp_sigmoid_fu_261_ap_return_7),
-    .ap_return_8(grp_sigmoid_fu_261_ap_return_8),
-    .ap_return_9(grp_sigmoid_fu_261_ap_return_9),
-    .ap_return_10(grp_sigmoid_fu_261_ap_return_10),
-    .ap_return_11(grp_sigmoid_fu_261_ap_return_11),
-    .ap_return_12(grp_sigmoid_fu_261_ap_return_12),
-    .ap_return_13(grp_sigmoid_fu_261_ap_return_13),
-    .ap_return_14(grp_sigmoid_fu_261_ap_return_14),
-    .ap_return_15(grp_sigmoid_fu_261_ap_return_15)
+    .ap_start(grp_sigmoid_fu_268_ap_start),
+    .ap_done(grp_sigmoid_fu_268_ap_done),
+    .ap_idle(grp_sigmoid_fu_268_ap_idle),
+    .ap_ready(grp_sigmoid_fu_268_ap_ready),
+    .ap_ce(grp_sigmoid_fu_268_ap_ce),
+    .data_0_V_read(layer6_out_0_V_reg_1068),
+    .data_1_V_read(layer6_out_1_V_reg_1073),
+    .data_2_V_read(layer6_out_2_V_reg_1078),
+    .data_3_V_read(layer6_out_3_V_reg_1083),
+    .data_4_V_read(layer6_out_4_V_reg_1088),
+    .data_5_V_read(layer6_out_5_V_reg_1093),
+    .data_6_V_read(layer6_out_6_V_reg_1098),
+    .data_7_V_read(layer6_out_7_V_reg_1103),
+    .data_8_V_read(layer6_out_8_V_reg_1108),
+    .data_9_V_read(layer6_out_9_V_reg_1113),
+    .data_10_V_read(layer6_out_10_V_reg_1118),
+    .data_11_V_read(layer6_out_11_V_reg_1123),
+    .data_12_V_read(layer6_out_12_V_reg_1128),
+    .data_13_V_read(layer6_out_13_V_reg_1133),
+    .data_14_V_read(layer6_out_14_V_reg_1138),
+    .data_15_V_read(layer6_out_15_V_reg_1143),
+    .ap_return_0(grp_sigmoid_fu_268_ap_return_0),
+    .ap_return_1(grp_sigmoid_fu_268_ap_return_1),
+    .ap_return_2(grp_sigmoid_fu_268_ap_return_2),
+    .ap_return_3(grp_sigmoid_fu_268_ap_return_3),
+    .ap_return_4(grp_sigmoid_fu_268_ap_return_4),
+    .ap_return_5(grp_sigmoid_fu_268_ap_return_5),
+    .ap_return_6(grp_sigmoid_fu_268_ap_return_6),
+    .ap_return_7(grp_sigmoid_fu_268_ap_return_7),
+    .ap_return_8(grp_sigmoid_fu_268_ap_return_8),
+    .ap_return_9(grp_sigmoid_fu_268_ap_return_9),
+    .ap_return_10(grp_sigmoid_fu_268_ap_return_10),
+    .ap_return_11(grp_sigmoid_fu_268_ap_return_11),
+    .ap_return_12(grp_sigmoid_fu_268_ap_return_12),
+    .ap_return_13(grp_sigmoid_fu_268_ap_return_13),
+    .ap_return_14(grp_sigmoid_fu_268_ap_return_14),
+    .ap_return_15(grp_sigmoid_fu_268_ap_return_15)
 );
 
-normalize_0_0_0_0_0_s call_ret_normalize_0_0_0_0_0_s_fu_283(
-    .ap_ready(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_ready),
+relu call_ret2_relu_fu_290(
+    .ap_ready(call_ret2_relu_fu_290_ap_ready),
+    .data_0_V_read(layer3_out_0_V_reg_908),
+    .data_1_V_read(layer3_out_1_V_reg_913),
+    .data_2_V_read(layer3_out_2_V_reg_918),
+    .data_3_V_read(layer3_out_3_V_reg_923),
+    .data_4_V_read(layer3_out_4_V_reg_928),
+    .data_5_V_read(layer3_out_5_V_reg_933),
+    .data_6_V_read(layer3_out_6_V_reg_938),
+    .data_7_V_read(layer3_out_7_V_reg_943),
+    .data_8_V_read(layer3_out_8_V_reg_948),
+    .data_9_V_read(layer3_out_9_V_reg_953),
+    .data_10_V_read(layer3_out_10_V_reg_958),
+    .data_11_V_read(layer3_out_11_V_reg_963),
+    .data_12_V_read(layer3_out_12_V_reg_968),
+    .data_13_V_read(layer3_out_13_V_reg_973),
+    .data_14_V_read(layer3_out_14_V_reg_978),
+    .data_15_V_read(layer3_out_15_V_reg_983),
+    .data_16_V_read(layer3_out_16_V_reg_988),
+    .data_17_V_read(layer3_out_17_V_reg_993),
+    .data_18_V_read(layer3_out_18_V_reg_998),
+    .data_19_V_read(layer3_out_19_V_reg_1003),
+    .data_20_V_read(layer3_out_20_V_reg_1008),
+    .data_21_V_read(layer3_out_21_V_reg_1013),
+    .data_22_V_read(layer3_out_22_V_reg_1018),
+    .data_23_V_read(layer3_out_23_V_reg_1023),
+    .data_24_V_read(layer3_out_24_V_reg_1028),
+    .data_25_V_read(layer3_out_25_V_reg_1033),
+    .data_26_V_read(layer3_out_26_V_reg_1038),
+    .data_27_V_read(layer3_out_27_V_reg_1043),
+    .data_28_V_read(layer3_out_28_V_reg_1048),
+    .data_29_V_read(layer3_out_29_V_reg_1053),
+    .data_30_V_read(layer3_out_30_V_reg_1058),
+    .data_31_V_read(layer3_out_31_V_reg_1063),
+    .ap_return_0(call_ret2_relu_fu_290_ap_return_0),
+    .ap_return_1(call_ret2_relu_fu_290_ap_return_1),
+    .ap_return_2(call_ret2_relu_fu_290_ap_return_2),
+    .ap_return_3(call_ret2_relu_fu_290_ap_return_3),
+    .ap_return_4(call_ret2_relu_fu_290_ap_return_4),
+    .ap_return_5(call_ret2_relu_fu_290_ap_return_5),
+    .ap_return_6(call_ret2_relu_fu_290_ap_return_6),
+    .ap_return_7(call_ret2_relu_fu_290_ap_return_7),
+    .ap_return_8(call_ret2_relu_fu_290_ap_return_8),
+    .ap_return_9(call_ret2_relu_fu_290_ap_return_9),
+    .ap_return_10(call_ret2_relu_fu_290_ap_return_10),
+    .ap_return_11(call_ret2_relu_fu_290_ap_return_11),
+    .ap_return_12(call_ret2_relu_fu_290_ap_return_12),
+    .ap_return_13(call_ret2_relu_fu_290_ap_return_13),
+    .ap_return_14(call_ret2_relu_fu_290_ap_return_14),
+    .ap_return_15(call_ret2_relu_fu_290_ap_return_15),
+    .ap_return_16(call_ret2_relu_fu_290_ap_return_16),
+    .ap_return_17(call_ret2_relu_fu_290_ap_return_17),
+    .ap_return_18(call_ret2_relu_fu_290_ap_return_18),
+    .ap_return_19(call_ret2_relu_fu_290_ap_return_19),
+    .ap_return_20(call_ret2_relu_fu_290_ap_return_20),
+    .ap_return_21(call_ret2_relu_fu_290_ap_return_21),
+    .ap_return_22(call_ret2_relu_fu_290_ap_return_22),
+    .ap_return_23(call_ret2_relu_fu_290_ap_return_23),
+    .ap_return_24(call_ret2_relu_fu_290_ap_return_24),
+    .ap_return_25(call_ret2_relu_fu_290_ap_return_25),
+    .ap_return_26(call_ret2_relu_fu_290_ap_return_26),
+    .ap_return_27(call_ret2_relu_fu_290_ap_return_27),
+    .ap_return_28(call_ret2_relu_fu_290_ap_return_28),
+    .ap_return_29(call_ret2_relu_fu_290_ap_return_29),
+    .ap_return_30(call_ret2_relu_fu_290_ap_return_30),
+    .ap_return_31(call_ret2_relu_fu_290_ap_return_31)
+);
+
+normalize_0_0_0_0_0_s call_ret_normalize_0_0_0_0_0_s_fu_326(
+    .ap_ready(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_ready),
     .data_V_read(input_V_in_sig),
-    .ap_return_0(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_0),
-    .ap_return_1(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_1),
-    .ap_return_2(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_2),
-    .ap_return_3(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_3),
-    .ap_return_4(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_4),
-    .ap_return_5(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_5),
-    .ap_return_6(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_6),
-    .ap_return_7(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_7),
-    .ap_return_8(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_8),
-    .ap_return_9(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_9),
-    .ap_return_10(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_10),
-    .ap_return_11(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_11),
-    .ap_return_12(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_12),
-    .ap_return_13(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_13),
-    .ap_return_14(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_14),
-    .ap_return_15(call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_15)
-);
-
-relu call_ret2_relu_fu_289(
-    .ap_ready(call_ret2_relu_fu_289_ap_ready),
-    .data_0_V_read(layer3_out_0_V_reg_831),
-    .data_1_V_read(layer3_out_1_V_reg_836),
-    .data_2_V_read(layer3_out_2_V_reg_841),
-    .data_3_V_read(layer3_out_3_V_reg_846),
-    .data_4_V_read(layer3_out_4_V_reg_851),
-    .data_5_V_read(layer3_out_5_V_reg_856),
-    .data_6_V_read(layer3_out_6_V_reg_861),
-    .data_7_V_read(layer3_out_7_V_reg_866),
-    .data_8_V_read(layer3_out_8_V_reg_871),
-    .data_9_V_read(layer3_out_9_V_reg_876),
-    .data_10_V_read(layer3_out_10_V_reg_881),
-    .data_11_V_read(layer3_out_11_V_reg_886),
-    .data_12_V_read(layer3_out_12_V_reg_891),
-    .data_13_V_read(layer3_out_13_V_reg_896),
-    .data_14_V_read(layer3_out_14_V_reg_901),
-    .data_15_V_read(layer3_out_15_V_reg_906),
-    .data_16_V_read(layer3_out_16_V_reg_911),
-    .data_17_V_read(layer3_out_17_V_reg_916),
-    .data_18_V_read(layer3_out_18_V_reg_921),
-    .data_19_V_read(layer3_out_19_V_reg_926),
-    .data_20_V_read(layer3_out_20_V_reg_931),
-    .data_21_V_read(layer3_out_21_V_reg_936),
-    .data_22_V_read(layer3_out_22_V_reg_941),
-    .data_23_V_read(layer3_out_23_V_reg_946),
-    .data_24_V_read(layer3_out_24_V_reg_951),
-    .ap_return_0(call_ret2_relu_fu_289_ap_return_0),
-    .ap_return_1(call_ret2_relu_fu_289_ap_return_1),
-    .ap_return_2(call_ret2_relu_fu_289_ap_return_2),
-    .ap_return_3(call_ret2_relu_fu_289_ap_return_3),
-    .ap_return_4(call_ret2_relu_fu_289_ap_return_4),
-    .ap_return_5(call_ret2_relu_fu_289_ap_return_5),
-    .ap_return_6(call_ret2_relu_fu_289_ap_return_6),
-    .ap_return_7(call_ret2_relu_fu_289_ap_return_7),
-    .ap_return_8(call_ret2_relu_fu_289_ap_return_8),
-    .ap_return_9(call_ret2_relu_fu_289_ap_return_9),
-    .ap_return_10(call_ret2_relu_fu_289_ap_return_10),
-    .ap_return_11(call_ret2_relu_fu_289_ap_return_11),
-    .ap_return_12(call_ret2_relu_fu_289_ap_return_12),
-    .ap_return_13(call_ret2_relu_fu_289_ap_return_13),
-    .ap_return_14(call_ret2_relu_fu_289_ap_return_14),
-    .ap_return_15(call_ret2_relu_fu_289_ap_return_15),
-    .ap_return_16(call_ret2_relu_fu_289_ap_return_16),
-    .ap_return_17(call_ret2_relu_fu_289_ap_return_17),
-    .ap_return_18(call_ret2_relu_fu_289_ap_return_18),
-    .ap_return_19(call_ret2_relu_fu_289_ap_return_19),
-    .ap_return_20(call_ret2_relu_fu_289_ap_return_20),
-    .ap_return_21(call_ret2_relu_fu_289_ap_return_21),
-    .ap_return_22(call_ret2_relu_fu_289_ap_return_22),
-    .ap_return_23(call_ret2_relu_fu_289_ap_return_23),
-    .ap_return_24(call_ret2_relu_fu_289_ap_return_24)
+    .ap_return_0(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_0),
+    .ap_return_1(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_1),
+    .ap_return_2(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_2),
+    .ap_return_3(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_3),
+    .ap_return_4(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_4),
+    .ap_return_5(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_5),
+    .ap_return_6(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_6),
+    .ap_return_7(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_7),
+    .ap_return_8(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_8),
+    .ap_return_9(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_9),
+    .ap_return_10(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_10),
+    .ap_return_11(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_11),
+    .ap_return_12(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_12),
+    .ap_return_13(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_13),
+    .ap_return_14(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_14),
+    .ap_return_15(call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_15)
 );
 
 always @ (posedge ap_clk) begin
@@ -592,12 +641,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_sigmoid_fu_261_ap_start_reg <= 1'b0;
+        grp_sigmoid_fu_268_ap_start_reg <= 1'b0;
     end else begin
         if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter2 == 1'b1))) begin
-            grp_sigmoid_fu_261_ap_start_reg <= 1'b1;
-        end else if ((grp_sigmoid_fu_261_ap_ready == 1'b1)) begin
-            grp_sigmoid_fu_261_ap_start_reg <= 1'b0;
+            grp_sigmoid_fu_268_ap_start_reg <= 1'b1;
+        end else if ((grp_sigmoid_fu_268_ap_ready == 1'b1)) begin
+            grp_sigmoid_fu_268_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -626,68 +675,75 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        layer2_out_0_V_reg_751 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_0;
-        layer2_out_10_V_reg_801 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_10;
-        layer2_out_11_V_reg_806 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_11;
-        layer2_out_12_V_reg_811 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_12;
-        layer2_out_13_V_reg_816 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_13;
-        layer2_out_14_V_reg_821 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_14;
-        layer2_out_15_V_reg_826 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_15;
-        layer2_out_1_V_reg_756 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_1;
-        layer2_out_2_V_reg_761 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_2;
-        layer2_out_3_V_reg_766 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_3;
-        layer2_out_4_V_reg_771 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_4;
-        layer2_out_5_V_reg_776 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_5;
-        layer2_out_6_V_reg_781 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_6;
-        layer2_out_7_V_reg_786 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_7;
-        layer2_out_8_V_reg_791 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_8;
-        layer2_out_9_V_reg_796 <= call_ret_normalize_0_0_0_0_0_s_fu_283_ap_return_9;
-        layer3_out_0_V_reg_831 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_0;
-        layer3_out_10_V_reg_881 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_10;
-        layer3_out_11_V_reg_886 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_11;
-        layer3_out_12_V_reg_891 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_12;
-        layer3_out_13_V_reg_896 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_13;
-        layer3_out_14_V_reg_901 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_14;
-        layer3_out_15_V_reg_906 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_15;
-        layer3_out_16_V_reg_911 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_16;
-        layer3_out_17_V_reg_916 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_17;
-        layer3_out_18_V_reg_921 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_18;
-        layer3_out_19_V_reg_926 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_19;
-        layer3_out_1_V_reg_836 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_1;
-        layer3_out_20_V_reg_931 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_20;
-        layer3_out_21_V_reg_936 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_21;
-        layer3_out_22_V_reg_941 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_22;
-        layer3_out_23_V_reg_946 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_23;
-        layer3_out_24_V_reg_951 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_24;
-        layer3_out_2_V_reg_841 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_2;
-        layer3_out_3_V_reg_846 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_3;
-        layer3_out_4_V_reg_851 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_4;
-        layer3_out_5_V_reg_856 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_5;
-        layer3_out_6_V_reg_861 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_6;
-        layer3_out_7_V_reg_866 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_7;
-        layer3_out_8_V_reg_871 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_8;
-        layer3_out_9_V_reg_876 <= call_ret1_dense_latency_0_0_0_1_fu_241_ap_return_9;
+        layer2_out_0_V_reg_828 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_0;
+        layer2_out_10_V_reg_878 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_10;
+        layer2_out_11_V_reg_883 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_11;
+        layer2_out_12_V_reg_888 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_12;
+        layer2_out_13_V_reg_893 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_13;
+        layer2_out_14_V_reg_898 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_14;
+        layer2_out_15_V_reg_903 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_15;
+        layer2_out_1_V_reg_833 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_1;
+        layer2_out_2_V_reg_838 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_2;
+        layer2_out_3_V_reg_843 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_3;
+        layer2_out_4_V_reg_848 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_4;
+        layer2_out_5_V_reg_853 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_5;
+        layer2_out_6_V_reg_858 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_6;
+        layer2_out_7_V_reg_863 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_7;
+        layer2_out_8_V_reg_868 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_8;
+        layer2_out_9_V_reg_873 <= call_ret_normalize_0_0_0_0_0_s_fu_326_ap_return_9;
+        layer3_out_0_V_reg_908 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_0;
+        layer3_out_10_V_reg_958 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_10;
+        layer3_out_11_V_reg_963 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_11;
+        layer3_out_12_V_reg_968 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_12;
+        layer3_out_13_V_reg_973 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_13;
+        layer3_out_14_V_reg_978 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_14;
+        layer3_out_15_V_reg_983 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_15;
+        layer3_out_16_V_reg_988 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_16;
+        layer3_out_17_V_reg_993 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_17;
+        layer3_out_18_V_reg_998 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_18;
+        layer3_out_19_V_reg_1003 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_19;
+        layer3_out_1_V_reg_913 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_1;
+        layer3_out_20_V_reg_1008 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_20;
+        layer3_out_21_V_reg_1013 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_21;
+        layer3_out_22_V_reg_1018 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_22;
+        layer3_out_23_V_reg_1023 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_23;
+        layer3_out_24_V_reg_1028 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_24;
+        layer3_out_25_V_reg_1033 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_25;
+        layer3_out_26_V_reg_1038 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_26;
+        layer3_out_27_V_reg_1043 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_27;
+        layer3_out_28_V_reg_1048 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_28;
+        layer3_out_29_V_reg_1053 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_29;
+        layer3_out_2_V_reg_918 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_2;
+        layer3_out_30_V_reg_1058 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_30;
+        layer3_out_31_V_reg_1063 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_31;
+        layer3_out_3_V_reg_923 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_3;
+        layer3_out_4_V_reg_928 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_4;
+        layer3_out_5_V_reg_933 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_5;
+        layer3_out_6_V_reg_938 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_6;
+        layer3_out_7_V_reg_943 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_7;
+        layer3_out_8_V_reg_948 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_8;
+        layer3_out_9_V_reg_953 <= call_ret1_dense_latency_0_0_0_1_fu_248_ap_return_9;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b0 == ap_block_pp0_stage0_11001)) begin
-        layer6_out_0_V_reg_956 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_0;
-        layer6_out_10_V_reg_1006 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_10;
-        layer6_out_11_V_reg_1011 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_11;
-        layer6_out_12_V_reg_1016 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_12;
-        layer6_out_13_V_reg_1021 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_13;
-        layer6_out_14_V_reg_1026 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_14;
-        layer6_out_15_V_reg_1031 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_15;
-        layer6_out_1_V_reg_961 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_1;
-        layer6_out_2_V_reg_966 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_2;
-        layer6_out_3_V_reg_971 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_3;
-        layer6_out_4_V_reg_976 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_4;
-        layer6_out_5_V_reg_981 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_5;
-        layer6_out_6_V_reg_986 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_6;
-        layer6_out_7_V_reg_991 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_7;
-        layer6_out_8_V_reg_996 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_8;
-        layer6_out_9_V_reg_1001 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_9;
+        layer6_out_0_V_reg_1068 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_0;
+        layer6_out_10_V_reg_1118 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_10;
+        layer6_out_11_V_reg_1123 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_11;
+        layer6_out_12_V_reg_1128 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_12;
+        layer6_out_13_V_reg_1133 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_13;
+        layer6_out_14_V_reg_1138 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_14;
+        layer6_out_15_V_reg_1143 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_15;
+        layer6_out_1_V_reg_1073 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_1;
+        layer6_out_2_V_reg_1078 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_2;
+        layer6_out_3_V_reg_1083 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_3;
+        layer6_out_4_V_reg_1088 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_4;
+        layer6_out_5_V_reg_1093 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_5;
+        layer6_out_6_V_reg_1098 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_6;
+        layer6_out_7_V_reg_1103 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_7;
+        layer6_out_8_V_reg_1108 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_8;
+        layer6_out_9_V_reg_1113 <= call_ret3_dense_latency_0_0_0_s_fu_212_ap_return_9;
     end
 end
 
@@ -756,10 +812,10 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_pp0_stage0_11001_ignoreCallOp93) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        grp_sigmoid_fu_261_ap_ce = 1'b1;
+    if (((1'b0 == ap_block_pp0_stage0_11001_ignoreCallOp107) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        grp_sigmoid_fu_268_ap_ce = 1'b1;
     end else begin
-        grp_sigmoid_fu_261_ap_ce = 1'b0;
+        grp_sigmoid_fu_268_ap_ce = 1'b0;
     end
 end
 
@@ -939,7 +995,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_pp0_stage0_11001_ignoreCallOp93 = ((ap_start == 1'b1) & ((ap_start == 1'b0) | (input_V_ap_vld_in_sig == 1'b0)));
+    ap_block_pp0_stage0_11001_ignoreCallOp107 = ((ap_start == 1'b1) & ((ap_start == 1'b0) | (input_V_ap_vld_in_sig == 1'b0)));
 end
 
 always @ (*) begin
@@ -951,24 +1007,24 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_state1_pp0_stage0_iter0_ignore_call112 = ((ap_start == 1'b0) | (input_V_ap_vld_in_sig == 1'b0));
+    ap_block_state1_pp0_stage0_iter0_ignore_call126 = ((ap_start == 1'b0) | (input_V_ap_vld_in_sig == 1'b0));
 end
 
 assign ap_block_state2_pp0_stage0_iter1 = ~(1'b1 == 1'b1);
 
-assign ap_block_state2_pp0_stage0_iter1_ignore_call112 = ~(1'b1 == 1'b1);
+assign ap_block_state2_pp0_stage0_iter1_ignore_call126 = ~(1'b1 == 1'b1);
 
 assign ap_block_state3_pp0_stage0_iter2 = ~(1'b1 == 1'b1);
 
-assign ap_block_state3_pp0_stage0_iter2_ignore_call112 = ~(1'b1 == 1'b1);
+assign ap_block_state3_pp0_stage0_iter2_ignore_call126 = ~(1'b1 == 1'b1);
 
 assign ap_block_state4_pp0_stage0_iter3 = ~(1'b1 == 1'b1);
 
-assign ap_block_state4_pp0_stage0_iter3_ignore_call112 = ~(1'b1 == 1'b1);
+assign ap_block_state4_pp0_stage0_iter3_ignore_call126 = ~(1'b1 == 1'b1);
 
 assign ap_block_state5_pp0_stage0_iter4 = ~(1'b1 == 1'b1);
 
-assign ap_block_state5_pp0_stage0_iter4_ignore_call112 = ~(1'b1 == 1'b1);
+assign ap_block_state5_pp0_stage0_iter4_ignore_call126 = ~(1'b1 == 1'b1);
 
 assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
@@ -978,38 +1034,38 @@ assign const_size_in_1 = 16'd16;
 
 assign const_size_out_1 = 16'd16;
 
-assign grp_sigmoid_fu_261_ap_start = grp_sigmoid_fu_261_ap_start_reg;
+assign grp_sigmoid_fu_268_ap_start = grp_sigmoid_fu_268_ap_start_reg;
 
-assign layer8_out_0_V = grp_sigmoid_fu_261_ap_return_0;
+assign layer8_out_0_V = grp_sigmoid_fu_268_ap_return_0;
 
-assign layer8_out_10_V = grp_sigmoid_fu_261_ap_return_10;
+assign layer8_out_10_V = grp_sigmoid_fu_268_ap_return_10;
 
-assign layer8_out_11_V = grp_sigmoid_fu_261_ap_return_11;
+assign layer8_out_11_V = grp_sigmoid_fu_268_ap_return_11;
 
-assign layer8_out_12_V = grp_sigmoid_fu_261_ap_return_12;
+assign layer8_out_12_V = grp_sigmoid_fu_268_ap_return_12;
 
-assign layer8_out_13_V = grp_sigmoid_fu_261_ap_return_13;
+assign layer8_out_13_V = grp_sigmoid_fu_268_ap_return_13;
 
-assign layer8_out_14_V = grp_sigmoid_fu_261_ap_return_14;
+assign layer8_out_14_V = grp_sigmoid_fu_268_ap_return_14;
 
-assign layer8_out_15_V = grp_sigmoid_fu_261_ap_return_15;
+assign layer8_out_15_V = grp_sigmoid_fu_268_ap_return_15;
 
-assign layer8_out_1_V = grp_sigmoid_fu_261_ap_return_1;
+assign layer8_out_1_V = grp_sigmoid_fu_268_ap_return_1;
 
-assign layer8_out_2_V = grp_sigmoid_fu_261_ap_return_2;
+assign layer8_out_2_V = grp_sigmoid_fu_268_ap_return_2;
 
-assign layer8_out_3_V = grp_sigmoid_fu_261_ap_return_3;
+assign layer8_out_3_V = grp_sigmoid_fu_268_ap_return_3;
 
-assign layer8_out_4_V = grp_sigmoid_fu_261_ap_return_4;
+assign layer8_out_4_V = grp_sigmoid_fu_268_ap_return_4;
 
-assign layer8_out_5_V = grp_sigmoid_fu_261_ap_return_5;
+assign layer8_out_5_V = grp_sigmoid_fu_268_ap_return_5;
 
-assign layer8_out_6_V = grp_sigmoid_fu_261_ap_return_6;
+assign layer8_out_6_V = grp_sigmoid_fu_268_ap_return_6;
 
-assign layer8_out_7_V = grp_sigmoid_fu_261_ap_return_7;
+assign layer8_out_7_V = grp_sigmoid_fu_268_ap_return_7;
 
-assign layer8_out_8_V = grp_sigmoid_fu_261_ap_return_8;
+assign layer8_out_8_V = grp_sigmoid_fu_268_ap_return_8;
 
-assign layer8_out_9_V = grp_sigmoid_fu_261_ap_return_9;
+assign layer8_out_9_V = grp_sigmoid_fu_268_ap_return_9;
 
 endmodule //filtering_network

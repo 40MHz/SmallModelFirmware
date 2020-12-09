@@ -43,9 +43,9 @@ void filtering_network(
         //hls-fpga-machine-learning insert load weights
         nnet::load_weights_from_txt<bn1_default_t, 16>(s2, "s2.txt");
         nnet::load_weights_from_txt<bn1_default_t, 16>(b2, "b2.txt");
-        nnet::load_weights_from_txt<weight3_t, 400>(w3, "w3.txt");
-        nnet::load_weights_from_txt<bias3_t, 25>(b3, "b3.txt");
-        nnet::load_weights_from_txt<weight6_t, 400>(w6, "w6.txt");
+        nnet::load_weights_from_txt<weight3_t, 512>(w3, "w3.txt");
+        nnet::load_weights_from_txt<bias3_t, 32>(b3, "b3.txt");
+        nnet::load_weights_from_txt<weight6_t, 512>(w6, "w6.txt");
         nnet::load_weights_from_txt<bias6_t, 16>(b6, "b6.txt");
         loaded_weights = true;
     }
@@ -75,7 +75,7 @@ void filtering_network(
     #pragma HLS ARRAY_PARTITION variable=layer5_out complete dim=0
     nnet::relu<layer3_t, layer5_t, relu_config5>(layer3_out, layer5_out);
 #ifndef __SYNTHESIS__
-    nnet::save_layer_output<layer5_t>(layer5_out, "relu", N_LAYER_3);
+    nnet::save_layer_output<layer5_t>(layer5_out, "relu1", N_LAYER_3);
 #endif
 
     layer6_t layer6_out[N_LAYER_6];

@@ -12,7 +12,7 @@ use IEEE.numeric_std.all;
 entity product_1 is
 port (
     ap_ready : OUT STD_LOGIC;
-    a_V : IN STD_LOGIC_VECTOR (19 downto 0);
+    a_V : IN STD_LOGIC_VECTOR (20 downto 0);
     w_V : IN STD_LOGIC_VECTOR (5 downto 0);
     ap_return : OUT STD_LOGIC_VECTOR (15 downto 0) );
 end;
@@ -21,11 +21,11 @@ end;
 architecture behav of product_1 is 
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_boolean_1 : BOOLEAN := true;
-    constant ap_const_lv32_7 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000111";
-    constant ap_const_lv32_16 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010110";
+    constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
+    constant ap_const_lv32_17 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010111";
     constant ap_const_logic_0 : STD_LOGIC := '0';
 
-    signal r_V_fu_43_p2 : STD_LOGIC_VECTOR (22 downto 0);
+    signal r_V_fu_43_p2 : STD_LOGIC_VECTOR (23 downto 0);
 
     component filtering_networkbkb IS
     generic (
@@ -35,9 +35,9 @@ architecture behav of product_1 is
         din1_WIDTH : INTEGER;
         dout_WIDTH : INTEGER );
     port (
-        din0 : IN STD_LOGIC_VECTOR (19 downto 0);
+        din0 : IN STD_LOGIC_VECTOR (20 downto 0);
         din1 : IN STD_LOGIC_VECTOR (5 downto 0);
-        dout : OUT STD_LOGIC_VECTOR (22 downto 0) );
+        dout : OUT STD_LOGIC_VECTOR (23 downto 0) );
     end component;
 
 
@@ -47,9 +47,9 @@ begin
     generic map (
         ID => 1,
         NUM_STAGE => 1,
-        din0_WIDTH => 20,
+        din0_WIDTH => 21,
         din1_WIDTH => 6,
-        dout_WIDTH => 23)
+        dout_WIDTH => 24)
     port map (
         din0 => a_V,
         din1 => w_V,
@@ -59,5 +59,5 @@ begin
 
 
     ap_ready <= ap_const_logic_1;
-    ap_return <= r_V_fu_43_p2(22 downto 7);
+    ap_return <= r_V_fu_43_p2(23 downto 8);
 end behav;

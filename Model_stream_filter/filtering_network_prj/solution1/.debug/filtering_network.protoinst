@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_sigmoid_fu_261/grp_sigmoid_fu_261_activity": {
+				"grp_sigmoid_fu_268/grp_sigmoid_fu_268_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

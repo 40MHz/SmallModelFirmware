@@ -16,18 +16,18 @@ module product_1 (
 
 
 output   ap_ready;
-input  [19:0] a_V;
+input  [20:0] a_V;
 input  [5:0] w_V;
 output  [15:0] ap_return;
 
-wire  signed [22:0] r_V_fu_43_p2;
+wire  signed [23:0] r_V_fu_43_p2;
 
 filtering_networkbkb #(
     .ID( 1 ),
     .NUM_STAGE( 1 ),
-    .din0_WIDTH( 20 ),
+    .din0_WIDTH( 21 ),
     .din1_WIDTH( 6 ),
-    .dout_WIDTH( 23 ))
+    .dout_WIDTH( 24 ))
 filtering_networkbkb_U2(
     .din0(a_V),
     .din1(w_V),
@@ -36,6 +36,6 @@ filtering_networkbkb_U2(
 
 assign ap_ready = 1'b1;
 
-assign ap_return = {{r_V_fu_43_p2[22:7]}};
+assign ap_return = {{r_V_fu_43_p2[23:8]}};
 
 endmodule //product_1

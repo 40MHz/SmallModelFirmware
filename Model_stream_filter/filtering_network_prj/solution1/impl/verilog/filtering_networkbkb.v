@@ -2,9 +2,9 @@
 `timescale 1 ns / 1 ps
 
   module filtering_networkbkb_DSP48_0(a, b, p);
-input signed [20 - 1 : 0] a;
+input signed [21 - 1 : 0] a;
 input signed [6 - 1 : 0] b;
-output signed [23 - 1 : 0] p;
+output signed [24 - 1 : 0] p;
 
 assign p = $signed (a) * $signed (b);
 

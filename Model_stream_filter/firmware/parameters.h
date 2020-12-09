@@ -36,8 +36,8 @@ struct config3 : nnet::dense_config {
     static const unsigned n_out = N_LAYER_3;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 231;
-    static const unsigned n_nonzeros = 169;
+    static const unsigned n_zeros = 316;
+    static const unsigned n_nonzeros = 196;
     static const bool store_weights_in_bram = false;
     typedef ap_fixed<16,6> accum_t;
     typedef bias3_t bias_t;
@@ -58,8 +58,8 @@ struct config6 : nnet::dense_config {
     static const unsigned n_out = N_LAYER_6;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 202;
-    static const unsigned n_nonzeros = 198;
+    static const unsigned n_zeros = 276;
+    static const unsigned n_nonzeros = 236;
     static const bool store_weights_in_bram = false;
     typedef ap_fixed<16,6> accum_t;
     typedef bias6_t bias_t;

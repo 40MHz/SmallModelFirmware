@@ -28,7 +28,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>20</bitwidth>
+					<bitwidth>21</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -79,7 +79,7 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/matteo/mlxtrg/ModelloAndrea/Model_stream_filter</fileDirectory>
 						<lineNumber>90</lineNumber>
-						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -91,7 +91,7 @@
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>90</second>
 									</item>
@@ -128,7 +128,7 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/matteo/mlxtrg/ModelloAndrea/Model_stream_filter</fileDirectory>
 						<lineNumber>90</lineNumber>
-						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -140,7 +140,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>90</second>
 									</item>
@@ -151,7 +151,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>20</bitwidth>
+					<bitwidth>21</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -177,7 +177,7 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/matteo/mlxtrg/ModelloAndrea/Model_stream_filter</fileDirectory>
 						<lineNumber>90</lineNumber>
-						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -189,7 +189,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>90</second>
 									</item>
@@ -200,7 +200,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>23</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -225,7 +225,7 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/matteo/mlxtrg/ModelloAndrea/Model_stream_filter</fileDirectory>
 						<lineNumber>90</lineNumber>
-						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -237,7 +237,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>90</second>
 									</item>
@@ -248,7 +248,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>23</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -273,7 +273,7 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/matteo/mlxtrg/ModelloAndrea/Model_stream_filter</fileDirectory>
 						<lineNumber>90</lineNumber>
-						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -285,7 +285,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>90</second>
 									</item>
@@ -296,7 +296,7 @@
 						<rtlName></rtlName>
 						<coreName></coreName>
 					</Obj>
-					<bitwidth>23</bitwidth>
+					<bitwidth>24</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -322,7 +322,7 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/matteo/mlxtrg/ModelloAndrea/Model_stream_filter</fileDirectory>
 						<lineNumber>90</lineNumber>
-						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -334,7 +334,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>90</second>
 									</item>
@@ -373,7 +373,7 @@
 						<fileName>firmware/nnet_utils/nnet_dense.h</fileName>
 						<fileDirectory>/home/matteo/mlxtrg/ModelloAndrea/Model_stream_filter</fileDirectory>
 						<lineNumber>90</lineNumber>
-						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
+						<contextFuncName>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -385,7 +385,7 @@
 									<item>
 										<first>
 											<first>firmware/nnet_utils/nnet_dense.h</first>
-											<second>product&amp;lt;ap_fixed&amp;lt;20, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
+											<second>product&amp;lt;ap_fixed&amp;lt;21, 8, 0, 0, 0&amp;gt;, ap_fixed&amp;lt;7, 2, 5, 3, 0&amp;gt;, ap_fixed&amp;lt;16, 6, 5, 3, 0&amp;gt; &amp;gt;</second>
 										</first>
 										<second>90</second>
 									</item>
@@ -437,7 +437,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>7</content>
+				<content>8</content>
 			</item>
 			<item class_id_reference="16" object_id="_11">
 				<Value>
@@ -460,7 +460,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>22</content>
+				<content>23</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">

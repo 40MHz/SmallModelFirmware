@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'product_1'
 ================================================================
-* Date:           Wed Dec  9 18:07:29 2020
+* Date:           Wed Dec  9 19:30:17 2020
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        filtering_network_prj
@@ -104,7 +104,7 @@
 +-----------+-----+-----+------------+--------------+--------------+
 |ap_ready   | out |    1| ap_ctrl_hs |   product.1  | return value |
 |ap_return  | out |   16| ap_ctrl_hs |   product.1  | return value |
-|a_V        |  in |   20|   ap_none  |      a_V     |    scalar    |
+|a_V        |  in |   21|   ap_none  |      a_V     |    scalar    |
 |w_V        |  in |    6|   ap_none  |      w_V     |    scalar    |
 +-----------+-----+-----+------------+--------------+--------------+
 
