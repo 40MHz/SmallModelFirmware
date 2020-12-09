@@ -1,0 +1,10 @@
+filtering_networkbkb
+sigmoid_sigmoid_tcud
+normalize_0_0_0_0_0_s
+product_1
+dense_latency_0_0_0_1
+relu
+product
+dense_latency_0_0_0_s
+sigmoid
+filtering_network
