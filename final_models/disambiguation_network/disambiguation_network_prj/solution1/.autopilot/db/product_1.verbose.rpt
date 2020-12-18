@@ -1,0 +1,355 @@
+
+
+================================================================
+== Vivado HLS Report for 'product_1'
+================================================================
+* Date:           Thu Dec 17 12:39:08 2020
+
+* Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
+* Project:        disambiguation_network_prj
+* Solution:       solution1
+* Product family: kintexu
+* Target device:  xcku115-flvb2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 12.50 ns | 2.250 ns |   1.56 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+--------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT  | URAM|
++---------------------+---------+-------+---------+--------+-----+
+|DSP                  |        -|      -|        -|       -|    -|
+|Expression           |        -|      0|        0|      30|    -|
+|FIFO                 |        -|      -|        -|       -|    -|
+|Instance             |        -|      -|        -|       -|    -|
+|Memory               |        -|      -|        -|       -|    -|
+|Multiplexer          |        -|      -|        -|       -|    -|
+|Register             |        -|      -|        -|       -|    -|
++---------------------+---------+-------+---------+--------+-----+
+|Total                |        0|      0|        0|      30|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Available SLR        |     2160|   2760|   663360|  331680|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization SLR (%)  |        0|      0|        0|   ~0   |  100|
++---------------------+---------+-------+---------+--------+-----+
+|Available            |     4320|   5520|  1326720|  663360|    0|
++---------------------+---------+-------+---------+--------+-----+
+|Utilization (%)      |        0|      0|        0|   ~0   |    0|
++---------------------+---------+-------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------+----------+-------+---+----+------------+------------+
+    | Variable Name| Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |ap_return     |     *    |      0|  0|  30|           7|           7|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Total         |          |      0|  0|  30|           7|           7|
+    +--------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+--------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-----------+-----+-----+------------+--------------+--------------+
+|ap_ready   | out |    1| ap_ctrl_hs |   product.1  | return value |
+|ap_return  | out |   14| ap_ctrl_hs |   product.1  | return value |
+|a_V        |  in |    7|   ap_none  |      a_V     |    scalar    |
+|w_V        |  in |    7|   ap_none  |      w_V     |    scalar    |
++-----------+-----+-----+------------+--------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 1
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.25>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%w_V_read = call i7 @_ssdm_op_Read.ap_auto.i7(i7 %w_V)" [firmware/nnet_utils/nnet_dense.h:90]   --->   Operation 2 'read' 'w_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%a_V_read = call i7 @_ssdm_op_Read.ap_auto.i7(i7 %a_V)" [firmware/nnet_utils/nnet_dense.h:90]   --->   Operation 3 'read' 'a_V_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%r_V = sext i7 %a_V_read to i14" [firmware/nnet_utils/nnet_dense.h:90]   --->   Operation 4 'sext' 'r_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%sext_ln1118 = sext i7 %w_V_read to i14" [firmware/nnet_utils/nnet_dense.h:90]   --->   Operation 5 'sext' 'sext_ln1118' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (2.25ns)   --->   "%r_V_2 = mul i14 %sext_ln1118, %r_V" [firmware/nnet_utils/nnet_dense.h:90]   --->   Operation 6 'mul' 'r_V_2' <Predicate = true> <Delay = 2.25> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 2.25> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "ret i14 %r_V_2" [firmware/nnet_utils/nnet_dense.h:90]   --->   Operation 7 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 1
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 1
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ a_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ w_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+w_V_read    (read) [ 00]
+a_V_read    (read) [ 00]
+r_V         (sext) [ 00]
+sext_ln1118 (sext) [ 00]
+r_V_2       (mul ) [ 00]
+ret_ln90    (ret ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="a_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="a_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="w_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="w_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1004" name="w_V_read_read_fu_6">
+<pin_list>
+<pin id="7" dir="0" index="0" bw="7" slack="0"/>
+<pin id="8" dir="0" index="1" bw="7" slack="0"/>
+<pin id="9" dir="1" index="2" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="w_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="12" class="1004" name="a_V_read_read_fu_12">
+<pin_list>
+<pin id="13" dir="0" index="0" bw="7" slack="0"/>
+<pin id="14" dir="0" index="1" bw="7" slack="0"/>
+<pin id="15" dir="1" index="2" bw="7" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="a_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="18" class="1004" name="r_V_fu_18">
+<pin_list>
+<pin id="19" dir="0" index="0" bw="7" slack="0"/>
+<pin id="20" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="r_V/1 "/>
+</bind>
+</comp>
+
+<comp id="22" class="1004" name="sext_ln1118_fu_22">
+<pin_list>
+<pin id="23" dir="0" index="0" bw="7" slack="0"/>
+<pin id="24" dir="1" index="1" bw="14" slack="0"/>
+</pin_list>
+<bind>
+<opcode="sext(35) " fcode="sext"/>
+<opset="sext_ln1118/1 "/>
+</bind>
+</comp>
+
+<comp id="26" class="1004" name="r_V_2_fu_26">
+<pin_list>
+<pin id="27" dir="0" index="0" bw="7" slack="0"/>
+<pin id="28" dir="0" index="1" bw="7" slack="0"/>
+<pin id="29" dir="1" index="2" bw="14" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="mul(12) " fcode="mul"/>
+<opset="r_V_2/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="10"><net_src comp="4" pin="0"/><net_sink comp="6" pin=0"/></net>
+
+<net id="11"><net_src comp="2" pin="0"/><net_sink comp="6" pin=1"/></net>
+
+<net id="16"><net_src comp="4" pin="0"/><net_sink comp="12" pin=0"/></net>
+
+<net id="17"><net_src comp="0" pin="0"/><net_sink comp="12" pin=1"/></net>
+
+<net id="21"><net_src comp="12" pin="2"/><net_sink comp="18" pin=0"/></net>
+
+<net id="25"><net_src comp="6" pin="2"/><net_sink comp="22" pin=0"/></net>
+
+<net id="30"><net_src comp="22" pin="1"/><net_sink comp="26" pin=0"/></net>
+
+<net id="31"><net_src comp="18" pin="1"/><net_sink comp="26" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: product.1 : a_V | {1 }
+	Port: product.1 : w_V | {1 }
+  - Chain level:
+	State 1
+		r_V_2 : 1
+		ret_ln90 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------|---------|---------|---------|
+| Operation|   Functional Unit   |  DSP48E |    FF   |   LUT   |
+|----------|---------------------|---------|---------|---------|
+|    mul   |     r_V_2_fu_26     |    0    |    0    |    30   |
+|----------|---------------------|---------|---------|---------|
+|   read   |  w_V_read_read_fu_6 |    0    |    0    |    0    |
+|          | a_V_read_read_fu_12 |    0    |    0    |    0    |
+|----------|---------------------|---------|---------|---------|
+|   sext   |      r_V_fu_18      |    0    |    0    |    0    |
+|          |  sext_ln1118_fu_22  |    0    |    0    |    0    |
+|----------|---------------------|---------|---------|---------|
+|   Total  |                     |    0    |    0    |    30   |
+|----------|---------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           | DSP48E |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    0   |    0   |   30   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    0   |    0   |   30   |
++-----------+--------+--------+--------+

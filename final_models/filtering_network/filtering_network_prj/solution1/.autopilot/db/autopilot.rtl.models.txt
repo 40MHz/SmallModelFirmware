@@ -1,0 +1,8 @@
+sigmoid_sigmoid_tbkb
+product
+dense_latency_0_0_0_s
+relu
+product_1
+dense_latency_0_0_0_1
+sigmoid
+filtering_network
